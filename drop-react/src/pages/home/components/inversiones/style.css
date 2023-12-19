@@ -18,6 +18,7 @@
 .inversiones__container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -25,7 +26,7 @@
     border: 1px solid var(--fourth-color);
     border-radius: 1rem;
     padding: 1rem;
-    min-height: 15rem;
+    min-height: 20rem;
     max-width: 30rem;
 }
 
