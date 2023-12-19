@@ -1,0 +1,10 @@
+.spacer{
+    flex: 1;
+}
+
+.div__home{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

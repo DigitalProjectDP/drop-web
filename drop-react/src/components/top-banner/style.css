@@ -1,0 +1,10 @@
+.top-banner{
+    /* margin-top: 70px; */
+    min-height: 50vh;
+}
+
+@media screen and (max-width: 479px){ 
+    .top-banner{
+        min-height: 50vw;
+    }
+}

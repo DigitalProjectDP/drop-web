@@ -1,0 +1,39 @@
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a:hover{
+    opacity: 0.7;
+}
+
+.section__footer{
+    background-color: var(--first-color);
+    min-height: 220px;
+    color: #FFF;
+}
+
+.div__left{
+    justify-content: start;
+    align-items: start;
+}
+
+.footer__icon{
+    color: var(--second-color);
+}
+
+@media screen and (max-width: 992px){
+    .div__left{
+        justify-content: center;
+        align-items: center;
+    }
+}
