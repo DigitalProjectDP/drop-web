@@ -13,7 +13,7 @@ export default function Header() {
   }, [])  
 
   return (
-    <nav className="navbar navbar-expand-lg navbar__bg">
+    <nav className="navbar navbar-expand-xl navbar__bg">
       <a href="" className="navbar-toggler"><img src={imgLogo} alt="Logo" width={74} height={74} /></a>
       <button className="navbar-toggler bg-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -30,8 +30,8 @@ export default function Header() {
             <a className="nav-link" href="#">INVERSIONES</a>
           </li>
 
-          <li className="d-none d-lg-flex w-25 justify-content-center align-items-center">
-            <a href="" className="navbar-brand"><img src={imgLogo} alt="Logo" width={64} height={64} /></a>
+          <li className="d-none d-xl-flex w-25 justify-content-center align-items-center">
+            <a href="" className="navbar-brand"><img src={imgLogo} alt="Logo" width={74} height={74} /></a>
           </li>
 
           <li className="nav-item">

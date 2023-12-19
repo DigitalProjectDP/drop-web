@@ -1,0 +1,48 @@
+.section__inversiones{
+    text-align: center;
+    padding: 1rem;
+}
+
+.text__paragraph{
+    white-space: pre-line;
+}
+
+.text__secondary{
+    color: var(--second-color);
+}
+
+.inversiones__title{
+    padding: 1rem 0;
+}
+
+.inversiones__container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card__container{
+    border: 1px solid var(--fourth-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: 15rem;
+    max-width: 30rem;
+}
+
+.card__titulo{
+    color: var(--second-color);
+}
+
+.tag__container{
+    color: var(--third-color);;
+    border: 1px solid var(--third-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.tag__text{
+    margin: 0;    
+}

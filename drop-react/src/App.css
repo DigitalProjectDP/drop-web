@@ -31,3 +31,28 @@ body{
 .row{
   margin: 0!important;
 }
+
+.button__primary{
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.button__primary:hover{
+  background-color: var(--second-color);
+}
+
+.button__secondary{
+  background-color: var(--second-color);
+  color: #FFF;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.button__secondary:hover{
+  opacity: 1!important;
+  background-color: var(--first-color);
+}
