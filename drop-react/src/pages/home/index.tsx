@@ -5,6 +5,7 @@ import TopBanner from "../../components/top-banner";
 import HomeInversiones from './components/inversiones/inversiones';
 import HomeProceso from './components/proceso/proceso';
 import HomeBeneficios from './components/beneficios/beneficios';
+import HomeModelos from './components/modelos/modelos';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HomeInversiones></HomeInversiones>
       <HomeProceso></HomeProceso>
       <HomeBeneficios></HomeBeneficios>
+      <HomeModelos></HomeModelos>
       <div className="spacer"></div>      
       <Footer></Footer>
     </div>

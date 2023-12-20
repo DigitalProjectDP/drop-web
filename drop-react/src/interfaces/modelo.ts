@@ -1,13 +1,13 @@
 import { Caracteristica } from "./caracteristica";
-import { ImagenObra } from "./imagenObra";
+import { ImagenModelo } from "./imagenModelo";
 
-export interface Obra{
+export interface Modelo{
     id?: number,
     nombre?: string,
     descripcion?: string,
     valor: number,
     moneda: string,
     brochure: string,
-    imagenes: ImagenObra[],
+    imagenes: ImagenModelo[],
     caracteristicas: Caracteristica[]
 }
