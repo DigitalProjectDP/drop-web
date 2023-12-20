@@ -4,6 +4,7 @@ import Header from "../../components/header";
 import TopBanner from "../../components/top-banner";
 import HomeInversiones from './components/inversiones/inversiones';
 import HomeProceso from './components/proceso/proceso';
+import HomeBeneficios from './components/beneficios/beneficios';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <TopBanner></TopBanner>      
       <HomeInversiones></HomeInversiones>
       <HomeProceso></HomeProceso>
+      <HomeBeneficios></HomeBeneficios>
       <div className="spacer"></div>      
       <Footer></Footer>
     </div>

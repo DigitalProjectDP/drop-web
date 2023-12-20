@@ -1,0 +1,38 @@
+.section__beneficios{
+    text-align: center;
+    padding: 1rem;
+}
+
+.text__paragraph{
+    white-space: pre-line;
+}
+
+.text__secondary{
+    color: var(--second-color);
+}
+
+.beneficios__title{
+    padding: 1rem 0;
+}
+
+.beneficios__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card__container__beneficios{
+    padding: 1rem;
+    min-height: 20rem;
+    width: 30rem;
+    text-align: start;
+}
+
+.card__imagen{
+    filter: var(--filter-fourth-color);
+}
+
+.card__titulo{
+    color: var(--second-color);
+}

@@ -9,7 +9,7 @@ export const SetParameters = async () => {
   let firstColor = '#000000';
   let secondColor = '#bf345d';
   let thirdColor = '#d696a8';
-  let fourthColor = '#7b7b84';
+  let fourthColor = '#115778';
   let fifthColor = '#7b7b84';
   let bgColor = '#FFFFFF';
   let logoHeader = '/static/media/Mateicos-48.b55486906fe20fa7bfe0.png';

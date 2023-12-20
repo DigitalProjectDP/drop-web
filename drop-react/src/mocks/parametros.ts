@@ -39,7 +39,7 @@ export const MockParametros: ClaveValor[] = [
     {
       id: 8,
       clave: "FourthColor",
-      valor: "#7b7b84"
+      valor: "#115778"
     },
     {
       id: 9,
