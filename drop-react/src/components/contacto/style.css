@@ -1,0 +1,27 @@
+li{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.section__contacto form [class*="col-"] {
+    padding: 0 10px 20px;
+}
+
+.input__form {
+    width: 100%;
+    height: 65px;
+    font-size: 17px;    
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
+    box-shadow: none !important;
+}
+
+textarea.input__form {
+    height: 5rem;
+    font-size: 17px;
+    padding: 0.5rem;
+}
