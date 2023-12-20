@@ -7,7 +7,7 @@ export default function HomeInversiones() {
 const listInfo = MockInversiones;
   const renderInversiones = () => listInfo?.map((v, i) => <CardInversiones data={v} key={i}></CardInversiones>)
   return (
-    <section className="section__inversiones">
+    <section className="section__inversiones" id="section__inversiones">
       <p className="container text__paragraph">
           Somos <strong className="text__secondary">Drop</strong>, pioneros y líderes en arquitectura modular en Argentina. <br />
           La construcción modular es la nueva forma de construir. Basándonos en 3 pilares fundamentales: <i>rapidez, adaptabilidad y economía</i>. <br />

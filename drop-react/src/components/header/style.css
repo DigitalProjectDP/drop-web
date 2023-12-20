@@ -27,6 +27,10 @@
     color: var(--second-color);
 }
 
+.nav-link:focus{
+    color: var(--fourth-color);
+}
+
 .navbar__bg{
     background-color: var(--first-color);
     padding: 0 3rem;  

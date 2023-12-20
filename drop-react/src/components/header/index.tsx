@@ -21,17 +21,17 @@ export default function Header() {
       <div className="collapse navbar-collapse navbar__bg" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">INICIO</a>
+            <a className="nav-link" href="/inicio">INICIO</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">MODELOS</a>
+            <a className="nav-link" href="/inicio/#section__modelos">MODELOS</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">INVERSIONES</a>
+            <a className="nav-link" href="/inicio/#section__inversiones">INVERSIONES</a>
           </li>
 
           <li className="d-none d-xl-flex w-25 justify-content-center align-items-center">
-            <a href="" className="navbar-brand"><img src={imgLogo} alt="Logo" width={74} height={74} /></a>
+            <a href="/inicio" className="navbar-brand"><img src={imgLogo} alt="Logo" width={74} height={74} /></a>
           </li>
 
           <li className="nav-item">
@@ -41,7 +41,7 @@ export default function Header() {
             <a className="nav-link" href="#">BLOG</a>
           </li>  
           <li className="nav-item">
-            <a className="nav-link" href="#">CONTACTO</a>
+            <a className="nav-link" href="/contacto">CONTACTO</a>
           </li>
         </ul>
       </div>
