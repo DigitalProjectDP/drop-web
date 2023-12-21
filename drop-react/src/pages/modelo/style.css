@@ -1,5 +1,6 @@
 .img__modelo__container, .modelo__container{
-    padding: 2rem!important
+    padding: 2rem!important;
+    margin-top: 100px;
 }
 
 .img__modelo__container img{
@@ -9,4 +10,10 @@
 
 .list__caracteristicas__modelo li{
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px){
+    .modelo__container{
+        margin: 0;
+    }
 }
