@@ -27,9 +27,8 @@ export default function CardBlog({data}: BlogProps) {
         navigate(`/blog/?id=${blog?.id}`);
     }
 
-
     return(
-        <div className="col-12 col-lg-6 p-3 card__container__blogs" onClick={redirect}>
+        <div className="col-12 col-lg-6 p-3 card__container__blogs">
             <div className="d-flex flex-column gap-2 align-items-center text-start">
                 <img className="card__imagen__blog" src={blog?.imagenUrl} alt="LogoModelo"/>
 
@@ -37,7 +36,7 @@ export default function CardBlog({data}: BlogProps) {
                     <h3 className="card__titulo__blog">
                         {blog?.titulo}
                     </h3>
-                    <a href="" className="link__blog" >Leer el artículo completo</a>
+                    <a href="" onClick={redirect} className="link__blog" >Leer el artículo completo</a>
                 </div>
             </div>           
         </div>

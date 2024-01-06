@@ -5,7 +5,7 @@ import { Modelo } from '../../interfaces/modelo';
 import { GetModeloById } from '../../services/modeloService';
 import Header from '../../components/header';
 import OwlCarousel from 'react-owl-carousel';
-
+import Contacto from '../../components/contacto'
 
 
 export default function ModeloPage() {
@@ -66,13 +66,22 @@ export default function ModeloPage() {
                 <p className="py-3">{modelo?.moneda} {modelo?.valor}</p>
                 <div className="d-flex justify-content-around py-2">
                     <button className="button__primary">Brochure</button>
-                    <button className="button__primary">Contacto</button>
+                    <button className="button__primary" data-bs-toggle="modal" data-bs-target="#modal-modelo-contacto">Contacto</button>
                 </div>
             </div>
             <div className="container-fluid">
                 {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
                     {renderImagenes()} 
                 </OwlCarousel> : ''}
+            </div>
+            <div className="modal fade" id="modal-modelo-contacto" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-xl modal-dialog-centered">
+                    <div className="modal-content">            
+                        <div className="modal-body">
+                            <Contacto data={''}></Contacto>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

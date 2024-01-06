@@ -2,8 +2,11 @@ import './style.css'
 import { MockModelos } from '../../../../mocks/modelos';
 import CardModelo from './cardModelo'
 import OwlCarousel from 'react-owl-carousel';
+import ModeloModal from '../../../../components/modeloModal';
+import { useState } from 'react';
 
 export default function HomeModelos() {
+  const [modeloId, setModeloId] = useState<Number>();
 
   const listInfo = MockModelos;
 
@@ -33,16 +36,28 @@ export default function HomeModelos() {
     }
   };
 
-  const rendermodelos = () => listInfo?.map((v, i) => <CardModelo data={v} key={i}></CardModelo>)
+  const getModelo = (id: Number) => {
+    const buttonModal = document.getElementById("buttonModal");
+    buttonModal?.click();
+    setModeloId(id);
+} 
+
+  const rendermodelos = () => listInfo?.map((v, i) => <CardModelo setModeloId={getModelo} data={v} key={i}></CardModelo>)
   return (
     <section className="section__modelos" id="section__modelos">     
       <h1 className="modelos__title">Nuestros modelos</h1>
       {listInfo? <OwlCarousel className='modelos__container' loop {...options}>
           {rendermodelos()} 
       </OwlCarousel> : ''} 
-      {/* <div className="row modelos__container">
-        {listInfo? rendermodelos(): ''}
-      </div> */}
+      <div className="modal fade" id="modal-modelo" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal-dialog modal-xl modal-dialog-centered">
+                <div className="modal-content">            
+                    <div className="modal-body p-0">
+                      <ModeloModal id={modeloId}></ModeloModal>                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
   )
 }
