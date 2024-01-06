@@ -4,6 +4,7 @@ import { useLocation } from 'react-router';
 import { Modelo } from '../../interfaces/modelo';
 import { GetModeloById } from '../../services/modeloService';
 import Header from '../../components/header';
+import OwlCarousel from 'react-owl-carousel';
 
 
 
@@ -23,7 +24,33 @@ export default function ModeloPage() {
         //setMessage(`Hola, quiero recibir más información por el emprendimiento ${propiedad?.nombre}. ¡Muchas gracias!`);
     }
 
+    const options = {
+        margin: 0,
+        responsiveClass: true,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        navContainerClass: `owl-nav`,
+        navClass: ['owl-prev','owl-next'],
+        dotsClass: `owl-dots customDots`,
+        dotClass: `owl-dot buttonDot`,
+        controlsClass: "owl-controls",        
+        smartSpeed: 2000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            900:{
+                items:3
+            },
+        }
+      };
+
     const renderListModelos = () => modelo?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
+    const renderImagenes = () => modelo?.imagenes.map((v, i) => <img src={v.url} key={i}></img>)
     return (
         <div className="row">
             <Header></Header>
@@ -41,6 +68,11 @@ export default function ModeloPage() {
                     <button className="button__primary">Brochure</button>
                     <button className="button__primary">Contacto</button>
                 </div>
+            </div>
+            <div className="container-fluid">
+                {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
+                    {renderImagenes()} 
+                </OwlCarousel> : ''}
             </div>
         </div>
     )

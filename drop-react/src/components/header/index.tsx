@@ -35,10 +35,10 @@ export default function Header() {
           </li>
 
           <li className="nav-item">
-            <a className="nav-link" href="#">NOSOTROS</a>
+            <a className="nav-link" href="/nosotros">NOSOTROS</a>
           </li>    
           <li className="nav-item">
-            <a className="nav-link" href="#">BLOG</a>
+            <a className="nav-link" href="/blogs">BLOG</a>
           </li>  
           <li className="nav-item">
             <a className="nav-link" href="/contacto">CONTACTO</a>

@@ -37,6 +37,13 @@ body{
   margin: 0!important;
 }
 
+.main__height{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .button__primary{
   background-color: var(--first-color);
   color: #FFF;

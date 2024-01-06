@@ -1,0 +1,29 @@
+.card__container__blogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card__container__blogs div{
+    width: 100%;
+}
+
+.card__imagen__blog{
+    width: 100%;
+    object-fit: contain;
+    max-height: 400px;
+}
+
+.card__titulo__blog{
+    font-weight: bolder;
+}
+
+.link__blog{
+    color: slategray;
+    font-size: 1.5rem;
+}
+
+.link__blog:hover{
+    color: var(--second-color);
+}

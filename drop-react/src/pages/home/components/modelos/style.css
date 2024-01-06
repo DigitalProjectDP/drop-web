@@ -1,6 +1,7 @@
 .section__modelos{
     text-align: center;
     padding: 1rem;
+    padding-top: 100px;
 }
 
 .text__paragraph{
@@ -69,4 +70,20 @@
     text-align: start;
     list-style: none;
     font-size: 0.75rem;
+}
+
+.owl-nav{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-nav span{
+    color: white;
+    padding: 0 10px 6px 10px;
+    margin: 0 0.5rem;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.8);
 }

@@ -1,5 +1,5 @@
 import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
-import { ContactoRoute, InicioRoute, ModeloRoute } from "./routes";
+import { BlogRoute, ContactoRoute, InicioRoute, ModeloRoute, NosotrosRoute } from "./routes";
 
 export default function Router(){  
     return (
@@ -10,6 +10,8 @@ export default function Router(){
                 <Route path="/inicio" element={<InicioRoute></InicioRoute>}></Route>
                 <Route path="/modelo" element={<ModeloRoute></ModeloRoute>}></Route>
                 <Route path="/contacto" element={<ContactoRoute></ContactoRoute>}></Route>
+                <Route path="/blogs" element={<BlogRoute></BlogRoute>}></Route>
+                <Route path="/nosotros" element={<NosotrosRoute></NosotrosRoute>}></Route>
             </Routes>
         </BrowserRouter>
     )
