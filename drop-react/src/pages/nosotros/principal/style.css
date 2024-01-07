@@ -1,0 +1,27 @@
+.section__noticias{
+    text-align: center;
+    padding: 1rem;
+}
+
+.text__paragraph{
+    font-size: 1.5rem;
+    white-space: pre-line;
+}
+
+.text__secondary{
+    color: var(--second-color);
+}
+
+.noticia__title{
+    padding: 1rem 0;
+}
+
+.noticia__container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.noticia__imagen{
+    object-fit: contain;
+}
