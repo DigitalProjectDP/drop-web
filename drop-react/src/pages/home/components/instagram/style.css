@@ -1,7 +1,8 @@
 .instagram__header{
-    max-width: 1300px;
+    max-width: 1000px;
     width: 100%;
     align-items: start;
+    padding: 1rem;
 }
 
 .instagram__title{    
@@ -33,6 +34,10 @@
     width: 100%;
     max-height: 330px;
     object-fit: contain;
+}
+
+.instagram__card:hover{
+    opacity: 0.5;
 }
 
 @media (max-width: 769px) {

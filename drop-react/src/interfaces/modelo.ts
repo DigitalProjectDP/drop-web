@@ -8,6 +8,7 @@ export interface Modelo{
     valor: number,
     moneda: string,
     brochure: string,
+    categoria: Caracteristica,
     imagenes: ImagenModelo[],
     caracteristicas: Caracteristica[]
 }

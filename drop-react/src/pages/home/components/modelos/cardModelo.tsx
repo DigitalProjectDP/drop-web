@@ -32,13 +32,14 @@ export default function CardModelo({data, setModeloId}: ModelosProps) {
         <div className="d-flex flex-column gap-2 align-items-center card__container__modelos" onClick={callbackModeloId}>
             <img className="card__imagen__modelo" src={modelo?.imagenes[0].url} alt="LogoModelo"/>
 
-            <div className="card__overlay__modelo d-flex flex-column gap-2 justify-content-between">
+            <div className="card__overlay__modelo flex-column gap-2 justify-content-start">
                 <h5 className="card__titulo__modelo">
                     {modelo?.nombre}
-                </h5>   
-                <ul className="card__caracteristica__modelo">
+                </h5> 
+                <h6>{modelo?.categoria?.descripcion}</h6>  
+                {/* <ul className="card__caracteristica__modelo">
                     {modelo?.caracteristicas? renderListModelos(): ''}
-                </ul>
+                </ul> */}
             </div>
             <button type="button" id="buttonModal" className="d-none" data-bs-toggle="modal" data-bs-target="#modal-modelo"></button>            
         </div> 

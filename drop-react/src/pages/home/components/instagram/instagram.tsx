@@ -16,14 +16,14 @@ export default function HomeInstagram() {
         setInstagramPosts(vInstagramPosts.slice(0,6));
     }
     
-    const renderInstagramPosts = () => instagramPosts?.map((v, i) => <img className="instagram__card" src={v?.media_url} key={i}/>)
+    const renderInstagramPosts = () => instagramPosts?.map((v, i) => <a key={i} href={v?.permalink} target="_blank"><img className="instagram__card" src={v?.media_url}/></a>)
     return (
     <section className="section__instagram d-flex justify-content-center align-items-center flex-column">
         <div className="instagram__header">
             <h1 className="instagram__title">Seguinos en Instagram</h1>
             <a className="d-flex flex-row instagram__link" href="https://www.instagram.com/drop.houses/" target="_blank">
                 <img src={instagramLogo} className="instagram__logo" alt="LogoInstragram"/>
-                <h3 className="d-flex justify-content-center align-items-center mx-5 text-dark"><strong>drop.houses</strong></h3>
+                <h3 className="d-flex justify-content-center align-items-center mx-3 text-dark"><strong>drop.houses</strong></h3>
             </a>
         </div>
         <div className="instagram__container">

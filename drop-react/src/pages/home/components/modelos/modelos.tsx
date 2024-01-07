@@ -45,7 +45,7 @@ export default function HomeModelos() {
   return (
     <section className="section__modelos" id="section__modelos">     
       <h1 className="modelos__title">Nuestros modelos</h1>
-      {listInfo? <OwlCarousel className='modelos__container' loop {...options}>
+      {listInfo? <OwlCarousel className='modelos__container container-fluid' loop {...options}>
           {rendermodelos()} 
       </OwlCarousel> : ''} 
       <div className="modal fade" id="modal-modelo" aria-labelledby="exampleModalLabel" aria-hidden="true">

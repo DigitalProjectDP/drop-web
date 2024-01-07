@@ -26,6 +26,7 @@ export const MockModelos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
+        categoria: { id: 1, descripcion: 'Alquiler temporario'},
         imagenes: [{id: 1, nombre: 'Imagen01', url: imgDosdor01}, {id: 2, nombre: 'Imagen02', url: imgDosdor02}, {id: 3, nombre: 'Imagen03', url: imgDosdor03}, {id: 4, nombre: 'Imagen04', url: imgDosdor04}],
         caracteristicas: [{id: 1, descripcion: '2 dormitorios | 6 módulos'},{id: 2, descripcion: '116 m2'},{id: 3, descripcion: '70m2 cubiertos + 46m2 de deck'}]
     },
@@ -36,6 +37,7 @@ export const MockModelos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
+        categoria: { id: 1, descripcion: 'Alquiler temporario'},
         imagenes: [{id: 1, nombre: 'Imagen01', url: imgChillout01}, {id: 2, nombre: 'Imagen02', url: imgChillout02}, {id: 3, nombre: 'Imagen03', url: imgChillout03},
                     {id: 4, nombre: 'Imagen04', url: imgChillout04}, {id: 5, nombre: 'Imagen05', url: imgChillout05}, {id: 6, nombre: 'Imagen06', url: imgChillout06}],
         caracteristicas: [{id: 1, descripcion: '1 Dormitorio | 53m2'},{id: 2, descripcion: 'Personalizable'}]
@@ -47,6 +49,7 @@ export const MockModelos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
+        categoria: { id: 1, descripcion: 'Alquiler temporario'},
         imagenes: [{id: 1, nombre: 'Imagen01', url: imgUndor01}, {id: 2, nombre: 'Imagen02', url: imgUndor02}, {id: 3, nombre: 'Imagen03', url: imgUndor03}],
         caracteristicas: [{id: 1, descripcion: 'Casa 1 dormitorio | 97m2'},{id: 2, descripcion: 'Personalizable'}]
     },
@@ -57,6 +60,7 @@ export const MockModelos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
+        categoria: { id: 1, descripcion: 'Alquiler temporario'},
         imagenes: [{id: 1, nombre: 'Imagen01', url: imgAmedida01}, {id: 2, nombre: 'Imagen02', url: imgAmedida02}, {id: 3, nombre: 'Imagen03', url: imgAmedida03}, {id: 4, nombre: 'Imagen04', url: imgAmedida04}],
         caracteristicas: [{id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad'}]
     },
