@@ -9,14 +9,13 @@ export default function HomeModelos() {
   const [modeloId, setModeloId] = useState<Number>();
 
   const listInfo = MockModelos;
-
-
+  
   const options = {
     margin: 0,
     responsiveClass: true,
     nav: true,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     navContainerClass: `owl-nav`,
     navClass: ['owl-prev','owl-next'],
     dotsClass: `owl-dots customDots`,
@@ -50,7 +49,7 @@ export default function HomeModelos() {
           {rendermodelos()} 
       </OwlCarousel> : ''} 
       <div className="modal fade" id="modal-modelo" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog modal-xl modal-dialog-centered">
+          <div className="modal-dialog modal-lg modal-dialog-centered">
                 <div className="modal-content">            
                     <div className="modal-body p-0">
                       <ModeloModal id={modeloId}></ModeloModal>                        

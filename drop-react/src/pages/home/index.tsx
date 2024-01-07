@@ -7,6 +7,7 @@ import HomeProceso from './components/proceso/proceso';
 import HomeBeneficios from './components/beneficios/beneficios';
 import HomeModelos from './components/modelos/modelos';
 import Contacto from '../../components/contacto';
+import HomeInstagram from './components/instagram/instagram';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <HomeBeneficios></HomeBeneficios>
       <HomeModelos></HomeModelos>
       <Contacto data={''}></Contacto>
+      <HomeInstagram></HomeInstagram>
       <div className="spacer"></div>      
       <Footer></Footer>
     </div>

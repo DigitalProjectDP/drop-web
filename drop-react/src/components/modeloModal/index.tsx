@@ -40,7 +40,7 @@ export default function ModeloModal({id}: ModalModeloProps) {
       };
 
     const renderListModelos = () => modelo?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
-    const renderImagenes = () => modelo?.imagenes.map((v, i) => <img src={v.url} key={i}></img>)
+    const renderImagenes = () => modelo?.imagenes.map((v, i) => <img className="modelo__carousel__img" src={v.url} key={i}></img>)
     return (
         <div className="row p-0"> 
             <div className="modelo__header p-3">

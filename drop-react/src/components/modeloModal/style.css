@@ -3,8 +3,9 @@
     margin-top: 100px;
 }
 
-.img__modelo__container img{
+.modelo__carousel__img{
     object-fit: cover;
+    max-height: 797px;
 }
 
 .list__caracteristicas__modelo li{
