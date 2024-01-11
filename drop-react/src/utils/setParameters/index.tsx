@@ -16,7 +16,7 @@ export const SetParameters = async () => {
   let logoFooter = '/static/media/Mateicos-45.9feed3e0ab85f3d03583.png';
   let nombre = 'Drop';
   let correo = 'maximiliano_hermosilla@hotmail.com';
-  let instagram = 'https://www.instagram.com/mateicos_/?hl=es';
+  let instagram = 'https://www.instagram.com/drop.houses/';
   let whatsapp = '1132357543';
   let telefono = '1132357543';
   
@@ -46,8 +46,7 @@ export const SetParameters = async () => {
     root?.style.setProperty('--third-color', parametro.thirdColor);
     root?.style.setProperty('--fourth-color', parametro.fourthColor);
     root?.style.setProperty('--fifth-color', parametro.fifthColor);
-    root?.style.setProperty('--background-color', parametro.bgColor);
-    
+    root?.style.setProperty('--background-color', parametro.bgColor);    
   }
   
   await getParametrosConfiguracion();

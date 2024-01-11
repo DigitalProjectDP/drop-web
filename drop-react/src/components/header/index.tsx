@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <nav className="navbar navbar-expand-xl navbar__bg">
-      <a href="" className="navbar-toggler"><img src={imgLogo} alt="Logo" width={74} height={74} /></a>
+      <a href="/inicio" className="navbar-toggler"><img src={imgLogo} alt="Logo" width={74} height={74} /></a>
       <button className="navbar-toggler bg-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>

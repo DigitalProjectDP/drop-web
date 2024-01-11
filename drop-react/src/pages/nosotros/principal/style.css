@@ -1,4 +1,4 @@
-.section__noticias{
+.section__nosotros{
     text-align: center;
     padding: 1rem;
 }
@@ -12,16 +12,22 @@
     color: var(--second-color);
 }
 
-.noticia__title{
+.nosotros__title{
     padding: 1rem 0;
 }
 
-.noticia__container{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+.nosotros__imagen{
+    object-fit: contain;
 }
 
-.noticia__imagen{
-    object-fit: contain;
+.img__nosotros{
+    object-fit: cover;
+    object-position: center;
+    width: 75%;
+    height: 75%;
+    max-width: 600px;
+}
+
+.div__nosotros{
+    font-size: 1.5rem;
 }
