@@ -19,7 +19,7 @@ export default function Home() {
       <HomePrincipal></HomePrincipal>
       <HomeInversiones></HomeInversiones>
       <HomeProceso></HomeProceso>
-      <HomeBeneficios></HomeBeneficios>
+      {/* <HomeBeneficios></HomeBeneficios> */}
       <HomeBeneficiosNew></HomeBeneficiosNew>
       <HomeModelos></HomeModelos>
       <Contacto data={''}></Contacto>

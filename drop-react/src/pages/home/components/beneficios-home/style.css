@@ -32,7 +32,7 @@
 }
 
 .card__imagen__beneficio, .card__titulo__beneficio, .card__descripcion{
-    filter: var(--filter-fifth-color);
+    filter: var(--filter-first-color);
 }
 
 .card__titulo{

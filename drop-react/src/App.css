@@ -45,15 +45,19 @@ body{
 }
 
 .button__primary{
-  background-color: var(--first-color);
-  color: #FFF;
+  color: var(--first-color);
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: #FFF;
   padding: 0.5rem 1rem;
-  border: 0;
-  border-radius: 0.5rem;
+  border: 2px solid black!important;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .button__primary:hover{
-  background-color: var(--second-color);
+  background-color: #000;
+  color: #FFF;
+  opacity: 1;
 }
 
 .button__secondary{
@@ -61,7 +65,6 @@ body{
   color: #FFF;
   padding: 0.5rem 1rem;
   border: 0;
-  border-radius: 0.5rem;
 }
 
 .button__secondary:hover{
