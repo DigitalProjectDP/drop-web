@@ -16,6 +16,7 @@ export default function CardBanner({info}: InfoProps){
     return(
         <div className='item' style={{backgroundImage: `url(${infoBanner?.imagenUrl})`, width: "100%"}}>
             <div className='bannerCaption'>
+                <video src={infoBanner?.imagenUrl}></video>
                 <h2>{infoBanner?.titulo}</h2>                                   
                 <h3>{infoBanner?.descripcion}</h3>
             </div>                  

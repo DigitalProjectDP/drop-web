@@ -53,7 +53,7 @@ export default function ModeloPage() {
     const renderImagenes = () => modelo?.imagenes.map((v, i) => <img src={v.url} key={i}></img>)
     return (
         <div className="row">
-            <Header></Header>
+            <Header opacity={true}></Header>
             <div className="img__modelo__container col-12 col-lg-6">
                 <img src={modelo?.imagenes[0]?.url} alt={modelo?.imagenes[0]?.nombre} width="100%"/>
             </div>

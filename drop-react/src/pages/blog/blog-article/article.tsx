@@ -27,9 +27,9 @@ export default function BlogArticle() {
 
     return (
         <div className="row">
-            <Header></Header>
+            <Header opacity={true}></Header>
             <HeaderSpace></HeaderSpace>      
-            <div className="container-fluid d-flex flex-column p-5 blog__container">
+            <div className="container-fluid d-flex flex-column blog__container">
                 <h1 className="text-start mb-3">{blog?.titulo}</h1>
                 <h3 className="text-start mb-3">{blog?.subtitulo}</h3>                
                 {blog?.descripcion? htmlString(): ""}

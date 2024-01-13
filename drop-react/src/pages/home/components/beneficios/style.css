@@ -20,7 +20,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    max-width: 1920px;
+    max-width: 100%;
+    padding: 5rem 0;
+    -webkit-box-shadow: 0px -11px 28px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px -11px 28px 0px rgba(0,0,0,0.21);
+    box-shadow: 0px -11px 28px 0px rgba(0,0,0,0.21);
 }
 
 .card__container__beneficios{

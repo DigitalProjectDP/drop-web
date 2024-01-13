@@ -8,7 +8,7 @@ const listInfo = MockBeneficios;
   const renderbeneficios = () => listInfo?.map((v, i) => <CardBeneficio data={v} key={i}></CardBeneficio>)
   return (
     <section className="section__beneficios d-flex justify-content-center align-items-center flex-column">     
-      <h1 className="beneficios__title">Beneficios de construir con Drop</h1>
+      <h1 className="beneficios__title pb-5">Beneficios de construir con Drop</h1>
       <div className="beneficios__container">
         {listInfo? renderbeneficios(): ''}
       </div>

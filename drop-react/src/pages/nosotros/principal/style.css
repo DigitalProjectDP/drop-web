@@ -3,12 +3,12 @@
     padding: 1rem;
 }
 
-.text__paragraph{
+.section__nosotros .text__paragraph{
     font-size: 1.5rem;
     white-space: pre-line;
 }
 
-.text__secondary{
+.section__nosotros .text__secondary{
     color: var(--second-color);
 }
 
@@ -23,11 +23,7 @@
 .img__nosotros{
     object-fit: cover;
     object-position: center;
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 70%;
     max-width: 600px;
-}
-
-.div__nosotros{
-    font-size: 1.5rem;
 }

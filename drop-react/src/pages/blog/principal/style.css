@@ -3,16 +3,15 @@
     padding: 1rem;
 }
 
-.text__paragraph{
-    font-size: 1.5rem;
+.section__blogs .text__paragraph{ 
     white-space: pre-line;
 }
 
-.text__secondary{
+.section__blogs .text__secondary{
     color: var(--second-color);
 }
 
-.blog__title{
+.section__blogs .blog__title{
     padding: 1rem 0;
 }
 

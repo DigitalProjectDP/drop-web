@@ -8,7 +8,7 @@ import './styles.css'
 export default function NosotrosPage(){
     return(
         <main className="main__height min-vh-100 h-10">
-            <Header></Header>
+            <Header opacity={true}></Header>
             <HeaderSpace></HeaderSpace>
             <NosotrosPrincipal></NosotrosPrincipal>
             <Footer></Footer>
