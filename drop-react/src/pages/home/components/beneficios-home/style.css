@@ -39,12 +39,12 @@
     color: var(--second-color);
 }
 
-.card__descripcion{
-    font-size: 1.5rem;
-}
+@media screen and (max-width: 1280px){
+    .card__container__beneficios{
+        width: 20rem;
+    }
 
-@media screen and (max-width: 479px){
     .card__descripcion{
-        font-size: 1rem;
-    }   
+        font-size: 0.75rem;
+    }
 }

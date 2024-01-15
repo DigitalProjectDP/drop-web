@@ -43,9 +43,9 @@ export default function SectionTextImage({info,inverse, buttonLink, buttonText, 
                                 {infoSection?.subtitulo}
                             </span>
                         </div>
-                        <p className="section__descripcion">
+                        <div className="section__descripcion">
                             {infoSection?.descripcion? htmlString(): ''}
-                        </p>
+                        </div>
                         <div className="d-flex justify-content-center gap-2">
                             {buttonText? <button className="buttonVerMas" onClick={redirect}>
                                 {buttonText}

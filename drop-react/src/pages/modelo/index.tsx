@@ -66,7 +66,7 @@ export default function ModeloPage() {
                 <p className="py-3">{modelo?.moneda} {modelo?.valor}</p>
                 <div className="d-flex justify-content-around py-2">
                     <button className="button__primary">Brochure</button>
-                    <button className="button__primary" data-bs-toggle="modal" data-bs-target="#modal-modelo-contacto">Contacto</button>
+                    <button className="button__primary" data-bs-toggle="modal" data-bs-target="#modal-contacto-modelo">Contacto</button>
                 </div>
             </div>
             <div className="container-fluid">
@@ -74,15 +74,32 @@ export default function ModeloPage() {
                     {renderImagenes()} 
                 </OwlCarousel> : ''}
             </div>
-            <div className="modal fade" id="modal-modelo-contacto" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog modal-xl modal-dialog-centered">
-                    <div className="modal-content">            
-                        <div className="modal-body">
-                            <Contacto data={''}></Contacto>
+            <div className="modal fade" id="modal-contacto-modelo" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-lg">
+                    <div className="modal-content">  
+                        <button type="button" className="btn-close button__close" data-bs-dismiss="modal" aria-label="Close"></button>          
+                        <div className="modal-body p-0 text-align-start">
+                        <Contacto data={''}></Contacto>                        
                         </div>
                     </div>
                 </div>
             </div>
+            <div className="modal fade" id="modal-contacto-confirmacion" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content"> 
+                        <div className="modal-header">
+                            <h5 className="modal-title">Confirmación</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>           
+                        <div className="modal-body p-3 my-3 text-center">
+                            Email enviado con éxito
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="button__primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
     )
 }

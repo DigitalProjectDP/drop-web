@@ -21,8 +21,9 @@ export const MockModelos: Modelo[] = [
     {
         id: 1,
         nombre: 'Dosdor',
-        descripcion: `El concepto orientativo planteado ene l brochure puede ser modificado por el cliente, según conveniencia.
-                      Este modelo de fabricación estandar, permite elegir al usuario si desea toilette + baño, 2 dormitorios, dormitorio, vestidor y estudio, opciones de ubicaciones, cantidades y morfología de carpinterías.`,
+        // descripcion: `El concepto orientativo planteado ene l brochure puede ser modificado por el cliente, según conveniencia.
+        //               Este modelo de fabricación estandar, permite elegir al usuario si desea toilette + baño, 2 dormitorios, dormitorio, vestidor y estudio, opciones de ubicaciones, cantidades y morfología de carpinterías.`,
+        descripcion: '',
         valor: 40000,
         moneda: 'USD$',
         brochure: '',

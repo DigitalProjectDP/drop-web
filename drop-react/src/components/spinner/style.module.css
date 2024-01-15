@@ -1,0 +1,41 @@
+.divAbsolute{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    zoom: 1;
+}
+
+.divSpinner{
+    position: relative;
+    min-height: 150vh;
+}
+
+.spinner{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    color: white;
+    font-size: 2rem;
+}
+
+.spinner span{
+    font-size: 2rem;
+    color: white!important;
+}
+
+.spinnerText{
+    position: absolute;
+    top: 45%;
+    left: 45%;;    
+    width: 100%;    
+}
+
+@media screen and (max-width: 1499px){
+    .divAbsolute{
+        zoom: 1;
+    }
+}

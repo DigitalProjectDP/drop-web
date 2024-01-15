@@ -5,6 +5,7 @@ import { GetParametroByClave } from "../../services/parametroService";
 import { SendMail } from "../../services/mailService";
 import { FaLocationDot, FaPhone } from 'react-icons/fa6';
 import { IoMail } from "react-icons/io5";
+import SpinnerLoading from '../spinner';
 
 interface ConsultaProps{
     data: string;
@@ -40,10 +41,10 @@ export default function Contacto({data}: ConsultaProps){
             Destinatario: destinatario?.valor,
             Datetime: today.toISOString()
         }
-        let response =  SendMail(formData);
+        //let response =  SendMail(formData);
 
         setTimeout(() => {
-            let btnConfirmar = document.getElementById("btnModalEmai");
+            let btnConfirmar = document.getElementById("btnModalEmail");
             btnConfirmar?.click();
             setLoading(false);
         }, 500);
@@ -55,26 +56,26 @@ export default function Contacto({data}: ConsultaProps){
           <h2>Hablemos!</h2>
         </div>
         <div className="row">
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 text-start align-items-start">
             <ul>
               <li>
-                <FaLocationDot className="footer__icon mx-3" size={32}></FaLocationDot>
+                <FaLocationDot className="mx-3" size={32}></FaLocationDot>
                 <div>
-                    <h3>Ubicación</h3>
+                    <h4>Ubicación</h4>
                     <p>12 779, B1900 La Plata, Provincia de Buenos Aires <br /> Cita previa requerida</p>
                 </div>
               </li>
               <li>
-                <FaPhone className="footer__icon mx-3" size={32}></FaPhone>
+                <FaPhone className="mx-3" size={32}></FaPhone>
                 <div>
-                    <h3>Teléfono</h3>
+                    <h4>Teléfono</h4>
                     <p>221.2200007</p>
                 </div>
               </li>
               <li>
-                <IoMail className="footer__icon mx-3" size={32}></IoMail>
+                <IoMail className="mx-3" size={32}></IoMail>
                 <div>
-                    <h3>Email</h3>
+                    <h4>Email</h4>
                     <p>drop.modulos@gmail.com</p>
                 </div>
               </li>
@@ -148,6 +149,8 @@ export default function Contacto({data}: ConsultaProps){
             </div>
           </form>
         </div>
+        {loading? <SpinnerLoading></SpinnerLoading>: ''}
+        <button type="button" id="btnModalEmail" className="d-none" data-bs-toggle="modal" data-bs-target="#modal-contacto-confirmacion"></button>  
       </section>
     );
 }

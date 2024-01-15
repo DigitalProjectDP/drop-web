@@ -7,7 +7,6 @@
 
 .sectionTitle {
     width: 100%;
-    font-size: 20px;
     color: var(--title-light-color);
     margin-bottom: 25px;   
     font-family: var(--font-primary)!important;    
@@ -15,17 +14,13 @@
 
 .sectionTitle span {
     display: block;
-    font-size: 25px;
     color: var(--first-color)!important;
-    line-height: normal;
     margin-bottom: 20px;
     position: relative;
     z-index: 1; 
 }
 
 .sectionTitle h2 {
-    font-size: 48px;
-    line-height: 48px;
     color: var(--fifth-color);
     margin-bottom: 0.5rem;
     margin-left: -0.25rem;
@@ -37,32 +32,14 @@
     margin-bottom: 2rem;
 }
 
-.sectionTile .subtitle{
-    font-size: 1.5rem;
-}
-
-.options button{
-    padding: 1rem 2rem;
-    font-size: 24px;
-}
-
-.options button:hover{
-    background-color: var(--dark-color);
-}
-
 .section__descripcion{
-    font-size: 18px;
     white-space: pre-line;
     text-wrap: wrap;
     text-align: start;
 }
 
 .about p {
-    color: var(--paragraph-color);
-    line-height: 28px;
     margin-bottom: 40px;
-    font-family: var(--font-secondary);
-    font-weight: 200;
     white-space: pre-line;
     text-wrap: wrap;
     padding-right: 1rem;
@@ -86,11 +63,9 @@
 }
 
 .options .block a {
-    font-size: 16px;
     margin-bottom: 0;
     color: var(--span-color);
     font-family: var(--font-secondary);
-    font-weight: 400;
     text-decoration: underline;
 }
 
@@ -109,15 +84,11 @@
 .imagen{
     min-height: 500px;
     width: auto;
-    object-fit: cover;
+    object-fit:contain;
+    object-position: top;
 }
 
-@media screen and (max-width: 1399px){
-    .options .block h3 {
-        font-size: 17px;
-        color: var(--dark-color);
-    }
-    
+@media screen and (max-width: 1399px){    
     .imagen{
         min-height: 400px;
     }
@@ -139,19 +110,11 @@
 }
 @media screen and (max-width: 479px){ 
     .sectionTitle span {
-        font-size: 20px;
         margin-bottom: 15px;
     }
 
     .sectionTitle h2 {
         padding-top: 1rem;
-        font-size: 33px;
-        line-height: 38px;
-    }
-
-    .about p {
-        font-size: 17px;
-        line-height: 24px;
     }
 
     .options {
@@ -178,10 +141,6 @@
         width: auto;
     }
 
-    .about {    
-        margin: 0 1rem;
-    }
-
     .options button{
         padding: 1rem;
     }
@@ -195,4 +154,10 @@
     .aboutImage {
         max-width: 220px;
     }
+}
+
+@media screen and (min-width: 1281px){ 
+    .section__descripcion{
+        font-size: 1.5rem;
+    }    
 }

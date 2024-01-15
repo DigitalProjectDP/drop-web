@@ -4,7 +4,6 @@
 }
 
 .text__paragraph{
-    font-size: 1.5rem;
     white-space: pre-line;
 }
 
@@ -24,4 +23,42 @@
 
 .proceso__imagen{
     max-width: 90vw;
+}
+
+.timeline__container{
+    position: relative;
+    text-align: start;
+    padding: 0 2rem;
+}
+
+.timeline__container h5{
+    font-weight: 600;
+    padding-bottom: 3rem;
+}
+
+.timeline__container p{
+    padding-right: 1rem;
+}
+
+.timeline__arrow::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    height: 4rem;
+    width: 95%;
+    border-bottom: 5px solid black;
+    z-index: 1000;    
+}
+
+@media screen and (max-width:479px){
+    .timeline__arrow::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        height: 4rem;
+        width: 5%;
+        height: 100%;
+        border-left: 5px solid black;        
+        z-index: 1000;    
+    }
 }

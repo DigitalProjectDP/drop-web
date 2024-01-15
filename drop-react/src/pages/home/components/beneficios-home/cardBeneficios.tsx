@@ -17,18 +17,16 @@ export default function CardBeneficioHome({data}: BeneficiosProps) {
     const renderListBeneficios = () => beneficio?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
 
     return(
-        <div>
-            <div className="container d-flex flex-column justify-content-start gap-4 card__container__beneficios">
-                <div className="d-flex flex-column gap-2 align-items-start">
-                    <img className="card__imagen__beneficio" src={beneficio?.imagen} alt="LogoBeneficio" width={64} height={64}/>
-                    <h2 className="card__titulo__beneficio">
-                        {beneficio?.titulo}
-                    </h2>   
-                </div>
-                <p className="card__descripcion">
-                    {beneficio?.descripcion}
-                </p>
+        <div className="d-flex flex-column justify-content-start gap-4 card__container__beneficios">
+            <div className="d-flex flex-column gap-2 align-items-start">
+                <img className="card__imagen__beneficio" src={beneficio?.imagen} alt="LogoBeneficio" width={36} height={36}/>
+                <h4 className="card__titulo__beneficio">
+                    {beneficio?.titulo}
+                </h4>   
             </div>
+            <p className="card__descripcion">
+                {beneficio?.descripcion}
+            </p>
         </div>
     )
 }

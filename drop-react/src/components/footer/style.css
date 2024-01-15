@@ -28,7 +28,8 @@ footer a:hover{
 }
 
 .footer__icon{
-    color: var(--second-color);
+    /* color: var(--second-color); */
+    color: #FFF;
 }
 
 @media screen and (max-width: 992px){

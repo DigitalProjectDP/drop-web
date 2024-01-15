@@ -6,19 +6,18 @@ import TagInversiones from './tagInversionesCaracteristicas';
 
 interface InversionesProps{
     data?: Inversion;
+    openModal?: any;
 }
 
-export default function CardInversiones({data}: InversionesProps) {
+export default function CardInversiones({data, openModal}: InversionesProps) {
     const [inversion, setInversion] = useState(data);
 
     useEffect(() => {
         setInversion(data);
-    }, []);
-    
-    const navigate = useNavigate();
+    }, []);    
 
-    const redirect = () => {
-        //navigate(`/inversiones/?id=inversiones0${infoInversion?.id}`);
+    const callback = () => {
+        openModal();
     }
 
     const renderTagInversiones = () => inversion?.caracteristicas.map((v, i) => <TagInversiones data={v} key={i}></TagInversiones>)
@@ -38,7 +37,7 @@ export default function CardInversiones({data}: InversionesProps) {
                 {inversion?.caracteristicas? renderTagInversiones(): ''}
             </div>
             <div className="container d-flex justify-content-center align-items-end my-4">
-                <button className="button__primary" onClick={redirect}>
+                <button className="button__primary" onClick={callback}>
                     Contacto
                 </button>
             </div>

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
 import './style.css'
-import imgLogo from '../../media/logo/logo.jpg'
+import React, { useEffect, useState } from 'react'
+import imgLogo from '../../media/logo/logo_drop.png'
 import { GrMail } from "react-icons/gr";
 import { FaFacebook, FaInstagram, FaPhone  } from 'react-icons/fa6'
 

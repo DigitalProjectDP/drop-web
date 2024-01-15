@@ -2,7 +2,7 @@
     max-width: 1000px;
     width: 100%;
     align-items: start;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .instagram__title{    
@@ -18,6 +18,7 @@
 
 .instagram__link:hover{
     cursor: pointer;
+    opacity: 0.7;
 }
 
 .instagram__container {
