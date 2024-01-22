@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { GetParametroByClave } from "../../services/parametroService";
 import { SendMail } from "../../services/mailService";
-import { FaLocationDot, FaPhone } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram, FaLocationDot, FaPhone, FaYoutube } from 'react-icons/fa6';
 import { IoMail } from "react-icons/io5";
 import SpinnerLoading from '../spinner';
 
@@ -14,7 +14,23 @@ interface ConsultaProps{
 export default function Contacto({data}: ConsultaProps){
     const [message, setMessage] = useState(data);
     const [loading, setLoading] = useState(false);
+    const [instagram, setInstagram] = useState('');
+    const [whatsapp, setWhatsapp] = useState('');
+    const [telefono, setTelefono] = useState('');
 
+    useEffect(() => {
+        let parametros = localStorage.getItem("parametros") ? JSON.parse(localStorage.getItem("parametros")!) : {};
+
+        let instagramParametro = parametros?.instagram || '';
+        let whatsappParametro = parametros?.whatsapp || '';
+        let telefonoParametro = parametros?.telefono || '';
+
+        setMessage(data);    
+        setInstagram(instagramParametro);
+        setWhatsapp(whatsappParametro);
+        setTelefono(telefonoParametro);
+    }, [])  
+    
     const { register, formState: {errors}, watch, handleSubmit } = useForm({
         defaultValues: {
             Nombre: '',
@@ -53,33 +69,38 @@ export default function Contacto({data}: ConsultaProps){
     return (
       <section className="container-fluid section__contacto">
         <div className="section__title text-center py-4">
-          <h2>Hablemos!</h2>
+          <h3>¡Hablemos!</h3>
         </div>
         <div className="row">
           <div className="col-12 col-lg-6 text-start align-items-start">
             <ul>
               <li>
-                <FaLocationDot className="mx-3" size={32}></FaLocationDot>
+                <FaLocationDot className="mx-3" size={24}></FaLocationDot>
                 <div>
-                    <h4>Ubicación</h4>
+                    <h5>Ubicación</h5>
                     <p>12 779, B1900 La Plata, Provincia de Buenos Aires <br /> Cita previa requerida</p>
                 </div>
               </li>
               <li>
-                <FaPhone className="mx-3" size={32}></FaPhone>
+                <FaPhone className="mx-3" size={24}></FaPhone>
                 <div>
-                    <h4>Teléfono</h4>
+                    <h5>Teléfono</h5>
                     <p>221.2200007</p>
                 </div>
               </li>
               <li>
-                <IoMail className="mx-3" size={32}></IoMail>
+                <IoMail className="mx-3" size={24}></IoMail>
                 <div>
-                    <h4>Email</h4>
+                    <h5>Email</h5>
                     <p>drop.modulos@gmail.com</p>
                 </div>
               </li>
             </ul>
+            <div className="d-flex flex-row gap-1 justify-content-center pt-2">
+              <a href={instagram} target="_blank"><FaInstagram className="contacto__icon mx-2" size={32}></FaInstagram></a>
+              <a href={instagram} target="_blank"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
+              <a href={instagram} target="_blank"><FaYoutube className="contacto__icon mx-2" size={32}></FaYoutube></a>
+            </div>
           </div>
 
           <form className="col-12 col-lg-6" onSubmit={handleSubmit(enviarContacto)}>

@@ -22,7 +22,7 @@ export default function BlogArticle() {
     }
     
     const htmlString = () => (
-        <div dangerouslySetInnerHTML={{ __html: blog?.descripcion || 'Holaaaaaaa' }} />
+        <div className="blog__descripcion" dangerouslySetInnerHTML={{ __html: blog?.descripcion || 'Holaaaaaaa' }} />
       );
 
     return (
@@ -30,8 +30,8 @@ export default function BlogArticle() {
             <Header opacity={true}></Header>
             <HeaderSpace></HeaderSpace>      
             <div className="container-fluid d-flex flex-column blog__container">
-                <h1 className="text-start mb-3">{blog?.titulo}</h1>
-                <h3 className="text-start mb-3">{blog?.subtitulo}</h3>                
+                <h3 className="text-start mb-3">{blog?.titulo}</h3>
+                <h5 className="text-start mb-3">{blog?.subtitulo}</h5>                
                 {blog?.descripcion? htmlString(): ""}
             </div>       
         </div>

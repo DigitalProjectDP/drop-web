@@ -2,3 +2,8 @@
     padding: 2rem!important;
     white-space: pre-line;
 }
+
+.blog__descripcion{
+    color: grey;
+    font-size: 0.75rem;
+}

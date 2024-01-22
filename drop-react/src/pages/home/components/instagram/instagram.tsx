@@ -20,7 +20,7 @@ export default function HomeInstagram() {
     return (
     <section className="section__instagram d-flex justify-content-center align-items-center flex-column">
         <div className="instagram__header">
-            <h1 className="instagram__title">Seguinos en Instagram</h1>
+            <h3 className="instagram__title">Seguinos en Instagram</h3>
             <a className="d-flex flex-row instagram__link" href="https://www.instagram.com/drop.houses/" target="_blank">
                 <img src={instagramLogo} className="instagram__logo" alt="LogoInstragram"/>
                 <h3 className="d-flex justify-content-center align-items-center mx-3 text-dark"><strong>drop.houses</strong></h3>

@@ -8,7 +8,7 @@ export default function BlogPrincipal() {
     const rendermodelos = () => listInfo?.map((v, i) => <CardBlog data={v} key={i}></CardBlog>)
     return (
         <section className="section__blogs">
-            <h1 className="blog__title">Bienvenido a nuestro blog</h1>
+            <h3 className="blog__title">Bienvenido a nuestro blog</h3>
             <p className="container text__paragraph">
                 En esta sección vas a encontrar la información más reciente sobre arquitectura modular, y sobre datos e hitos importantes de Drop
             </p>

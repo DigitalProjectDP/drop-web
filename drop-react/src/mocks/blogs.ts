@@ -9,11 +9,11 @@ export const MockBlogs: Imagen[] =
         titulo: `Congreso nuevas tecnologías. 
                 Arquitectura modular, ¿la nueva forma de invertir seguro?`,
         subtitulo: 'Hace varios años que en Sudamérica se ha instalado una opción constructiva oriunda de merio oriente. Se trata de la arquitectura modular, diferenciando sus principales beneficios en costos y en entrega inmediata',
-        descripcion: `<strong>Entonces, ¿Qué tan segura es la inversión modular?</strong>
+        descripcion: `<strong style="color: #000">Entonces, ¿Qué tan segura es la inversión modular?</strong>
         En pocas palabras, el CEO y el Presidente de Drop, Agustín y Fernando Magno, nos comentaron sobre el fenómeno climático caracterizado por el calentamiento del Océano Pacífico y sus efectos se extienden por todo el myndo, incluso provocando condiciones climáticas extremas en Australia.
         Entonces, profundicemos en lo que eso realmente significa
         
-        <strong>Entendiendo el sistema constructivo</strong>
+        <strong style="color: #000">Entendiendo el sistema constructivo</strong>
         El Niño es un evento climático complejo que ocurre de manera irregular cada dos a siete años. Durante El Niño, el OcéanoPacífico central y oriental experimenta temperaturas superficiales del mar más altas de lo habitual, lo que provoca unacascada de cambios climáticos. Si bien los impactos de El Niño pueden variar, una característica común es un cambio enlos patrones climáticos, incluido el aumento de las temperaturas, la disminución de las precipitaciones y las mayorestasas de evaporación.
         `,
         imagenUrl: Blog001,

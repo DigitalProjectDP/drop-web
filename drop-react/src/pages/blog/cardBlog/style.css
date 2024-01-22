@@ -11,8 +11,9 @@
 
 .card__imagen__blog{
     width: 100%;
-    object-fit: contain;
-    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+    max-height: 300px;
 }
 
 .card__titulo__blog{
@@ -21,7 +22,7 @@
 
 .link__blog{
     color: slategray;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .link__blog:hover{

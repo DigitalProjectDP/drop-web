@@ -2,7 +2,7 @@ import './style.css'
 import React, { useEffect, useState } from 'react'
 import imgLogo from '../../media/logo/logo_drop.png'
 import { GrMail } from "react-icons/gr";
-import { FaFacebook, FaInstagram, FaPhone  } from 'react-icons/fa6'
+import { FaFacebook, FaInstagram, FaPhone, FaYoutube  } from 'react-icons/fa6'
 
 export default function Footer() {
 const [logo, setLogo] = useState(imgLogo);
@@ -27,10 +27,11 @@ const [telefono, setTelefono] = useState('');
   return (
     <footer className="row d-flex section__footer mt-1 bottom-0 footer">
         <div className="col-lg-4 col-sm-12 d-flex flex-column px-5 pt-5 gap-1">
-            <h5>Encontranos en:</h5>
+            <h6>Encontranos en:</h6>
             <div className="d-flex flex-row gap-1 justify-content-center pt-2">
-              <a href={instagram} target="_blank"><FaInstagram className="footer__icon mx-2" size={32}></FaInstagram></a>
-              <a href={instagram} target="_blank"><FaFacebook className="footer__icon mx-2" size={32}></FaFacebook></a>
+              <a href={instagram} target="_blank"><FaInstagram className="footer__icon mx-2" size={24}></FaInstagram></a>
+              <a href={instagram} target="_blank"><FaFacebook className="footer__icon mx-2" size={24}></FaFacebook></a>
+              <a href={instagram} target="_blank"><FaYoutube className="footer__icon mx-2" size={24}></FaYoutube></a>
             </div>
         </div>
 
@@ -40,8 +41,8 @@ const [telefono, setTelefono] = useState('');
 
         <div className="col-lg-4 col-sm-12 d-flex flex-column justify-content-start align-items-center py-5">
           <div className="d-flex flex-column align-items-start gap-3 pt-3">
-            <a href={instagram} target="_blank"><GrMail className="footer__icon mx-3" size={32}></GrMail>drop.modulos@gmail.com</a>
-            <a href={instagram} target="_blank"><FaPhone  className="footer__icon mx-3" size={32}></FaPhone >221-2200007</a>
+            <a href={instagram} target="_blank"><GrMail className="footer__icon mx-3" size={24}></GrMail>drop.modulos@gmail.com</a>
+            <a href={instagram} target="_blank"><FaPhone  className="footer__icon mx-3" size={24}></FaPhone >221-2200007</a>
           </div>
         </div>
     </footer>

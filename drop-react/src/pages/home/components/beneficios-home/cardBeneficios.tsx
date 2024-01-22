@@ -19,12 +19,12 @@ export default function CardBeneficioHome({data}: BeneficiosProps) {
     return(
         <div className="d-flex flex-column justify-content-start gap-4 card__container__beneficios">
             <div className="d-flex flex-column gap-2 align-items-start">
-                <img className="card__imagen__beneficio" src={beneficio?.imagen} alt="LogoBeneficio" width={36} height={36}/>
-                <h4 className="card__titulo__beneficio">
+                <img className="card__imagen__beneficio mb-2" src={beneficio?.imagen} alt="LogoBeneficio" width={36} height={36}/>
+                <h6 className="card__titulo__beneficio">
                     {beneficio?.titulo}
-                </h4>   
+                </h6>   
             </div>
-            <p className="card__descripcion">
+            <p className="card__descripcion__beneficios">
                 {beneficio?.descripcion}
             </p>
         </div>

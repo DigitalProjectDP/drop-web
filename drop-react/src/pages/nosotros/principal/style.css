@@ -26,3 +26,7 @@
     height: 70%;
     max-width: 600px;
 }
+
+.div__nosotros p{
+    font-size: 0.75rem;
+}

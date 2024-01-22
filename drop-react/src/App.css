@@ -45,13 +45,13 @@ body{
 }
 
 .button__primary{
-  color: var(--first-color);
-  font-size: 1.25rem;
-  font-weight: 500;
+  color: var(--first-color);  
+  font-weight: 400;
   background-color: #FFF;
-  padding: 0.5rem 1rem;
-  border: 2px solid black!important;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  padding: 0.3rem 1rem;
+  border: 1px solid black!important;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+  transition: 0.5s background-color;
 }
 
 .button__primary:hover{

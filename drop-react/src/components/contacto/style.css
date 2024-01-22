@@ -8,10 +8,15 @@ li{
     padding: 0 10px 20px;
 }
 
+.section__contacto p{
+    font-size: 0.75rem;
+    color: grey;
+}
+
 .input__form {
     width: 100%;
-    height: 65px;
-    font-size: 17px;    
+    height: 48px;
+    font-size: 0.7rem;
     -webkit-appearance: none;
     -ms-appearance: none;
     -o-appearance: none;
@@ -22,6 +27,14 @@ li{
 
 textarea.input__form {
     height: 5rem;
-    font-size: 17px;
+    font-size: 0.7rem;
     padding: 6px 12px;
+}
+
+.contacto__icon{
+    color: #000;
+}
+
+.contacto__icon:hover{
+    opacity: 0.5;
 }

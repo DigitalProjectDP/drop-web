@@ -23,7 +23,7 @@ export default function HomePrincipal() {
 
     return (
         <section className="home__principal my-5">
-            <SectionTextImage info={seccionNosotros} inverse={false} idSeccion="seccion-principal"></SectionTextImage>        
+            <SectionTextImage info={seccionNosotros} inverse={false} idSeccion="seccion-principal" buttonText={"Leer más"} buttonLink={"nosotros"}></SectionTextImage>        
         </section>
     )
 }

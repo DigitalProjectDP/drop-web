@@ -38,7 +38,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 3,
     titulo: "AHORRO",
-    descripcion: `El diseño modular y adaptable de ORCA garantiza ajustes r+apidos, brindando flexibilidad y eficiencia durante todo el proceso de construcción.
+    descripcion: `El diseño modular y adaptable de ORCA garantiza ajustes rápidos, brindando flexibilidad y eficiencia durante todo el proceso de construcción.
     Desbloquee una agilidad incomparable en la construcción`,
     imagen: imgBeneficio3,
     caracteristicas: [
@@ -50,7 +50,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 4,
     titulo: "CALIDAD",
-    descripcion: `Reconocidas por su durabilidad y precisión, estas estructuras prometen una calidad excepcional, asegurando un hogar que resiste el paso del tiempo con estilo y resistencia,
+    descripcion: `Reconocidas por su durabilidad y precisión, estas estructuras prometen una calidad excepcional, asegurando un hogar que resiste el paso del tiempo con estilo y resistencia.
     Eleva tu desarrollo con casas ORCA.`,
     imagen: imgBeneficio4,
     caracteristicas: [

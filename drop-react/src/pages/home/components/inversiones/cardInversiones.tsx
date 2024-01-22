@@ -25,9 +25,9 @@ export default function CardInversiones({data, openModal}: InversionesProps) {
     return(
         <div className="d-flex flex-column justify-content-between card__container">
             <div className="card__header w-100 mb-2">
-                <h2 className="card__titulo__inversion">
+                <h5 className="card__titulo__inversion">
                     {inversion?.titulo}
-                </h2>
+                </h5>
                 <img src={inversion?.imagen} alt="Imagen" className="card__imagen__inversion"/>
             </div>
             <p className="card__descripcion">

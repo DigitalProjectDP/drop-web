@@ -27,7 +27,7 @@ export default function NosotrosPrincipal() {
     return (
         <section className="section__nosotros">
             <SectionTextImage info={seccionNosotros} idSeccion="seccion-nuestra-historia"></SectionTextImage>
-            <h1 className="nosotros__title mb-5">Nosotros</h1>
+            <h3 className="nosotros__title my-5">Nosotros</h3>
             <div className="row div__nosotros">
                 <div className="col-12 col-xl-4 d-flex flex-column justify-content-center align-items-center gap-2">
                     <img className="img__nosotros" alt="Foto" src={imagen001}></img>

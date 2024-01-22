@@ -5,7 +5,8 @@
     justify-content: center;
     text-align: center;
     padding: 1rem;
-    padding-top: 100px;
+    padding: 100px 0;
+    background: linear-gradient(0deg, #EEE 50%, #000 50%);
 }
 
 .text__paragraph{
@@ -28,10 +29,10 @@
 }
 
 .card__container{
-    border: 1px solid var(--fourth-color);
     min-height: 20rem;
     width: 18rem;
     max-width: 90vw;
+    background-color: #FFF;
 }
 
 .card__titulo__inversion{
@@ -50,26 +51,40 @@
 }
 
 .card__descripcion{
-    padding: 0.5rem;
+    padding: 1rem;
+    text-align: justify;
+    color: grey;
 }
 
 .tag__container{
     color: var(--fifth-color);;
     border: 1px solid var(--fifth-color);
     border-radius: 1rem;
-    padding: 0.5rem;
+    padding: 0.4rem;
     margin: 5px;
     display: flex;
     align-items: center;
 }
 
 .tag__text{
-    margin: 0;    
+    margin: 0;
+    font-size: 0.6rem;
 }
 
 @media screen and (max-width: 1919px){
     .inversiones__container{
         max-width: 1200px;
+    }
+
+    .tag__text{
+        margin: 0;
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .card__descripcion{
+        font-size: 0.75rem;
     }
 }
 

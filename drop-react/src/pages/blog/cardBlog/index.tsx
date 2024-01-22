@@ -33,9 +33,9 @@ export default function CardBlog({data}: BlogProps) {
                 <img className="card__imagen__blog" src={blog?.imagenUrl} alt="LogoModelo"/>
 
                 <div className="d-flex flex-column gap-2 justify-content-between">
-                    <h3 className="card__titulo__blog">
+                    <h5 className="card__titulo__blog">
                         {blog?.titulo}
-                    </h3>
+                    </h5>
                     <a href="" onClick={redirect} className="link__blog" >Leer el artículo completo</a>
                 </div>
             </div>           

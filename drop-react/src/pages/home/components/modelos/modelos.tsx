@@ -44,7 +44,7 @@ export default function HomeModelos() {
   const rendermodelos = () => listInfo?.map((v, i) => <CardModelo setModeloId={getModelo} data={v} key={i}></CardModelo>)
   return (
     <section className="section__modelos" id="section__modelos">     
-      <h1 className="modelos__title">Nuestros modelos</h1>
+      <h3 className="modelos__title">Nuestros modelos</h3>
       {listInfo? <OwlCarousel className='modelos__container container-fluid' loop {...options}>
           {rendermodelos()} 
       </OwlCarousel> : ''} 

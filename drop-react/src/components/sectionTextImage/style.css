@@ -36,6 +36,7 @@
     white-space: pre-line;
     text-wrap: wrap;
     text-align: start;
+    color: grey;
 }
 
 .about p {
@@ -87,6 +88,10 @@
     object-fit:contain;
     object-position: top;
 }
+
+.section__descripcion{
+   font-size: 0.75rem;
+}  
 
 @media screen and (max-width: 1399px){    
     .imagen{
@@ -158,6 +163,6 @@
 
 @media screen and (min-width: 1281px){ 
     .section__descripcion{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }    
 }

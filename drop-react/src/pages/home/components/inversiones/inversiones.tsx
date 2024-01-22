@@ -35,7 +35,7 @@ export default function HomeInversiones() {
                 </div>
             </div>
         </div>
-          <button type="button" id="buttonModalContacto" className="d-none" data-bs-toggle="modal" data-bs-target="#modal-contacto"></button>            
+        <button type="button" id="buttonModalContacto" className="d-none" data-bs-toggle="modal" data-bs-target="#modal-contacto"></button>            
     </section>
   )
 }

@@ -58,7 +58,7 @@ export default function ModeloPage() {
                 <img src={modelo?.imagenes[0]?.url} alt={modelo?.imagenes[0]?.nombre} width="100%"/>
             </div>
             <div className="modelo__container col-12 col-lg-6">
-                <h1 className="text-center mb-3">{modelo?.nombre}</h1>
+                <h3 className="text-center mb-3">{modelo?.nombre}</h3>
                 <ul className="list__caracteristicas__modelo p-0">
                     {modelo?.caracteristicas? renderListModelos(): ''}
                 </ul>
@@ -69,7 +69,7 @@ export default function ModeloPage() {
                     <button className="button__primary" data-bs-toggle="modal" data-bs-target="#modal-contacto-modelo">Contacto</button>
                 </div>
             </div>
-            <div className="container-fluid">
+            <div className="container-fluid mt-5">
                 {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
                     {renderImagenes()} 
                 </OwlCarousel> : ''}

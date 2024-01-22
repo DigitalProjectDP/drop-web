@@ -19,7 +19,7 @@ export default function CardModelo({data, setModeloId}: ModelosProps) {
     const navigate = useNavigate();
 
     const redirect = () => {
-        //navigate(`/modelo/?id=${modelo?.id}`);        
+        navigate(`/modelo/?id=${modelo?.id}`);        
     }
 
     const callbackModeloId = () => {
