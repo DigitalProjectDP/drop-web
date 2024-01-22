@@ -2,15 +2,22 @@ import './style.css'
 import { MockInversiones } from '../../../../mocks/inversiones';
 import CardInversiones from './cardInversiones'
 import Contacto from '../../../../components/contacto';
+import { useEffect, useState } from 'react';
 
 export default function HomeInversiones() {
+  const [inversionNombre, setInversionNombre] = useState<string>();
+
   const listInfo = MockInversiones;
 
-  const showModal = (id: Number) => {
+  const showModal = (nombre: string) => {
+    console.log(nombre)
+    setInversionNombre(nombre);
     const buttonModal = document.getElementById("buttonModalContacto");
     buttonModal?.click();
-  } 
+  }
 
+  useEffect(() =>{
+  },[inversionNombre] )
 
   const renderInversiones = () => listInfo?.map((v, i) => <CardInversiones data={v} key={i} openModal={showModal}></CardInversiones>)
 
@@ -30,7 +37,7 @@ export default function HomeInversiones() {
                 <div className="modal-content">  
                     <button type="button" className="btn-close button__close" data-bs-dismiss="modal" aria-label="Close"></button>          
                     <div className="modal-body p-0 text-align-start">
-                      <Contacto data={''}></Contacto>                        
+                      {inversionNombre?<Contacto data={`Hola. Quiero recibir más información sobre Inversiones`} isModal={true}></Contacto>:''}
                     </div>
                 </div>
             </div>

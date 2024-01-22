@@ -10,6 +10,7 @@ import Contacto from '../../components/contacto';
 import HomeInstagram from './components/instagram/instagram';
 import HomeBeneficiosNew from './components/beneficios-home/beneficios';
 import HomePrincipal from './components/principal';
+import HomeProyectos from './components/proyectos/proyectos';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <HomeBeneficiosNew></HomeBeneficiosNew>
       <HomeModelos></HomeModelos>
       <Contacto data={''}></Contacto>
+      <HomeProyectos></HomeProyectos>
       <HomeInstagram></HomeInstagram>
       <div className="spacer"></div>     
       <div className="modal fade" id="modal-contacto-confirmacion" aria-labelledby="exampleModalLabel" aria-hidden="true">

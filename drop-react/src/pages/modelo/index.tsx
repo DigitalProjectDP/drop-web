@@ -16,6 +16,7 @@ export default function ModeloPage() {
 
     useEffect(() => {
         fetchModelo();
+        window.scrollTo(0, 0)
     }, []);
 
     const fetchModelo = async () => {
@@ -69,17 +70,17 @@ export default function ModeloPage() {
                     <button className="button__primary" data-bs-toggle="modal" data-bs-target="#modal-contacto-modelo">Contacto</button>
                 </div>
             </div>
-            <div className="container-fluid mt-5">
+            <div className="container-fluid my-5">
                 {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
                     {renderImagenes()} 
                 </OwlCarousel> : ''}
             </div>
             <div className="modal fade" id="modal-contacto-modelo" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-lg">
-                    <div className="modal-content">  
+                    <div className="modal-content">
                         <button type="button" className="btn-close button__close" data-bs-dismiss="modal" aria-label="Close"></button>          
                         <div className="modal-body p-0 text-align-start">
-                        <Contacto data={''}></Contacto>                        
+                            {modelo?<Contacto data={`Hola. Quiero recibir más información sobre ${modelo?.nombre!}`} isModal={true}></Contacto>:''}
                         </div>
                     </div>
                 </div>

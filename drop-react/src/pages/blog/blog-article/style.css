@@ -7,3 +7,8 @@
     color: grey;
     font-size: 0.75rem;
 }
+
+.blog__article__imagen{
+    max-width: 360px;
+    padding: 1rem;
+}

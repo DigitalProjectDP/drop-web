@@ -1,7 +1,7 @@
 .section__modelos{
     text-align: center;
     padding: 1rem;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .text__paragraph{
@@ -19,7 +19,7 @@
 .modelos__container{
     display: flex;
     justify-content: center;
-    padding: 0!important;
+    padding: 2rem;
 }
 
 .row>div, .row>div>div{
@@ -40,27 +40,20 @@
     opacity: 0.7;
 }
 
-.card__container__modelos:hover .card__overlay__modelo{
-    display: flex;
-}
-
 .card__titulo__modelo{
     color: var(--background-color);
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.card__overlay__modelo h5, .card__overlay__modelo h6{
-    margin-top: 1rem!important;
-}
-
 .card__overlay__modelo {
     position: absolute;
     bottom: 0;
-    background: rgba(50, 70, 150, 0.6); /* Black see-through */    
+    /* background: rgba(50, 70, 150, 0.6); */
+    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
-    height: 100%;
+    height: 8rem;
     text-align: start;
     transition: .5s ease;
     opacity:1;
@@ -69,9 +62,7 @@
     padding: 0.25rem;
     text-align: center;
     z-index: 100;
-    display: none;
 }
-
 
 .card__overlay__modelo ul{
     min-height: 50%;
@@ -81,20 +72,4 @@
     text-align: start;
     list-style: none;
     font-size: 0.75rem;
-}
-
-.owl-nav{
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.owl-nav span{
-    color: white;
-    padding: 0 10px 6px 10px;
-    margin: 0 0.5rem;
-    font-size: 2rem;
-    background-color: rgba(0,0,0,0.8);
 }

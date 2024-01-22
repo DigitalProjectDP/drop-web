@@ -25,8 +25,8 @@ export const MockBlogs: Imagen[] =
     {
         id: 2,
         titulo: 'El auge de los alquileres temporarios',
-        subtitulo: '',
-        descripcion: '',
+        subtitulo: 'El auge de los alquileres temporarios',
+        descripcion: 'El auge de los alquileres temporarios. El auge de los alquileres temporarios. El auge de los alquileres temporarios. El auge de los alquileres temporarios. El auge de los alquileres temporarios',
         imagenUrl: Blog002,
         tipoSeccion: {
             id: 2,

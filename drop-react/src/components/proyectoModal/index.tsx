@@ -1,31 +1,31 @@
 import './style.css'
 import { useEffect, useState } from 'react'
 import { Modelo } from '../../interfaces/modelo';
-import { GetModeloById } from '../../services/modeloService';
 import OwlCarousel from 'react-owl-carousel';
 import { useNavigate } from 'react-router-dom';
+import { GetProyectoById } from '../../services/proyectoService';
 
-interface ModalModeloProps{
+interface ModalProyectoProps{
     id?: Number;
 }
 
-export default function ModeloModal({id}: ModalModeloProps) {
-    const [modelo, setModelo] = useState<Modelo>();
+export default function ProyectoModal({id}: ModalProyectoProps) {
+    const [proyecto, setProyecto] = useState<Modelo>();
 
     useEffect(() => {
-        fetchModelo();
+        fetchProyecto();
     }, [id]);
 
-    const fetchModelo = async () => {
-        let modelo = id? await GetModeloById(Number(id)): undefined;
-        setModelo(modelo);
+    const fetchProyecto = async () => {
+        let proyecto = id? await GetProyectoById(Number(id)): undefined;
+        setProyecto(proyecto);
     }
 
         
     const navigate = useNavigate();
 
     const redirect = () => {
-        navigate(`/modelo/?id=${modelo?.id}`);        
+        navigate(`/proyecto/?id=${proyecto?.id}`);        
     }
 
     const options = {
@@ -47,18 +47,18 @@ export default function ModeloModal({id}: ModalModeloProps) {
         }
       };
 
-    const renderListModelos = () => modelo?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
-    const renderImagenes = () => modelo?.imagenes.map((v, i) => <img className="modelo__carousel__img" src={v.url} key={i}></img>)
+    const renderListProyectos = () => proyecto?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
+    const renderImagenes = () => proyecto?.imagenes.map((v, i) => <img className="proyecto__carousel__img" src={v.url} key={i}></img>)
     return (
         <div className="row p-0 modal__container"> 
-            <div className="modelo__header p-3">
-                <h1 className="text-center mb-3">{modelo?.nombre}</h1>
-                <button className="button__primary mb-3" data-bs-dismiss="modal" onClick={redirect}>Ver más</button>     
+            <div className="proyecto__header p-3">
+                <h3 className="text-center mb-1">{proyecto?.nombre}</h3>
+                <h6 className="text-center">{proyecto?.categoria?.descripcion}</h6>
                 <button type="button" className="btn-close button__close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <p>{modelo?.descripcion}</p>      
+            <p>{proyecto?.descripcion}</p>      
             <div className="w-100 p-0">
-                {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
+                {proyecto?.imagenes? <OwlCarousel className='proyectos__container' loop {...options}>
                     {renderImagenes()} 
                 </OwlCarousel> : ''}
             </div>            

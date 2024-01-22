@@ -5,6 +5,7 @@ import imgNosotros from '../../../media/img/nosotros/nosotros.jpg'
 import imagen001 from '../../../media/img/nosotros/fernando-magno.jpg';
 import imagen002 from '../../../media/img/nosotros/agustin-magno.jpeg';
 import imagen003 from '../../../media/img/nosotros/juan-magno.jpg';
+import { useEffect } from 'react';
 
 export default function NosotrosPrincipal() {   
     const seccionNosotros: Imagen = {
@@ -23,6 +24,10 @@ export default function NosotrosPrincipal() {
             descripcion: 'Seccion'
         }
     }
+
+    useEffect(() => {        
+        window.scrollTo(0, 0)
+    },[])
 
     return (
         <section className="section__nosotros">

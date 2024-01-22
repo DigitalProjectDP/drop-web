@@ -9,9 +9,10 @@ import SpinnerLoading from '../spinner';
 
 interface ConsultaProps{
     data: string;
+    isModal?: boolean;
 }
 
-export default function Contacto({data}: ConsultaProps){
+export default function Contacto({data, isModal}: ConsultaProps){
     const [message, setMessage] = useState(data);
     const [loading, setLoading] = useState(false);
     const [instagram, setInstagram] = useState('');
@@ -24,8 +25,8 @@ export default function Contacto({data}: ConsultaProps){
         let instagramParametro = parametros?.instagram || '';
         let whatsappParametro = parametros?.whatsapp || '';
         let telefonoParametro = parametros?.telefono || '';
-
-        setMessage(data);    
+        console.log(data)
+        setMessage(data);
         setInstagram(instagramParametro);
         setWhatsapp(whatsappParametro);
         setTelefono(telefonoParametro);
@@ -72,7 +73,7 @@ export default function Contacto({data}: ConsultaProps){
           <h3>¡Hablemos!</h3>
         </div>
         <div className="row">
-          <div className="col-12 col-lg-6 text-start align-items-start">
+          {!isModal?<div className="col-12 col-lg-6 text-start align-items-start">
             <ul>
               <li>
                 <FaLocationDot className="mx-3" size={24}></FaLocationDot>
@@ -101,9 +102,9 @@ export default function Contacto({data}: ConsultaProps){
               <a href={instagram} target="_blank"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
               <a href={instagram} target="_blank"><FaYoutube className="contacto__icon mx-2" size={32}></FaYoutube></a>
             </div>
-          </div>
+          </div>:''}
 
-          <form className="col-12 col-lg-6" onSubmit={handleSubmit(enviarContacto)}>
+          <form className={`col-12 ${isModal?'':'col-lg-6'} `} onSubmit={handleSubmit(enviarContacto)}>
             <div className="row">
                 <div className="col-md-6">
                     <input

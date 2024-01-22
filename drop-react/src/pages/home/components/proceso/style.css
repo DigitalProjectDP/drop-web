@@ -1,6 +1,6 @@
 .section__proceso{
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .text__paragraph{
@@ -28,12 +28,13 @@
 .timeline__container{
     position: relative;
     text-align: start;
-    padding: 0 2rem;
+    padding-bottom: 2rem;
 }
 
 .timeline__container h5{
     font-weight: 600;
     padding-bottom: 3rem;
+    padding-right: 2rem;
 }
 
 .timeline__container p{
@@ -48,11 +49,15 @@
     content: '';
     top: 3rem;
     height: 100%;
-    width: 90%;
+    width: 99%;
     z-index: 1000;
     background: url(../../../../media/img/arrow_right.png);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.text-transparent{
+    color: transparent;
 }
 
 @media screen and (min-width:1440px){
@@ -62,13 +67,17 @@
     }
 }
 
-@media screen and (max-width:769px){
+@media screen and (max-width:854px){
     .timeline__arrow::after{
         top: 4.5rem;
     }
 }
 
-@media screen and (max-width:479px){
+@media screen and (max-width:732px){
+    .timeline__container{
+        padding-left: 1.5rem;
+    }
+
     .timeline__arrow::after{
         position: absolute;
         content: '';

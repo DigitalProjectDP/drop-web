@@ -17,7 +17,7 @@ export default function CardInversiones({data, openModal}: InversionesProps) {
     }, []);    
 
     const callback = () => {
-        openModal();
+        openModal(data?.titulo);
     }
 
     const renderTagInversiones = () => inversion?.caracteristicas.map((v, i) => <TagInversiones data={v} key={i}></TagInversiones>)
