@@ -90,7 +90,10 @@
 }
 
 .section__descripcion{
-   font-size: 0.75rem;
+   font-size: 14px;
+   text-align: justify;
+   padding-right: 2rem!important;
+   white-space: pre-wrap;
 }  
 
 @media screen and (max-width: 1399px){    

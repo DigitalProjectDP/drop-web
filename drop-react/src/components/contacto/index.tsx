@@ -59,12 +59,11 @@ export default function Contacto({data, isModal}: ConsultaProps){
             Datetime: today.toISOString()
         }
         //let response =  SendMail(formData);
-
+        console.log(formData)
         setTimeout(() => {
-            let btnConfirmar = document.getElementById("btnModalEmail");
-            btnConfirmar?.click();
             setLoading(false);
-        }, 500);
+            window.location.reload();
+        }, 2000);
     }
 
     return (
@@ -97,7 +96,7 @@ export default function Contacto({data, isModal}: ConsultaProps){
                 </div>
               </li>
             </ul>
-            <div className="d-flex flex-row gap-1 justify-content-center pt-2">
+            <div className="d-flex flex-row gap-1 justify-content-center py-4 mt-4">
               <a href={instagram} target="_blank"><FaInstagram className="contacto__icon mx-2" size={32}></FaInstagram></a>
               <a href={instagram} target="_blank"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
               <a href={instagram} target="_blank"><FaYoutube className="contacto__icon mx-2" size={32}></FaYoutube></a>
@@ -165,14 +164,13 @@ export default function Contacto({data, isModal}: ConsultaProps){
                         id="contacto_submit"
                         className="button__primary my-3"
                     >
-                        ENVIAR
+                        Enviar
                     </button>
                 </div>
             </div>
           </form>
         </div>
         {loading? <SpinnerLoading></SpinnerLoading>: ''}
-        <button type="button" id="btnModalEmail" className="d-none" data-bs-toggle="modal" data-bs-target="#modal-contacto-confirmacion"></button>  
       </section>
     );
 }

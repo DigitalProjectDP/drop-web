@@ -9,9 +9,7 @@ export default function HomeProceso() {
         id: 1,
         titulo: `Proceso de fabricación`,
         subtitulo: '',
-        descripcion: `Construimos espacios adaptables según la necesidad. 
-        Eso es posible con el método de construcción modular, modificando y presonalizando cada módulo según sea necesario. <br />
-        Este sistema nos permite trasladar los módulos en más de una ocasión.
+        descripcion: `Construimos espacios adaptables según la necesidad. Eso es posible con el método de construcción modular, modificando y presonalizando cada módulo según sea necesario.\n\nEste sistema nos permite trasladar los módulos en más de una ocasión.
         `,
         imagenUrl: imgProceso,
         tipoSeccion: {

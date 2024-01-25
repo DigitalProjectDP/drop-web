@@ -18,31 +18,14 @@ export default function Home() {
       <Header></Header>
       <TopBanner></TopBanner>
       <HomePrincipal></HomePrincipal>
-      <HomeInversiones></HomeInversiones>
-      <HomeProceso></HomeProceso>
-      {/* <HomeBeneficios></HomeBeneficios> */}
-      <HomeBeneficiosNew></HomeBeneficiosNew>
-      <HomeModelos></HomeModelos>
-      <Contacto data={''}></Contacto>
       <HomeProyectos></HomeProyectos>
+      <HomeModelos></HomeModelos>
+      <HomeBeneficiosNew></HomeBeneficiosNew>
+      <HomeInversiones></HomeInversiones>
+      <HomeProceso></HomeProceso>      
       <HomeInstagram></HomeInstagram>
-      <div className="spacer"></div>     
-      <div className="modal fade" id="modal-contacto-confirmacion" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog">
-                <div className="modal-content"> 
-                    <div className="modal-header">
-                        <h5 className="modal-title">Confirmación</h5>
-                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>           
-                    <div className="modal-body p-3 my-3 text-center">
-                        Email enviado con éxito
-                    </div>
-                    <div className="modal-footer">
-                        <button type="button" className="button__primary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div> 
+      <Contacto data={''}></Contacto>
+      <div className="spacer"></div>    
       <Footer></Footer>
     </div>
   )

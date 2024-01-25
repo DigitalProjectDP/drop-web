@@ -34,12 +34,12 @@
 .timeline__container h5{
     font-weight: 600;
     padding-bottom: 3rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
 }
 
 .timeline__container p{
     font-size: 0.75rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
     text-align: justify;
     color: grey;
 }
@@ -47,7 +47,7 @@
 .timeline__arrow::after{
     position: absolute;
     content: '';
-    top: 3rem;
+    top: 3.5rem;
     height: 100%;
     width: 99%;
     z-index: 1000;
@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (max-width:854px){
+@media screen and (max-width:1025px){
     .timeline__arrow::after{
         top: 4.5rem;
     }

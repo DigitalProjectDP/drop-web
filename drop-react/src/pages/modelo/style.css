@@ -1,3 +1,7 @@
+.modelo__container h4{
+    font-weight: 600;
+}
+
 .img__modelo__container, .modelo__container{
     padding: 2rem!important;
     margin-top: 50px;
@@ -8,8 +12,9 @@
     object-fit: contain;
 }
 
-.list__caracteristicas__modelo li{
+.list__caracteristicas__modelo li, .modelo__container p{
     margin-bottom: 0;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 992px){

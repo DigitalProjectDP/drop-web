@@ -33,7 +33,7 @@
 }
 
 .card__imagen__beneficio{
-    filter: var(--filter-fifth-color);
+    filter: var(--filter-grey-color);
 }
 
 .card__titulo__beneficio{

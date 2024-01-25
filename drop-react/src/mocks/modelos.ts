@@ -29,7 +29,7 @@ export const MockModelos: Modelo[] = [
         brochure: '',
         categoria: { id: 1, descripcion: 'Alquiler temporario'},
         imagenes: [{id: 1, nombre: 'Imagen01', url: imgDosdor01}, {id: 2, nombre: 'Imagen02', url: imgDosdor02}, {id: 3, nombre: 'Imagen03', url: imgDosdor03}, {id: 4, nombre: 'Imagen04', url: imgDosdor04}],
-        caracteristicas: [{id: 1, descripcion: '2 dormitorios | 6 módulos'},{id: 2, descripcion: '116 m2'},{id: 3, descripcion: '70m2 cubiertos + 46m2 de deck'}]
+        caracteristicas: [{id: 1, descripcion: 'Casa 2 dormitorios | 116 m2'},{id: 2, descripcion: 'Personalizable'}]
     },
     {
         id: 2,

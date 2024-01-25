@@ -8,11 +8,7 @@ export default function HomePrincipal() {
         id: 1,
         titulo: `DROP`,
         subtitulo: 'Arquitectura modular',
-        descripcion: `Somos una empresa constructora familiar, pioneros y líderes en arquitectura modular en Argentina.
-        <br/>
-        La construcción modular es la nueva forma de construir. Basándonos en 3 pilares fundamentales: <i>rapidez, adaptabilidad y economía</i>
-        <br/>
-        Por eso, somos el socio estratégico para aquellas personas que estén buscando su primer vivienda, para inversores gastronómicos, hoteleros o emprendedores.
+        descripcion: `Somos una empresa constructora familiar, pioneros y líderes en arquitectura modular en Argentina.\n\nLa construcción modular es la nueva forma de construir. Basándonos en 3 pilares fundamentales: <i>rapidez, adaptabilidad y economía</i>\n\nPor eso, somos el socio estratégico para aquellas personas que estén buscando su primer vivienda, para inversores gastronómicos, hoteleros o emprendedores.
         `,
         imagenUrl: imgDrop,
         tipoSeccion: {

@@ -59,7 +59,7 @@ export default function ModeloPage() {
                 <img src={modelo?.imagenes[0]?.url} alt={modelo?.imagenes[0]?.nombre} width="100%"/>
             </div>
             <div className="modelo__container col-12 col-lg-6">
-                <h3 className="text-center mb-3">{modelo?.nombre}</h3>
+                <h4 className="text-center mb-3">{modelo?.nombre}</h4>
                 <ul className="list__caracteristicas__modelo p-0">
                     {modelo?.caracteristicas? renderListModelos(): ''}
                 </ul>
