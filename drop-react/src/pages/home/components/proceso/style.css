@@ -50,7 +50,7 @@
     top: 3.5rem;
     height: 100%;
     width: 99%;
-    z-index: 1000;
+    z-index: 2;
     background: url(../../../../media/img/arrow_right.png);
     background-repeat: no-repeat;
     background-size: contain;
