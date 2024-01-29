@@ -68,7 +68,7 @@
     font-size: 20px;
     padding: 0.25rem;
     text-align: center;
-    z-index: 100;
+    z-index: 3;
     display: none;
 }
 

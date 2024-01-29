@@ -87,6 +87,6 @@
         background: url(../../../../media/img/arrow_down.png);
         background-repeat: no-repeat;
         background-size: contain;
-        z-index: 1000;    
+        z-index: 2;    
     }
 }
