@@ -34,6 +34,7 @@ export default function HomeInversiones() {
         {listInfo? renderInversiones(): ''}
       </div>
       <Modal show={showModal} onHide={closeModal}>
+          <Modal.Header closeButton className="border-0"></Modal.Header>   
           <Modal.Body>
             {inversionNombre?<Contacto data={`Hola. Quiero recibir más información sobre ${inversionNombre}`} isModal={true}></Contacto>:''}
           </Modal.Body>        

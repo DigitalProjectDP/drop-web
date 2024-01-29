@@ -11,6 +11,7 @@ import HomeInstagram from './components/instagram/instagram';
 import HomeBeneficiosNew from './components/beneficios-home/beneficios';
 import HomePrincipal from './components/principal';
 import HomeProyectos from './components/proyectos/proyectos';
+import WhatsappButton from '../../components/whatsapp-button';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Contacto data={''}></Contacto>
       <div className="spacer"></div>    
       <Footer></Footer>
+      <WhatsappButton></WhatsappButton>
     </div>
   )
 }

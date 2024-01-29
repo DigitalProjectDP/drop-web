@@ -68,7 +68,7 @@ export default function Contacto({data, isModal}: ConsultaProps){
 
     return (
       <section className="container-fluid section__contacto">
-        <div className="section__title text-center py-4">
+        <div className="section__title text-center py-5">
           <h3>¡Hablemos!</h3>
         </div>
         <div className="row">

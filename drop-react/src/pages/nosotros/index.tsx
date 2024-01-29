@@ -2,6 +2,7 @@ import Contacto from '../../components/contacto'
 import Footer from '../../components/footer'
 import Header from '../../components/header'
 import HeaderSpace from '../../components/header-space'
+import WhatsappButton from '../../components/whatsapp-button'
 import NosotrosPrincipal from './principal'
 import './styles.css'
 
@@ -12,6 +13,7 @@ export default function NosotrosPage(){
             <HeaderSpace></HeaderSpace>
             <NosotrosPrincipal></NosotrosPrincipal>
             <Footer></Footer>
+            <WhatsappButton></WhatsappButton>
         </main>
     )
 }

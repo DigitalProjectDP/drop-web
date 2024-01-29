@@ -32,14 +32,14 @@ a.navbar-toggler{
 }
 
 .nav-link{
-    font-size: 16px;    
+    font-size: 16px;
     color: #FFF;
     padding: 0 1rem!important;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 1px 1px 6px black;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
 .nav-link:hover{
@@ -57,7 +57,7 @@ a.navbar-toggler{
     z-index: 3;
     background-color: var(--first-color);
     padding: 0 3rem;  
-    min-height: 50px;  
+    min-height: 50px;
 }
 
 @media screen and (max-width: 1280px){ 
@@ -65,3 +65,9 @@ a.navbar-toggler{
         padding: 0;    
     }
 }
+/* 
+@media screen and (max-width: 1200px){
+    .navbar__bg{
+        background-color: var(--first-color)!important;
+    }
+} */

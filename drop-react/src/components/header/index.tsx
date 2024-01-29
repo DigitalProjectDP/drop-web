@@ -1,6 +1,7 @@
 import './style.css';
 import imgLogo from "../../media/logo/logo_drop.png";
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface HeaderProps{
   opacity?: boolean;
@@ -35,10 +36,20 @@ export default function Header({opacity}: HeaderProps) {
     }
   }
 
+  const changeBgColor = () => {
+    setBgColor('var(--first-color)');
+  }
+          
+  const navigate = useNavigate();
+
+  const redirect = () => {
+      navigate(`/inicio/`);        
+  }
+
   return (
     <nav className="navbar navbar-expand-xl navbar__bg" id="navHeader" style={{backgroundColor : bgColor}}>
       <a href="/inicio" className="navbar-toggler"><img src={imgLogo} alt="Logo" width={44} height={44} /></a>
-      <button className="navbar-toggler bg-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler bg-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={changeBgColor}>
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
@@ -47,10 +58,10 @@ export default function Header({opacity}: HeaderProps) {
             <a className="nav-link" href="/inicio">Inicio</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/inicio/#section__modelos">Modelos</a>
+            <a className="nav-link" href="#section__modelos" onClick={redirect}>Modelos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/inicio/#section__inversiones">Inversiones</a>
+            <a className="nav-link" href="#section__inversiones" onClick={redirect}>Inversiones</a>
           </li>
 
           <li className="d-none d-xl-flex w-25 justify-content-center align-items-center">

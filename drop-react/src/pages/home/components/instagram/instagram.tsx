@@ -18,7 +18,7 @@ export default function HomeInstagram() {
     
     const renderInstagramPosts = () => instagramPosts?.map((v, i) => <a key={i} href={v?.permalink} target="_blank"><img className="instagram__card" src={v?.media_url}/></a>)
     return (
-    <section className="section__instagram d-flex justify-content-center align-items-center flex-column">
+    <section className="section__instagram d-flex justify-content-center align-items-center flex-column mb-5">
         <div className="instagram__header">
             <h3 className="instagram__title">Seguinos en Instagram</h3>
             <a className="d-flex flex-row instagram__link" href="https://www.instagram.com/drop.houses/" target="_blank">
