@@ -41,8 +41,8 @@ const [telefono, setTelefono] = useState('');
 
         <div className="col-lg-4 col-sm-12 d-flex flex-column justify-content-start align-items-center py-5">
           <div className="d-flex flex-column align-items-start gap-3 pt-3">
-            <a href={instagram} target="_blank"><GrMail className="footer__icon mx-3" size={24}></GrMail>drop.modulos@gmail.com</a>
-            <a href={instagram} target="_blank"><FaPhone  className="footer__icon mx-3" size={24}></FaPhone >221-2200007</a>
+            <a href="mailto:drop.modulos@gmail.com" target="_blank"><GrMail className="footer__icon mx-3" size={24}></GrMail>drop.modulos@gmail.com</a>
+            <a href="tel:+2212200007" target="_blank"><FaPhone  className="footer__icon mx-3" size={24}></FaPhone >221-2200007</a>
           </div>
         </div>
     </footer>

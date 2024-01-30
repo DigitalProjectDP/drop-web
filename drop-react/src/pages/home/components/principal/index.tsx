@@ -8,8 +8,7 @@ export default function HomePrincipal() {
         id: 1,
         titulo: `DROP`,
         subtitulo: 'Arquitectura modular',
-        descripcion: `Somos una empresa constructora familiar, pioneros y líderes en arquitectura modular en Argentina.\n\nLa construcción modular es la nueva forma de construir. Basándonos en 3 pilares fundamentales: <i>rapidez, adaptabilidad y economía</i>\n\nPor eso, somos el socio estratégico para aquellas personas que estén buscando su primer vivienda, para inversores gastronómicos, hoteleros o emprendedores.
-        `,
+        descripcion: `Con nuestro estudio de ingeniería y empresa constructora de más de 25 años de experiencia en el rubro, decidimos desarrollar un sistema constructivo que cambie el paradigma de la construcción tradicional.\n\nDROP es una nueva forma de entender la arquitectura moderna. Nuestras premisas son CALIDAD, VELOCIDAD y ECONOMÍA.\n\nSomos el socio ideal tanto para quienes estén buscando una vivienda, desarrolladores inmobiliarios, gastronómicos y comerciales.`,
         imagenUrl: imgDrop,
         tipoSeccion: {
             id: 3,

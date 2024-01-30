@@ -22,7 +22,7 @@ export default function ProcesoTimeline() {
             <div className="col-12 col-md-3">
                 <span className="text-secondary">Día 90</span>
                 <h5>Entrega e instalación</h5>
-                <p>Cumplido el tiempo, trasladamos los módulos hacia tu terreno y ensamblamos en menos de 48 horas</p>
+                <p>Cumplido este plazo, trasladamos lo módulos al terreno y se implantan sobre las fundaciones, en no más de 7 días están listos para habitar.</p>
             </div>
         </div>
     )

@@ -9,8 +9,7 @@ export default function HomeProceso() {
         id: 1,
         titulo: `Proceso de fabricación`,
         subtitulo: '',
-        descripcion: `Construimos espacios adaptables según la necesidad. Eso es posible con el método de construcción modular, modificando y presonalizando cada módulo según sea necesario.\n\nEste sistema nos permite trasladar los módulos en más de una ocasión.
-        `,
+        descripcion: `El proceso productivo está enmarcado en un ambito industrializado con parámetros de control de materiales y calidad de terminaciones. Generando un proceso productivo eficiente, ahorrando materiales, plazos y por ende costos.\n\nUna vez que nuestros modelos están totalmente terminados en fábrica, a través del area de logística se embalan para el traslado y se cargan en los carretones de traslado para iniciar el camino a destino. Desde que nos encontramos en el terreno, si el proyecto puede ser transportado en un sólo módulo, se coloca sobre las fundaciones, se conectan los servicios y ya está listo para habitar. Si va en varios módulos, se realiza en ensamble y luego en no más de 7 días el proyecto ¡está listo para usar! `,
         imagenUrl: imgProceso,
         tipoSeccion: {
             id: 3,

@@ -10,13 +10,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 1,
     titulo: "VELOCIDAD",
-    descripcion: `Experiemente plazos de construcción
-    acelerados con edificios de acero de calibre
-    liviano. La facilidad de configuración y la
-    naturaleza modular permiten un montaje
-    rápido, lo que garantiza que su desarrollo
-    se complete de manera eficiente y
-    a tiempo.`,
+    descripcion: `Procesos constructivos de máximo 90 días en fábrica, instalaciones en el terreno muy veloces y con poco impacto.`,
     imagen: imgBeneficio1,
     caracteristicas: [
       { id: 1, descripcion: "En 90 días instalamos el proyecto" },
@@ -26,8 +20,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 2,
     titulo: "EXPANSION",
-    descripcion: `Construya con confianza y previsibilidad. 
-    La precisión y consistencia en la fabricación garantizan un proceso de construcción confiable, entregando su proyecto a tiempo y dentro de los parámetros especificados.`,
+    descripcion: `Con nuestros modelos DROP, siempre vas a tener la posibilidad de expandir la vivienda o local que proyectes.`,
     imagen: imgBeneficio2,
     caracteristicas: [
       { id: 1, descripcion: "Presupuesto inicial sin desviaciones" },
@@ -38,8 +31,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 3,
     titulo: "AHORRO",
-    descripcion: `El diseño modular y adaptable de ORCA garantiza ajustes rápidos, brindando flexibilidad y eficiencia durante todo el proceso de construcción.
-    Desbloquee una agilidad incomparable en la construcción`,
+    descripcion: `No sólo ahorrarás dinero, sino también disgustos y tiempo. Los plazos y valores pactados inicialmente no serán una variable.`,
     imagen: imgBeneficio3,
     caracteristicas: [
       { id: 1, descripcion: "Construimos en fábrica y te lo llevamos" },
@@ -50,8 +42,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 4,
     titulo: "CALIDAD",
-    descripcion: `Reconocidas por su durabilidad y precisión, estas estructuras prometen una calidad excepcional, asegurando un hogar que resiste el paso del tiempo con estilo y resistencia.
-    Eleva tu desarrollo con casas ORCA.`,
+    descripcion: `DROP posee todos materiales de primera calidad y en su conjunto pensado para que la durabilidad del proyecto sea la misma que la de la construcción tradicional.`,
     imagen: imgBeneficio4,
     caracteristicas: [
       { id: 1, descripcion: "Máxima flexibilidad y adaptabilidad. Permitiendo ampliar y modificar tu proyecto en cualquier momento" },      
@@ -60,8 +51,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 5,
     titulo: "TRANSPORTABLE",
-    descripcion: `Experimente una resiliencia incomparable en casas construidas con ORCA. Construidas para resistir la prueba del tiempo y diversos desafíos ambientales,
-    estas estructuras ofrecen resistencia duradera y tranquilidad a los propietarios.`,
+    descripcion: `De la misma manera que trasladamos los módulos desde nuestra planta al terreno, en un futuro el mismo proyecto puede ser implantado en otro lugar.`,
     imagen: imgBeneficio5,
     caracteristicas: [
       { id: 1, descripcion: "Construcción Offsite permite la mínima intervención del terreno y contaminación" },
@@ -72,8 +62,8 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 6,
     titulo: "VERDE",
-    descripcion: `Adopte una vida ecológica con casas fabricadas con acero LGS. 
-    Estas estructuras sostenibles minimizan el impacto ambiental, ofreciendo eficiencia energética, reciclabilidad y un compromiso con un futuro más verde para los propietarios.`,
+    descripcion: `Generamos el mínimo impacto posible en el lugar de implantación ya que no se debe realizar ningún movimiento de suelo, a lo sumo se trabaja 1 semana en el lugar.
+    Por otro lado, la aislación de nuestros paneles permite generar un ahorro de energía sustancial.`,
     imagen: imgBeneficio6,
     caracteristicas: [
       { id: 1, descripcion: "Altos estándares de calidad y seguridad." },

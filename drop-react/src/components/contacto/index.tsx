@@ -85,7 +85,7 @@ export default function Contacto({data, isModal}: ConsultaProps){
                 <FaPhone className="mx-3" size={24}></FaPhone>
                 <div>
                     <h5>Teléfono</h5>
-                    <p>221.2200007</p>
+                    <p><a href="tel:+2212200007" target="_blank">2212200007</a></p>
                 </div>
               </li>
               <li>
