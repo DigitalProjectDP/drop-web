@@ -49,7 +49,12 @@ export default function ModeloPage() {
                 items:3
             },
         }
-      };
+    };
+
+      
+    const htmlString = () => (
+        <div dangerouslySetInnerHTML={{ __html: modelo?.descripcion || '' }} />
+    );
 
     const renderListModelos = () => modelo?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
     const renderImagenes = () => modelo?.imagenes.map((v, i) => <img src={v.url} key={i}></img>)
@@ -62,11 +67,13 @@ export default function ModeloPage() {
                 </section>
                 <section className="modelo__container col-12 col-lg-6">
                     <h4 className="text-center mb-3">{modelo?.nombre}</h4>
-                    <ul className="list__caracteristicas__modelo p-0">
+                    {/* <ul className="list__caracteristicas__modelo p-0">
                         {modelo?.caracteristicas? renderListModelos(): ''}
-                    </ul>
-                    <p>{modelo?.descripcion}</p>
-                    <p className="py-3">{modelo?.moneda} {modelo?.valor}</p>
+                    </ul> */}
+                    <div className="section__descripcion">
+                        {modelo?.descripcion? htmlString(): ''}
+                    </div>
+                    <p className="py-3 fw-bold ">{modelo?.moneda} {modelo?.valor}</p>
                     <div className="d-flex justify-content-around py-2">
                         <button className="button__primary">Brochure</button>
                         <button className="button__primary" data-bs-toggle="modal" data-bs-target="#modal-contacto-modelo">Contacto</button>

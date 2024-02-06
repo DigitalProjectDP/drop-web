@@ -1,3 +1,9 @@
+.banner__video{
+    width: 100%;
+    max-height: 85vh;
+    object-fit: cover;
+}
+
 .item{
     min-height: 75vh;
     background-repeat: no-repeat;

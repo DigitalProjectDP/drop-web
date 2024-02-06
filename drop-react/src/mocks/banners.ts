@@ -1,5 +1,6 @@
 import { Imagen } from "../interfaces/imagen";
 import Banner001 from "../media/img/banner.jpg";
+import BannerVid from "../media/img/home/banner.MP4";
 import BannerVideo from "../media/img/home/banner.gif";
 
 export const MockBanners: Imagen[] = 
@@ -9,7 +10,7 @@ export const MockBanners: Imagen[] =
         titulo: '',
         subtitulo: '',
         descripcion: '',
-        imagenUrl: BannerVideo,
+        imagenUrl: BannerVid,
         tipoSeccion: {
             id: 1,
             descripcion: 'Banner'

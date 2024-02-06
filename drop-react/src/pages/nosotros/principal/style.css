@@ -29,4 +29,6 @@
 
 .div__nosotros p{
     font-size: 0.75rem;
+    line-height: 0.75rem;
+    margin: 0;
 }

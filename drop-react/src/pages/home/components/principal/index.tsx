@@ -8,7 +8,7 @@ export default function HomePrincipal() {
         id: 1,
         titulo: `DROP`,
         subtitulo: 'Arquitectura modular',
-        descripcion: `Con nuestro estudio de ingeniería y empresa constructora de más de 25 años de experiencia en el rubro, decidimos desarrollar un sistema constructivo que cambie el paradigma de la construcción tradicional.\n\nDROP es una nueva forma de entender la arquitectura moderna. Nuestras premisas son CALIDAD, VELOCIDAD y ECONOMÍA.\n\nSomos el socio ideal tanto para quienes estén buscando una vivienda, desarrolladores inmobiliarios, gastronómicos y comerciales.`,
+        descripcion: `Con nuestro estudio de ingeniería y empresa constructora de más de 25 años de experiencia en el rubro, decidimos desarrollar un sistema constructivo que cambie el paradigma de la construcción tradicional.\n\nDROP es una nueva forma de entender la arquitectura moderna. Por esta razón sabíamos que teníamos que basarnos en 3 conceptos fundamentales, los cuales no podían fallar a la hora de desarrollar un nuevo sistema constructivo: CALIDAD, VELOCIDAD Y ECONOMÍA.\n\nSomos el socio ideal tanto para quienes estén buscando una vivienda, desarrolladores inmobiliarios, gastronómicos y comerciales.`,
         imagenUrl: imgDrop,
         tipoSeccion: {
             id: 3,
@@ -17,7 +17,7 @@ export default function HomePrincipal() {
     }
 
     return (
-        <section className="home__principal my-5">
+        <section className="home__principal mt-3">
             <SectionTextImage info={seccionNosotros} inverse={false} idSeccion="seccion-principal" buttonText={"Leer más"} buttonLink={"nosotros"}></SectionTextImage>        
         </section>
     )

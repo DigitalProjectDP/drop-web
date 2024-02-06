@@ -19,7 +19,7 @@ export default function HomeProceso() {
 
     let imagenProceso = imgProceso;
     return (
-        <section className="section__proceso my-5">
+        <section className="section__proceso mt-3">
             {/* <h1 className="proceso__title">Proceso de fabricación</h1>
             <p className="container text__paragraph">
                 En <i>Drop</i>, construimos espacios adaptables según la necesidad. 

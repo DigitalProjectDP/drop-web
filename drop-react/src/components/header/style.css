@@ -43,11 +43,11 @@ a.navbar-toggler{
 }
 
 .nav-link:hover{
-    color: var(--second-color);
+    color: var(--fifth-color);
 }
 
 .nav-link:focus{
-    color: var(--fourth-color);
+    color: var(--fifth-color);
 }
 
 .navbar__bg{

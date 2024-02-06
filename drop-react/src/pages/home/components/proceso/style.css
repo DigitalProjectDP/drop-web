@@ -90,3 +90,13 @@
         z-index: 2;    
     }
 }
+
+@media screen and (max-width:361px){
+    .section__proceso{
+        padding: 1rem;
+    }
+
+    .timeline__container{
+        margin: 1rem!important;
+    }
+}

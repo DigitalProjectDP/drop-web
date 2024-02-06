@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { GetParametroByClave } from "../../services/parametroService";
 import { SendMail } from "../../services/mailService";
-import { FaFacebook, FaInstagram, FaLocationDot, FaPhone, FaYoutube } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram, FaLocationDot, FaPhone, FaYoutube, FaTiktok } from 'react-icons/fa6';
 import { IoMail } from "react-icons/io5";
 import SpinnerLoading from '../spinner';
 
@@ -99,7 +99,7 @@ export default function Contacto({data, isModal}: ConsultaProps){
             <div className="d-flex flex-row gap-1 justify-content-center py-4 mt-4">
               <a href={instagram} target="_blank"><FaInstagram className="contacto__icon mx-2" size={32}></FaInstagram></a>
               <a href={instagram} target="_blank"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
-              <a href={instagram} target="_blank"><FaYoutube className="contacto__icon mx-2" size={32}></FaYoutube></a>
+              <a href={instagram} target="_blank"><FaTiktok className="contacto__icon mx-2" size={32}></FaTiktok></a>
             </div>
           </div>:''}
 
