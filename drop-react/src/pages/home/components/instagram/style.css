@@ -13,7 +13,7 @@
 .instagram__logo{
     margin: 2rem 0;
     border-radius: 50%;
-    box-shadow: 1px 1px 16px black;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     width: 6rem;
 }
 
@@ -34,6 +34,8 @@
 .instagram__card {
     padding: 1rem;
     width: 100%;
+    max-width: 330px;
+    max-height: 330px;
     object-fit: contain;
 }
 
