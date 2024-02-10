@@ -43,39 +43,39 @@ export default function Header({opacity}: HeaderProps) {
   const navigate = useNavigate();
 
   const redirect = () => {
-      navigate(`/inicio/`);        
+      navigate(`#/inicio/`);        
   }
 
   return (
     <nav className="navbar navbar-expand-xl navbar__bg" id="navHeader" style={{backgroundColor : bgColor}}>
-      <a href="/inicio" className="navbar-toggler"><img src={imgLogo} alt="Logo" width={44} height={44} /></a>
+      <a href="#/inicio" className="navbar-toggler"><img src={imgLogo} alt="Logo" width={44} height={44} /></a>
       <button className="navbar-toggler bg-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={changeBgColor}>
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="/inicio">Inicio</a>
+            <a className="nav-link" href="#/inicio">Inicio</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#section__modelos" onClick={redirect}>Modelos</a>
+            <a className="nav-link" href="#/inicio/?id=section__modelos" onClick={redirect}>Modelos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#section__inversiones" onClick={redirect}>Inversiones</a>
+            <a className="nav-link" href="#/inicio/?id=section__inversiones" onClick={redirect}>Inversiones</a>
           </li>
 
           <li className="d-none d-xl-flex w-25 justify-content-center align-items-center">
-            <a href="/inicio" className="navbar-brand"><img src={imgLogo} className="header__logo" alt="Logo" width={44} height={44} /></a>
+            <a href="#/inicio" className="navbar-brand"><img src={imgLogo} className="header__logo" alt="Logo" width={44} height={44} /></a>
           </li>
 
           <li className="nav-item">
-            <a className="nav-link" href="/nosotros">Nosotros</a>
+            <a className="nav-link" href="#/nosotros">Nosotros</a>
           </li>    
           <li className="nav-item">
-            <a className="nav-link" href="/blogs">Blog</a>
+            <a className="nav-link" href="#/blogs">Blog</a>
           </li>  
           <li className="nav-item">
-            <a className="nav-link" href="/contacto">Contacto</a>
+            <a className="nav-link" href="#/contacto">Contacto</a>
           </li>
         </ul>
       </div>

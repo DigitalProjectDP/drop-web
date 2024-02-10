@@ -8,7 +8,7 @@ export const MockInversiones: Inversion[] = [
     {
         id: 1,
         titulo: "Gastronomía",
-        descripcion: "Diseños modernos y distintivos, con posibilidad de crecimiento y expansión.",
+        descripcion: "Diseños modernos y distintivos, con posibilidad de crecimiento y expansión. Tu proyecto en tiempo record, y al menor costo.",
         imagen: imgGastronomia,
         caracteristicas: [{id: 1, descripcion: 'Cafeterías'},{id: 2, descripcion: 'Heladerías'},{id: 3, descripcion: 'Restaurantes'},{id: 4, descripcion: 'Bares'}]
     },

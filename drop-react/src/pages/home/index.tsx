@@ -12,8 +12,25 @@ import HomeBeneficiosNew from './components/beneficios-home/beneficios';
 import HomePrincipal from './components/principal';
 import HomeProyectos from './components/proyectos/proyectos';
 import WhatsappButton from '../../components/whatsapp-button';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Home() {
+  const { search } = useLocation();  
+  const id = new URLSearchParams(search).get("id");
+  useEffect(() => {
+    if(id == undefined || id==""){
+      window.scrollTo(0, 0);
+    }
+    setTimeout(() => {
+      document.querySelector(`#${id}`)?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
+    }, 100);
+  },[id])
+  
+
   return (
     <div className="div__home min-vh-100 h-10">
       <Header></Header>

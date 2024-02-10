@@ -3,17 +3,18 @@ import { BlogArticleRoute, BlogRoute, ContactoRoute, InicioRoute, ModeloRoute, N
 
 export default function Router(){  
     return (
-        <BrowserRouter basename="https://digitalprojectdp.github.io/drop-web">           
+        <HashRouter>           
             <Routes>
                 <Route index element={<InicioRoute></InicioRoute>}></Route>
                 <Route path="/" element={<InicioRoute></InicioRoute>}></Route>                
-                <Route path="/inicio" element={<InicioRoute></InicioRoute>}></Route>
+                <Route path="/inicio" element={<InicioRoute></InicioRoute>}></Route>                
+                <Route path="/drop-web" element={<InicioRoute></InicioRoute>}></Route>                
                 <Route path="/modelo" element={<ModeloRoute></ModeloRoute>}></Route>
                 <Route path="/contacto" element={<ContactoRoute></ContactoRoute>}></Route>
                 <Route path="/blogs" element={<BlogRoute></BlogRoute>}></Route>
                 <Route path="/blog" element={<BlogArticleRoute></BlogArticleRoute>}></Route>
                 <Route path="/nosotros" element={<NosotrosRoute></NosotrosRoute>}></Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }

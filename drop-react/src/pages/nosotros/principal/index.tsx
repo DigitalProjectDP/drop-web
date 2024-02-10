@@ -40,7 +40,7 @@ export default function NosotrosPrincipal() {
                     <img className="img__nosotros" alt="Foto" src={imagen002}></img>
                     <strong>Agustín Magno</strong>
                     <p>CEO Drop</p>
-                    <p>Ing. Civil e Hidráulico</p>
+                    <p>Ing. Civil</p>
                 </div>
                 <div className="col-6 col-xl-3 d-flex flex-column justify-content-center align-items-center gap-2 container">
                     <img className="img__nosotros" alt="Foto" src={imagen003}></img>
