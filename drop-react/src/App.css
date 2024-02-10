@@ -27,6 +27,10 @@ body{
   height: 100%;
 }
 
+a:hover{
+  cursor: pointer;
+}
+
 #root{
   min-height: 100vh;
   display: flex;

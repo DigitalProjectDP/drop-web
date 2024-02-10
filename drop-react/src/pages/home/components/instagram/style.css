@@ -34,12 +34,16 @@
 .instagram__card {
     padding: 1rem;
     width: 100%;
-    max-height: 330px;
     object-fit: contain;
 }
 
 .instagram__card:hover{
     opacity: 0.5;
+}
+
+video.instagram__card{
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 1025px) {

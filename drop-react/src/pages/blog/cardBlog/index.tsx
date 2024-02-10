@@ -24,7 +24,7 @@ export default function CardBlog({data}: BlogProps) {
     const navigate = useNavigate();
 
     const redirect = () => {
-        navigate(`/blog/?id=${blog?.id}`);
+        navigate(`#/blog/?id=${blog?.id}`);
     }
 
     return(
@@ -36,7 +36,7 @@ export default function CardBlog({data}: BlogProps) {
                     <h5 className="card__titulo__blog">
                         {blog?.titulo}
                     </h5>
-                    <a href="" onClick={redirect} className="link__blog" >Leer el artículo completo</a>
+                    <a href={`#/blog/?id=${blog?.id}`} onClick={redirect} className="link__blog" >Leer el artículo completo</a>
                 </div>
             </div>           
         </div>
