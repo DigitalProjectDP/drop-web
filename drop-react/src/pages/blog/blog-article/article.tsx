@@ -30,15 +30,12 @@ export default function BlogArticle() {
             <Header opacity={true}></Header>
             <HeaderSpace></HeaderSpace>      
             <div className="container-fluid d-flex flex-column blog__container">
-                <h3 className="text-start mb-3">{blog?.titulo}</h3>
-                <h5 className="text-start mb-3">{blog?.subtitulo}</h5>
-                <div className="blog__article__imagen">
+                <h2 className="text-start mb-3 fw-bold">{blog?.titulo}</h2>
+                {blog?.subtitulo? <h5 className="text-start mb-3 fw-bold">{blog?.subtitulo}</h5>: ''}
+                {/* <div className="blog__article__imagen">
                     <img src="https://placehold.co/640x360?text=..." alt="BlogImagen01" width="100%" />
-                </div>
+                </div> */}
                 {blog?.descripcion? htmlString(): ""}
-                <div className="blog__article__imagen">
-                    <img src="https://placehold.co/640x360?text=..." alt="BlogImagen01" width="100%" />
-                </div>
             </div>       
         </div>
     )

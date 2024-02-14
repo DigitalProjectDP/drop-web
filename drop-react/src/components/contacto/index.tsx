@@ -2,10 +2,11 @@ import './style.css'
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { GetParametroByClave } from "../../services/parametroService";
-import { SendMail } from "../../services/mailService";
+import { ResendEmail, SendMail } from "../../services/mailService";
 import { FaFacebook, FaInstagram, FaLocationDot, FaPhone, FaYoutube, FaTiktok } from 'react-icons/fa6';
 import { IoMail } from "react-icons/io5";
 import SpinnerLoading from '../spinner';
+import { confirmAlert } from 'react-confirm-alert';
 
 interface ConsultaProps{
     data: string;
@@ -25,7 +26,6 @@ export default function Contacto({data, isModal}: ConsultaProps){
         let instagramParametro = parametros?.instagram || '';
         let whatsappParametro = parametros?.whatsapp || '';
         let telefonoParametro = parametros?.telefono || '';
-        console.log(data)
         setMessage(data);
         setInstagram(instagramParametro);
         setWhatsapp(whatsappParametro);
@@ -51,19 +51,33 @@ export default function Contacto({data, isModal}: ConsultaProps){
 
     const enviarContacto = async (formData: any) => {
         setLoading(true);
-        let destinatario = await GetParametroByClave('CORREO');
+        let vDestinatario = await GetParametroByClave('Correo');
         let today = new Date();
         formData = {
             ...formData,
-            Destinatario: destinatario?.valor,
-            Datetime: today.toISOString()
+            destinatario: vDestinatario?.valor,
+            Datetime: today.toISOString(),
+            Id: 0
         }
-        //let response =  SendMail(formData);
-        console.log(formData)
+        let response = await SendMail(formData);        
+        
+        setLoading(false);
+        
+        confirmAlert({            
+            message: response,
+            buttons: [{
+                label: 'Aceptar',
+                className: "button__primary",
+                onClick: () => window.location.reload()
+                }],
+            willUnmount: () => {window.location.reload()}
+        });
+
         setTimeout(() => {
-            setLoading(false);
             window.location.reload();
         }, 2000);
+        
+        
     }
 
     return (

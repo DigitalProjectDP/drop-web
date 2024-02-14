@@ -18,7 +18,7 @@ export default function HomeInstagram() {
     
     const renderInstagramPosts = () => instagramPosts?.map((v, i) => <a key={i} href={v?.permalink} target="_blank" className="">
         {v?.permalink?.includes("reel")?
-        <video className="instagram__card" src={v?.media_url}></video>:
+        <video className="instagram__card" src={v?.media_url} autoPlay muted loop></video>:
         <img className="instagram__card" src={v?.media_url}/>}
     </a>)
     return (

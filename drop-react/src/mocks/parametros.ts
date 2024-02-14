@@ -54,7 +54,7 @@ export const MockParametros: ClaveValor[] = [
     {
       id: 11,
       clave: "Instagram",
-      valor: "https://www.instagram.com/drop.houses/"
+      valor: "https://www.instagram.com/drop.modular/"
     },
     {
       id: 12,

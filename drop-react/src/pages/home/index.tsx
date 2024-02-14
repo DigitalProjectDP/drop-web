@@ -24,7 +24,7 @@ export default function Home() {
     }
     setTimeout(() => {
       document.querySelector(`#${id}`)?.scrollIntoView({
-          behavior: 'smooth',
+          behavior: 'auto',
           block: 'center',
         });
     }, 100);

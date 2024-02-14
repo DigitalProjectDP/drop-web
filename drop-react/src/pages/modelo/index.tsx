@@ -31,7 +31,7 @@ export default function ModeloPage() {
         responsiveClass: true,
         nav: true,
         dots: true,
-        autoplay: true,
+        autoplay: false,
         navContainerClass: `owl-nav`,
         navClass: ['owl-prev','owl-next'],
         dotsClass: `owl-dots customDots`,
@@ -51,6 +51,15 @@ export default function ModeloPage() {
         }
     };
 
+    const viewBrochure = async () => {
+        //const url = edificio?.archivoPDF?.url?.includes('https://')? edificio?.archivoPDF?.url: `https://www.estudiomayocchi.com/static/media/files/${edificio?.archivoPDF?.url}`        
+        const url = modelo?.brochure!;
+        let alink = document.createElement("a");
+        alink.href = url;
+        alink.target = "_blank";
+        alink.rel = "noreferrer"
+        alink.click();
+    }
       
     const htmlString = () => (
         <div dangerouslySetInnerHTML={{ __html: modelo?.descripcion || '' }} />
@@ -73,9 +82,9 @@ export default function ModeloPage() {
                     <div className="section__descripcion">
                         {modelo?.descripcion? htmlString(): ''}
                     </div>
-                    <p className="py-3 fw-bold ">{modelo?.moneda} {modelo?.valor}</p>
-                    <div className="d-flex justify-content-around py-2">
-                        <button className="button__primary">Brochure</button>
+                    {/* <p className="py-3 fw-bold ">{modelo?.moneda} {modelo?.valor}</p> */}
+                    <div className="d-flex justify-content-around py-5">
+                        <button className="button__primary" onClick={viewBrochure}>Brochure</button>
                         <button className="button__primary" data-bs-toggle="modal" data-bs-target="#modal-contacto-modelo">Contacto</button>
                     </div>
                 </section>
