@@ -166,6 +166,23 @@ body.react-confirm-alert-body-element {
   cursor: pointer;
 } */
 
+.main__height{
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0;}
+  to   { opacity: 1}
+}
+
+
+@keyframes maxHeightToMin {
+  from { min-height: 100vh;}
+  to   { min-height: auto;}
+}
+
+
+
 @-webkit-keyframes react-confirm-alert-fadeIn {
   from {
     opacity: 0;

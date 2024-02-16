@@ -12,7 +12,6 @@ export default function HomeInversiones() {
   const listInfo = MockInversiones;
 
   const openModal = (nombre: string) => {
-    console.log(nombre)
     setInversionNombre(nombre);
     const buttonModal = document.getElementById("buttonModalContacto");
     //buttonModal?.click();

@@ -72,7 +72,7 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Alquiler temporario'},
+        categoria: { id: 1, descripcion: 'Hotelería'},
         imagenes: [{id: 1, nombre: 'Imagen01', url: imgCabañas01}, {id: 2, nombre: 'Imagen02', url: imgCabañas02}, {id: 3, nombre: 'Imagen03', url: imgCabañas03}, {id: 4, nombre: 'Imagen04', url: imgCabañas04},
         {id: 5, nombre: 'Imagen05', url: imgCabañas05}, {id: 6, nombre: 'Imagen06', url: imgCabañas06}, {id: 7, nombre: 'Imagen07', url: imgCabañas07}, {id: 8, nombre: 'Imagen08', url: imgCabañas08},
         {id: 9, nombre: 'Imagen09', url: imgCabañas09}],
@@ -85,7 +85,7 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Alquiler temporario'},
+        categoria: { id: 1, descripcion: 'Residencial'},
         imagenes: [{id: 1, nombre: 'Imagen01', url: imgMatheu01}, {id: 2, nombre: 'Imagen02', url: imgMatheu02}, {id: 3, nombre: 'Imagen03', url: imgMatheu03}, {id: 4, nombre: 'Imagen04', url: imgMatheu04},
         {id: 5, nombre: 'Imagen05', url: imgMatheu05}, {id: 6, nombre: 'Imagen06', url: imgMatheu06}, {id: 7, nombre: 'Imagen07', url: imgMatheu07}, {id: 8, nombre: 'Imagen08', url: imgMatheu08},
         {id: 9, nombre: 'Imagen09', url: imgMatheu09}, {id: 10, nombre: 'Imagen10', url: imgMatheu10}, {id: 11, nombre: 'Imagen11', url: imgMatheu11}
@@ -99,7 +99,7 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Alquiler temporario'},
+        categoria: { id: 1, descripcion: 'Quincho/Casa Huéspedes'},
         imagenes: [{id: 1, nombre: 'Imagen01', url: imgGuest01}, {id: 2, nombre: 'Imagen02', url: imgGuest02}, {id: 3, nombre: 'Imagen03', url: imgGuest03}, {id: 4, nombre: 'Imagen04', url: imgGuest04},
         {id: 5, nombre: 'Imagen05', url: imgGuest05}, {id: 6, nombre: 'Imagen06', url: imgGuest06}, {id: 7, nombre: 'Imagen07', url: imgGuest07}, {id: 8, nombre: 'Imagen08', url: imgGuest08},
         {id: 9, nombre: 'Imagen09', url: imgGuest09}, {id: 10, nombre: 'Imagen10', url: imgGuest10}, {id: 11, nombre: 'Imagen11', url: imgGuest11}
@@ -113,7 +113,7 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Alquiler temporario'},
+        categoria: { id: 1, descripcion: 'Vivienda'},
         imagenes: [{id: 1, nombre: 'Imagen01', url: imgSueño01}, {id: 2, nombre: 'Imagen02', url: imgSueño02}, {id: 3, nombre: 'Imagen03', url: imgSueño03}, {id: 4, nombre: 'Imagen04', url: imgSueño04},
         {id: 5, nombre: 'Imagen05', url: imgSueño05}, {id: 6, nombre: 'Imagen06', url: imgSueño06}, {id: 7, nombre: 'Imagen07', url: imgSueño07}, {id: 8, nombre: 'Imagen08', url: imgSueño08},
         {id: 9, nombre: 'Imagen09', url: imgSueño09}, {id: 10, nombre: 'Imagen10', url: imgSueño10}, {id: 11, nombre: 'Imagen11', url: imgSueño11}, {id: 12, nombre: 'Imagen12', url: imgSueño12}

@@ -13,7 +13,7 @@ export default function CardProyecto({data, setProyectoId}: ProyectosProps) {
 
     useEffect(() => {
         setProyecto(data);
-    }, []);
+    }, [data]);
     
     const navigate = useNavigate();
 

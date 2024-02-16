@@ -4,9 +4,11 @@ import CardProyecto from './cardProyecto'
 import OwlCarousel from 'react-owl-carousel';
 import ProyectoModal from '../../../../components/proyectoModal';
 import { useState } from 'react';
+import SpinnerLoading from '../../../../components/spinner';
 
 export default function HomeProyectos() {
   const [proyectoId, setProyectoId] = useState<Number>();
+  const [loading, setLoading] = useState(false);
 
   const listInfo = MockProyectos;
   
@@ -36,9 +38,18 @@ export default function HomeProyectos() {
   };
 
   const getProyecto = (id: Number) => {
+    setLoading(true);
     const buttonModal = document.getElementById("buttonModal");
     buttonModal?.click();
     setProyectoId(id);
+    setTimeout(() => {      
+      setLoading(false);
+    }, 300);
+
+    const myModalEl = document.getElementById("modal-proyecto");
+    myModalEl?.addEventListener('hidden.bs.modal', function (event) {
+        window.location.reload();
+    });
 } 
 
   const renderproyectos = () => listInfo?.map((v, i) => <CardProyecto setProyectoId={getProyecto} data={v} key={i}></CardProyecto>)
@@ -55,7 +66,8 @@ export default function HomeProyectos() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
+        {loading? <SpinnerLoading></SpinnerLoading>: ''}
     </section>
   )
 }

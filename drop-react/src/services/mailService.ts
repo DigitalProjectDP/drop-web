@@ -43,7 +43,6 @@ export const ResendEmail = async (data: Contacto): Promise<any> => {
                 'X-Entity-Ref-ID': 'Y6sYT857_EkroVg5ZscfgqDa5qEXneE1g',
               },
         });
-        console.log(response)
         alert("Email enviado")
     } catch (error) {
         alert(error);

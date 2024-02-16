@@ -71,8 +71,8 @@
     font-size: 20px;
     padding: 0.25rem;
     text-align: center;
-    z-index: 3;
     display: none;
+    z-index: 3;
 }
 
 
@@ -84,6 +84,20 @@
     text-align: start;
     list-style: none;
     font-size: 0.75rem;
+}
+
+.proyectos__container .owl-stage-outer{
+    z-index: 0;
+}
+
+.proyectos__container .owl-nav{
+    z-index: 0;
+    height: 1px;
+}
+
+.proyectos__container .owl-prev, 
+.proyectos__container .owl-next{
+    z-index: 100;
 }
 
 .owl-nav{

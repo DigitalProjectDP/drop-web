@@ -49,19 +49,20 @@ export default function ProyectoModal({id}: ModalProyectoProps) {
 
     const renderListProyectos = () => proyecto?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
     const renderImagenes = () => proyecto?.imagenes.map((v, i) => <img className="proyecto__carousel__img" src={v.url} key={i}></img>)
-    return (
-        <div className="row p-0 modal__container"> 
+    return (<>
+        {proyecto?.imagenes? <div className="row p-0 modal__container"> 
             <div className="proyecto__header p-3">
                 <h3 className="text-center mb-1">{proyecto?.nombre}</h3>
                 <h6 className="text-center">{proyecto?.categoria?.descripcion}</h6>
                 <button type="button" className="btn-close button__close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <p>{proyecto?.descripcion}</p>      
+            {/* <p>{proyecto?.descripcion}</p>       */}
             <div className="w-100 p-0">
                 {proyecto?.imagenes? <OwlCarousel className='proyectos__container' loop {...options}>
                     {renderImagenes()} 
                 </OwlCarousel> : ''}
             </div>            
-        </div>
+        </div>: ''}
+        </>
     )
 }
