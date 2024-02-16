@@ -50,6 +50,10 @@
     top: 45%;
 }
 
+.modal__body__proyecto{
+    margin-top: -60px;
+}
+
 @media screen and (max-width: 992px){
     .proyecto__container{
         margin: 0;

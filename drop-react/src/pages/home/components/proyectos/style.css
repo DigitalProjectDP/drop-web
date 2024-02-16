@@ -117,6 +117,14 @@
     background-color: rgba(0,0,0,0.8);
 }
 
+.modal__proyecto .modal-dialog{
+    height: 100vh;
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 1100px){
     .card__container__proyectos, .card__imagen__proyecto{
         max-height: 195px;

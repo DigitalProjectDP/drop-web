@@ -54,7 +54,7 @@ export default function ProyectoModal({id}: ModalProyectoProps) {
             <div className="proyecto__header p-3">
                 <h3 className="text-center mb-1">{proyecto?.nombre}</h3>
                 <h6 className="text-center">{proyecto?.categoria?.descripcion}</h6>
-                <button type="button" className="btn-close button__close" data-bs-dismiss="modal" aria-label="Close"></button>
+                {/* <button type="button" className="btn-close button__close" data-bs-dismiss="modal" aria-label="Close"></button> */}
             </div>
             {/* <p>{proyecto?.descripcion}</p>       */}
             <div className="w-100 p-0">
