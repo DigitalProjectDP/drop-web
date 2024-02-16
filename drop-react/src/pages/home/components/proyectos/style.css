@@ -92,7 +92,8 @@
 
 .proyectos__container .owl-nav{
     z-index: 0;
-    height: 1px;
+    height: 1px;    
+    top: 35%;
 }
 
 .proyectos__container .owl-prev, 

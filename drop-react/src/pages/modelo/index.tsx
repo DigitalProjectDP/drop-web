@@ -48,6 +48,9 @@ export default function ModeloPage() {
             900:{
                 items:3
             },
+            1200:{
+                items:4
+            },
         }
     };
 
@@ -84,7 +87,7 @@ export default function ModeloPage() {
                     </div>
                     {/* <p className="py-3 fw-bold ">{modelo?.moneda} {modelo?.valor}</p> */}
                     <div className="d-flex justify-content-around py-5">
-                        <button className="button__primary" onClick={viewBrochure}>Brochure</button>
+                        {modelo?.brochure? <button className="button__primary" onClick={viewBrochure}>Brochure</button>: ''}
                         <button className="button__primary" data-bs-toggle="modal" data-bs-target="#modal-contacto-modelo">Contacto</button>
                     </div>
                 </section>

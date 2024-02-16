@@ -62,6 +62,10 @@ video.instagram__card{
     .instagram__header{
         padding: 2rem 4rem;
     }
+    
+    #instagramPost_4, #instagramPost_5{
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -72,5 +76,6 @@ video.instagram__card{
     .instagram__header{
         padding: 2rem;
     }
+
 }
 

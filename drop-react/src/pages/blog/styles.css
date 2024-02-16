@@ -1,9 +1,0 @@
-.main__height{
-    animation: fadein 2s;
-  }
-  
-  @keyframes fadein {
-    from { opacity: 0; height: 100%;}
-    to   { opacity: 1}
-  }
-  

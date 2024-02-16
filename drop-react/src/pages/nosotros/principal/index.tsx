@@ -1,7 +1,7 @@
 import './style.css'
 import { Imagen } from '../../../interfaces/imagen'
 import SectionTextImage from '../../../components/sectionTextImage'
-import imgNosotros from '../../../media/img/nosotros/nosotros.jpg'
+import imgNosotros from '../../../media/img/nosotros/zPortada nosotros.jpg'
 import imagen001 from '../../../media/img/nosotros/fernando_magno.jpg';
 import imagen002 from '../../../media/img/nosotros/agustin_magno.jpg';
 import imagen003 from '../../../media/img/nosotros/juan_magno.jpg';
@@ -30,25 +30,25 @@ export default function NosotrosPrincipal() {
             <SectionTextImage info={seccionNosotros} idSeccion="seccion-nuestra-historia"></SectionTextImage>
             <h3 className="nosotros__title my-5">Nosotros</h3>
             <div className="row div__nosotros">
-                <div className="col-6 col-xl-3 d-flex flex-column justify-content-center align-items-center gap-2 container">
+                <div className="col-6 col-xl-3 d-flex flex-column justify-content-center align-items-center gap-2 container mb-4">
                     <img className="img__nosotros" alt="Foto" src={imagen001}></img>
                     <strong>Fernando Magno</strong>
                     <p>Socio Fundador Graupel Sur SA</p>
                     <p>Ing. en Construcciones</p>
                 </div>
-                <div className="col-6 col-xl-3 d-flex flex-column justify-content-center align-items-center gap-2 container">
+                <div className="col-6 col-xl-3 d-flex flex-column justify-content-center align-items-center gap-2 container mb-4">
                     <img className="img__nosotros" alt="Foto" src={imagen002}></img>
                     <strong>Agustín Magno</strong>
                     <p>CEO Drop</p>
                     <p>Ing. Civil</p>
                 </div>
-                <div className="col-6 col-xl-3 d-flex flex-column justify-content-center align-items-center gap-2 container">
+                <div className="col-6 col-xl-3 d-flex flex-column justify-content-center align-items-center gap-2 container mb-4">
                     <img className="img__nosotros" alt="Foto" src={imagen003}></img>
                     <strong>Juan Belgrande Magno</strong>
                     <p>Socio Graupel</p>
                     <p>Ing. Civil</p>
                 </div>
-                <div className="col-6 col-xl-3 d-flex flex-column justify-content-center align-items-center gap-2 container">
+                <div className="col-6 col-xl-3 d-flex flex-column justify-content-center align-items-center gap-2 container mb-4">
                     <img className="img__nosotros" alt="Foto" src={imagen004}></img>
                     <strong>Darío Leandro Bardi</strong>
                     <p>Socio Graupel</p>

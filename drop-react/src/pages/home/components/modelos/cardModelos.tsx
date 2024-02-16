@@ -24,7 +24,7 @@ export default function CardModelo({data}: ModelosProps) {
     const renderListModelos = () => modelo?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
 
     return(
-        <div className="col-12 col-xl-3 col-lg-6 card__container__modelos" onClick={redirect}>
+        <div className="col-12 col-xl-5 col-lg-5 card__container__modelos" onClick={redirect}>
             <div className="d-flex flex-column gap-2 align-items-center">
                 <img className="card__imagen__modelo" src={modelo?.imagenes[0].url} alt="LogoModelo"/>
 

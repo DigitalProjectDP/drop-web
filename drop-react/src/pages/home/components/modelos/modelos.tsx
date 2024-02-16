@@ -9,7 +9,7 @@ const listInfo = MockModelos;
   return (
     <section className="section__modelos" id="section__modelos">     
       <h3 className="modelos__title">Nuestros modelos</h3>
-      <div className="row modelos__container">
+      <div className="row modelos__container gap-3 gap-xl-5 mb-5">
         {listInfo? rendermodelos(): ''}
       </div>
     </section>

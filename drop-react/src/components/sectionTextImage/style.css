@@ -158,6 +158,12 @@
     }
 }
 
+@media screen and (max-width: 769px){    
+    .section__descripcion{
+        padding-right: 0!important;
+    }
+}
+
 @media screen and (max-width: 399px){ 
     .aboutImage {
         max-width: 220px;

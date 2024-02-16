@@ -33,7 +33,7 @@ export default function ProyectoModal({id}: ModalProyectoProps) {
         responsiveClass: true,
         nav: true,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         navContainerClass: `owl-nav`,
         navClass: ['owl-prev','owl-next'],
         dotsClass: `owl-dots customDots`,
@@ -58,7 +58,7 @@ export default function ProyectoModal({id}: ModalProyectoProps) {
             </div>
             {/* <p>{proyecto?.descripcion}</p>       */}
             <div className="w-100 p-0">
-                {proyecto?.imagenes? <OwlCarousel className='proyectos__container' loop {...options}>
+                {proyecto?.imagenes? <OwlCarousel className='proyectos__container proyectos__carousel__modal' loop {...options}>
                     {renderImagenes()} 
                 </OwlCarousel> : ''}
             </div>            

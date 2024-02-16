@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 import { enviroment } from "../interfaces/enviroment";
 import { Contacto } from "../interfaces/contacto";
 
-const BASE_URL: string = enviroment.urlBase() + "api/Mail";
+const BASE_URL: string = enviroment.urlBase() + "Email";
 const ENV_DEMO: boolean = enviroment.demo();
 const API_KEY: string = "re_Y6sYT857_EkroVg5ZscfgqDa5qEXneE1g";
 
@@ -10,6 +10,7 @@ export const SendMail = async (data: Contacto): Promise<any> => {
     // if (ENV_DEMO){
     //     return "Email enviado con éxito";
     // }
+    //const url = BASE_URL;
     const url = `https://mayicuervo-001-site2.atempurl.com/Email`;
         let result;
 

@@ -45,10 +45,10 @@ import imgKube09 from "../media/img/modelos/kube/kube (6).jpg";
 import imgKube10 from "../media/img/modelos/kube/kube (7).jpg";
 import imgKube11 from "../media/img/modelos/kube/kube (8).jpg";
 import imgKube12 from "../media/img/modelos/kube/kube (9).JPG";
-import brochure01 from "../media/brochure/brochure01.pdf";
-import brochure02 from "../media/brochure/brochure02.pdf";
-import brochure03 from "../media/brochure/brochure03.pdf";
-import brochure04 from "../media/brochure/brochure04.pdf";
+import brochure01 from "../media/brochure/CABIN.pdf";
+import brochure02 from "../media/brochure/CHILLOUT.pdf";
+import brochure03 from "../media/brochure/DOSDOR.pdf";
+import brochure04 from "../media/brochure/brochure01.pdf";
 
 export const MockModelos: Modelo[] = [
     {
@@ -102,7 +102,7 @@ export const MockModelos: Modelo[] = [
         descripcion: `La línea KUBE nace a partir de la decisión de DROP de que tus proyectos sean a la medida de tu necesidad. Viviendas modernas, con ambientes amplios e iluminados con ventilaciones cruzadas.\n\nAplicable tanto para proyectos en terrenos con mucho espacio disponible, como para terrenos entre medianeras donde se debe lograr una fachada estética que proteja las visuales y un contrafrente vidriado abierto al parque. La posibilidad de que patios internos queden incrustados en el interior de la casa y provean ventilación e iluminación atodos los ambientes circundantes. \n\nLa flexibilidad y amplitud de los ambientes permiten usos diversos, economizando espacios, propios de la versatilidad y velocidad de la vida moderna, provocando espacios acústica y térmicamente aislados sin perder iluminación natural.`,
         valor: 40000,
         moneda: 'USD$',
-        brochure: brochure04,
+        brochure: undefined,
         categoria: { id: 1, descripcion: 'Alquiler temporario'},
         imagenes: [{id: 1, nombre: 'Imagen01', url: imgKube01}, {id: 2, nombre: 'Imagen02', url: imgKube02}, {id: 3, nombre: 'Imagen03', url: imgKube03}, {id: 4, nombre: 'Imagen04', url: imgKube04},
         {id: 5, nombre: 'Imagen05', url: imgKube05}, {id: 6, nombre: 'Imagen06', url: imgKube06}, {id: 7, nombre: 'Imagen07', url: imgKube07}, {id: 8, nombre: 'Imagen08', url: imgKube08},

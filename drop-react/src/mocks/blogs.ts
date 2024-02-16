@@ -12,12 +12,12 @@ export const MockBlogs: Imagen[] =
         id: 1,
         titulo: `¿Qué es la Arquitectura Modular?`,
         subtitulo: undefined,
-        descripcion: `<div className="blog__article__imagen">
-                        <img src="${imgArticulo01_01}" alt="BlogImagen01" width="100%" />
+        descripcion: `<div class="blog__article__imagen">
+                        <img class="imagen__blog" src="${imgArticulo01_01}" alt="BlogImagen01" width="100%" />
                     </div>
         En pocas palabras, una estructura o construcción modular es aquella que ha sido diseñada por partes y construida completamente fuera del sitio (off site), en una fábrica dedicada. El diseño modular implica múltiples etapas simultáneas de diseño y construcción que tienen lugar en la fábrica al mismo tiempo, asegurando la máxima eficiencia de tiempo para proyectos de construcción a gran y menor escala. Generando significativos <strong><i>beneficios</i></strong>, como ahorro de tiempo y dinero.
 
-        En <a className="text-dark" style="font-weight: 600; color: #000!important" href="#/inicio" target="_blank"><u>DROP</u></a>, y como comúnmente se denominan, es a través de módulos, donde cada uno de estos, compone alguno de los varios espacios del proyecto, como baños , cocinas, habitaciones, oficinas, etc, donde pueden ser diseñados de acuerdo a las necesidades exactas de tu proyecto de construcción y producidos en masa en nuestro sitio, antes de ser transportados de forma segura a tu ubicación para una instalación rápida y fácil, con el menor impacto ambiental entre cualquier otro tipo de construcción. 
+        En <a class="text-dark" style="font-weight: 600; " href="#/inicio" target="_blank">DROP</a>, y como comúnmente se denominan, es a través de módulos, donde cada uno de estos, compone alguno de los varios espacios del proyecto, como baños , cocinas, habitaciones, oficinas, etc, donde pueden ser diseñados de acuerdo a las necesidades exactas de tu proyecto de construcción y producidos en masa en nuestro sitio, antes de ser transportados de forma segura a tu ubicación para una instalación rápida y fácil, con el menor impacto ambiental entre cualquier otro tipo de construcción. 
         
         Esto se debe a que la arquitectura modular típicamente toma la forma de módulos como recientemente mencionamos, con cada diseño construido a medida. Cada módulo puede ser fácilmente instalado en cualquier sitio, de acuerdo a las necesidades únicas del cliente. 
         
@@ -26,15 +26,14 @@ export const MockBlogs: Imagen[] =
 
         <h4 clasName="text-dark fw-bolder">Ventajas de la Arquitectura Modular</h4>
         Entonces, ¿por qué elegir la construcción modular? ¿Es mejor que la construcción tradicional? La construcción modular tiene muchas ventajas sobre los métodos tradicionales. A continuación, mencionamos las más destacadas de la arquitectura modular que podrás disfrutar con el diseños flexibles y adaptados de DROP.
-        <div className="blog__article__imagen">
-            <img src="${imgArticulo01_02}" alt="BlogImagen01" width="100%" />
+        <div class="blog__article__imagen">
+            <img class="imagen__blog" src="${imgArticulo01_02}" alt="BlogImagen01" width="100%" />
         </div>
 
         <strong>Velocidad de construcción/ ahorro económico.</strong>
-        Una de las razones más beneficiosas para elegir constricción modular sobre una construcción tradicional es el corto tiempo de ejecución desde el inicio hasta el final. Desde que pactamos la primera reunión con el cliente y el concepto, hasta la finalización de un DROP estándar, el tiempo total es de solo 10-12 semanas, en nuestros <a className="text-dark" style="font-weight: 600; color: #000!important" href="#/inicio/?id=section__modelos" target="_blank"><u>modelos</u></a> estándar. 
+        Una de las razones más beneficiosas para elegir constricción modular sobre una construcción tradicional es el corto tiempo de ejecución desde el inicio hasta el final. Desde que pactamos la primera reunión con el cliente y el concepto, hasta la finalización de un DROP estándar, el tiempo total es de solo 10-12 semanas, en nuestros <a class="text-dark" style="font-weight: 600; " href="#/inicio/?id=section__modelos" target="_blank">modelos</a> estándar. 
         Esto puede reducir el cronograma de finalización total en hasta un 50%. Esto también reduce los costos de mano de obra, financiamiento y supervisión. Para ahorrar aún más tiempo y dinero, casi todas las disciplinas de diseño e ingeniería son parte del proceso de fabricación
         Esto resulta en un proceso fluido y eficiente para garantizar que su proyecto con DROP se complete en un período de tiempo extremadamente corto, ahorrando así, tiempo y dinero.
-
 
         <strong>Escalabilidad y flexibilidad</strong>
         En cualquier momento puedes agregar varios módulos más a tu proyecto. Incluso el proyecto inicial puede incluir una expansión del mismo, en un futuro. Respetando así los momentos y economías de los clientes.
@@ -52,7 +51,7 @@ export const MockBlogs: Imagen[] =
         <strong>Estandarización en el Diseño</strong>
         Cuando diseñas un sitio a gran escala con muchos ocupantes y usuarios, la estandarización es esencial. Quieres poder garantizar el mismo nivel de calidad en todas tus unidades, así como el mismo nivel de funcionalidad y uso. La arquitectura modular es, por definición, completamente estandarizada, asegurando resultados predecibles y consistentes para ti.
 
-        Si necesitas ayuda, no dudes en <a className="text-dark" style="font-weight: 600; color: #000!important" href="#/inicio/?id=section__inversiones" target="_blank"><u>contactarnos</u></a>
+        Si necesitas ayuda, no dudes en <a class="text-dark" style="font-weight: 600; " href="#/contacto" target="_blank">contactarnos</a>
 
         `,
         imagenUrl: imgArticulo01_01,
@@ -65,14 +64,14 @@ export const MockBlogs: Imagen[] =
         id: 2,
         titulo: 'La evolución de la construcción modular en la industria hotelera',
         subtitulo: 'La construcción modular tomó gran protagonismo incluso hasta en las inversiones en hotelería. Hoy destacándose el mundo de alquiler temporario; cabañas ; domos, entre otros, por sus grandes ventajas en rentabilidad y tiempo de construcción',
-        descripcion: `<div className="blog__article__imagen">
-                        <img src="${imgArticulo02_01}" alt="BlogImagen01" width="100%" />
+        descripcion: `<div class="blog__article__imagen">
+                        <img class="imagen__blog" src="${imgArticulo02_01}" alt="BlogImagen01" width="100%" />
                     </div>
         Dada la complejidad de los proyectos de construcción hotelera, una tarea constante para los desarrolladores es reducir costos, mejorar los plazos y disminuir los riesgos en el sitio, todo ello manteniendo la calidad y durabilidad de los edificios.
         Una posible solución es la construcción modular. Con esta técnica, se construyen unidades llamadas "módulos", desarrollados previamente en fábrica. 
         Grandes marcas hoteleras en los Estados Unidos y Europa están comenzando a aprovechar al máximo la construcción modular por sus principales beneficios de ahorro de costos y una finalización más rápida en general. Los proyectos van desde establecimientos de marcas principales de 5 estrellas hasta hoteles boutique más pequeños, todos ellos entre los casos de éxito.
-        Lo anterior nos muestra el gran poder que está tomando este tipo de construcción en las inversiones, pero, no solo es utilizado en aquellas grandes marcas, sino también y en mayor escala, en aquellas personas inversoras, que deciden construir pequeños módulos, con el fin de generar ingresos en la industria <a className="text-dark" style="font-weight: 600; color: #000!important" href="#/inicio/?id=section__inversiones" target="_blank"><u>hotelera</u></a> ( alquileres temporarios, cabañas, domos, etc), y esto es posible gracias a la construcción modular, que permite un recupero de la inversión en tiempos cortos y verdaderos. 
-        Hoy en día hay varias otras opciones de <a className="text-dark" style="font-weight: 600; color: #000!important" href="#/inicio/?id=section__inversiones" target="_blank"><u>inversión</u></a> en arquitectura modular, en DROP estamos para ayudarte y apuntamos a cumplir el sueño de nuestros clientes, por eso para nosotros cada proyecto es personal y hecho a medida según necesidades. 
+        Lo anterior nos muestra el gran poder que está tomando este tipo de construcción en las inversiones, pero, no solo es utilizado en aquellas grandes marcas, sino también y en mayor escala, en aquellas personas inversoras, que deciden construir pequeños módulos, con el fin de generar ingresos en la industria <a class="text-dark" style="font-weight: 600; " href="#/inicio/?id=section__inversiones" target="_blank">hotelera</a> ( alquileres temporarios, cabañas, domos, etc), y esto es posible gracias a la construcción modular, que permite un recupero de la inversión en tiempos cortos y verdaderos. 
+        Hoy en día hay varias otras opciones de <a class="text-dark" style="font-weight: 600; " href="#/inicio/?id=section__inversiones" target="_blank">inversión</a> en arquitectura modular, en DROP estamos para ayudarte y apuntamos a cumplir el sueño de nuestros clientes, por eso para nosotros cada proyecto es personal y hecho a medida según necesidades. 
         
         <strong>Los beneficios de la construcción modular para hoteles</strong>
         La construcción modular ofrece muchas ventajas importantes para los desarrolladores en la industria hotelera. Entre ellas se encuentran:
@@ -106,8 +105,8 @@ export const MockBlogs: Imagen[] =
         subtitulo: undefined,
         descripcion: `En la construcción fuera de sitio, los componentes destinados a la construcción no se fabrican in situ en el lugar de la obra, sino que se producen en una fábrica para luego ser transportados al lugar de construcción y ensamblados lo más rápidamente posible. Es un procedimiento de construcción que implica la planificación, diseño, fabricación, transporte de elementos de construcción fabricados y su ensamblaje en el lugar con gran rapidez y un alto grado de acabado. Este grado de precisión es mucho mejor que la construcción en el sitio.
         Se explican las características básicas, el proceso y características generales acerca de DROP y la construcción fuera del sitio, en este artículo.
-        <div className="blog__article__imagen">
-            <img src="${imgArticulo03_01}" alt="BlogImagen01" width="100%" />
+        <div class="blog__article__imagen">
+            <img class="imagen__blog" src="${imgArticulo03_01}" alt="BlogImagen01" width="100%" />
         </div>
 
         <strong>Características de la Construcción Fuera del Sitio</strong>
@@ -118,8 +117,8 @@ export const MockBlogs: Imagen[] =
         En DROP, somos pioneros en Argentina en construcción modular, y nuestros diseños pueden aprovecharse al trabajar desde una plataforma BIM, permitiendo una visualización para evaluar rendimiento energético, aislamiento e identificar medidas potenciales con eficiencia de costos. La construcción modular se beneficia de esta tecnología, donde el proceso ya es una colaboración de sistemas y materiales con parámetros físicos calculables.
         Esto ofrece oportunidades de diseño ilimitadas, ya que las unidades modulares pueden adaptarse a la estética de cualquier edificio existente.
         En resumen, los sistemas de construcción modular tienen ventajas sobre la construcción tradicional, que, aunque esta última es la más conocida por la mayoría, presenta deficiencias en términos de tiempo, eficiencia de materiales, costos, ahorro de recursos y reutilización.
-        Si quieres conocer más sobre construcción modular, podes seguir leyendo nuestro artículo sobre <a className="text-dark" style="font-weight: 600; color: #000!important" href="#/blog/?id=1" target="_blank">¿Qué es la Arquitectura Modular? Y sus ventajas.</a> 
-        ¡Cualquiera sea tu consulta, <a className="text-dark" style="font-weight: 600; color: #000!important" href="#/contacto" target="_blank"><u>contáctanos</u></a> ! Estamos para ayudarte.
+        Si quieres conocer más sobre construcción modular, podes seguir leyendo nuestro artículo sobre <a class="text-dark" style="font-weight: 600; " href="#/blog/?id=1" target="_blank">¿Qué es la Arquitectura Modular? Y sus ventajas.</a> 
+        ¡Cualquiera sea tu consulta, <a class="text-dark" style="font-weight: 600; " href="#/contacto" target="_blank">contáctanos</a> ! Estamos para ayudarte.
 
         `,
         imagenUrl: imgArticulo03_01,

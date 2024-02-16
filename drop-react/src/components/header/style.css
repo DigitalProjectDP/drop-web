@@ -4,6 +4,11 @@
 
 .header__logo{
     filter: drop-shadow(1px 1px 1px #000);
+    border: 0;
+}
+
+.header__logo:focus{
+    box-shadow: 0;
 }
 
 a.navbar-toggler{

@@ -39,11 +39,15 @@
 .proyectos__container  .owl-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .card__imagen__proyecto{
     object-fit: cover!important;
+}
+
+.proyectos__carousel__modal .owl-nav{
+    top: 45%;
 }
 
 @media screen and (max-width: 992px){
