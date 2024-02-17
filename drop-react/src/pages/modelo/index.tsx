@@ -70,6 +70,8 @@ export default function ModeloPage() {
 
     const renderListModelos = () => modelo?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
     const renderImagenes = () => modelo?.imagenes.map((v, i) => <img src={v.url} key={i}></img>)
+    const renderImagenesCover = () => modelo?.imagenes.map((v, i) => <img className="img__cover" src={v.url} key={i}></img>)
+    const renderImagenesFill = () => modelo?.imagenes.map((v, i) => <img className ="img__fill" src={v.url} key={i}></img>)
     return (
         <div>
             <div className="row">
@@ -92,8 +94,24 @@ export default function ModeloPage() {
                     </div>
                 </section>
                 <section className="container-fluid my-5">
-                    {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
+                    {/* {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
                         {renderImagenes()} 
+                    </OwlCarousel> : ''}
+                    {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
+                        {renderImagenesCover()} 
+                    </OwlCarousel> : ''}
+                    {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
+                        {renderImagenesFill()} 
+                    </OwlCarousel> : ''}
+                    {modelo?.imagenes? <OwlCarousel className='modelos__container wide__container' loop {...options}>
+                        {renderImagenesFill()} 
+                    </OwlCarousel> : ''}
+                    <br />
+                    {modelo?.imagenes? <OwlCarousel className='modelos__container wide__container' loop {...options}>
+                        {renderImagenesCover()} 
+                    </OwlCarousel> : ''} */}
+                    {modelo?.imagenes? <OwlCarousel className='modelos__container wide__container' loop {...options}>
+                        {renderImagenesCover()} 
                     </OwlCarousel> : ''}
                 </section>
 

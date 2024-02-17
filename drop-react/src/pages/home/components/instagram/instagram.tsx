@@ -3,24 +3,43 @@ import { useEffect, useState } from 'react';
 import { InstagramPost } from '../../../../interfaces/instagramPost';
 import { GetAllInstagramPosts } from '../../../../services/instagramService';
 import instagramLogo from '../../../../media/logo/instagram_logo.jpg'
+import dropLogo from "../../../../media/img/logo512.png"
 
 export default function HomeInstagram() {
     const [instagramPosts, setInstagramPosts] = useState<InstagramPost[]>();
+    const [width, setWidth] = useState<number>(0);
+    const [isMobile, setIsMobile] = useState<boolean>(false);
 
     useEffect(() => {
         fetchInstagramPosts();
-    }, []);
+        let windowDimension = getWindowDimensions()
+        setWidth(windowDimension?.width);
+    }, [width]);
 
     const fetchInstagramPosts = async () => {
         let vInstagramPosts = await GetAllInstagramPosts();
+        console.log(vInstagramPosts)
         setInstagramPosts(vInstagramPosts.slice(0,6));
     }
     
+    function getWindowDimensions() {
+        const { innerWidth: width, innerHeight: height } = window;
+        return {
+            width,
+            height
+        };
+    }
+
+    const imageOnLoadHandler = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {        
+        event.currentTarget.src = dropLogo;
+    };
+
     const renderInstagramPosts = () => instagramPosts?.map((v, i) => <a id={"instagramPost_"+i.toString()} key={i} href={v?.permalink} target="_blank" className="">
-        {v?.permalink?.includes("reel")?
-        <video className="instagram__card" src={v?.media_url} autoPlay muted loop></video>:
-        <img className="instagram__card" src={v?.media_url}/>}
+        {v?.media_type! == "VIDEO" && width>768?
+        <video playsInline className="instagram__card" src={v?.media_url} autoPlay muted loop></video>:
+        <img className={`instagram__card instagram__${v?.media_type}`} src={v?.media_url}  onError={imageOnLoadHandler}/>}
     </a>)
+
     return (
     <section className="section__instagram d-flex justify-content-center align-items-center flex-column mb-5">
         <div className="instagram__header">

@@ -117,8 +117,13 @@
     background-color: rgba(0,0,0,0.8);
 }
 
+.modal__proyecto{
+    min-width: 65vw;
+}
+
 .modal__proyecto .modal-dialog{
     height: 100vh;
+    min-width: 65vw;
     max-height: 90vh;
     display: flex;
     justify-content: center;

@@ -1,6 +1,7 @@
 import "./style.css";
 import { useEffect, useState } from "react";
 import { Imagen } from "../../interfaces/imagen";
+import bannerGif from "../../media/img/home/banner.gif"
 
 interface InfoProps{
     info?: Imagen;
@@ -12,17 +13,21 @@ export default function CardBanner({info}: InfoProps){
     useEffect(() => {
         setInfo(info);
         const bannerVideo = document.getElementById("bannerVideo") as HTMLMediaElement;
+        bannerVideo.src = infoBanner?.imagenUrl || "https://placehold.co/640x360?text=...";
         bannerVideo.muted = true;
-        bannerVideo.play();
+        setTimeout(() => {
+            bannerVideo.pause();
+            bannerVideo.play();
+        }, 500);
     }, []);
 
     return(
-        <div className='banner__container' style={{width: "100%"}}>     
-            <video id="bannerVideo" className='banner__video' autoPlay muted loop src={infoBanner?.imagenUrl} controls={false} ></video>
-            <div className='banner__caption'>
-                <h2>{infoBanner?.titulo}</h2>                                   
-                <h3>{infoBanner?.descripcion}</h3>
-            </div>                  
+        <div className='banner__container fill' style={{width: "100%"}}>  
+            <div className="video-overlay no-click fill hide-for-medium"></div>
+            <video id="bannerVideo" playsInline preload="yes" className='banner__video fill no-click w-100' autoPlay muted loop controls={false}>
+                <source src={infoBanner?.imagenUrl} type="video/mp4"/>
+            </video>
+            <div className="section-bg-overlay absolute fill item"></div>
         </div>
     )
 }
