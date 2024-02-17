@@ -106,13 +106,13 @@ export default function Contacto({data, isModal}: ConsultaProps){
                 <IoMail className="mx-3" size={24}></IoMail>
                 <div>
                     <h5>Email</h5>
-                    <p>drop.modulos@gmail.com</p>
+                    <p>ventas@dropmodular.com</p>
                 </div>
               </li>
             </ul>
             <div className="d-flex flex-row gap-1 justify-content-center py-4 mt-4">
               <a href={instagram} target="_blank"><FaInstagram className="contacto__icon mx-2" size={32}></FaInstagram></a>
-              <a href={instagram} target="_blank"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
+              <a href="https://www.facebook.com/profile.php?id=100084131770712&mibextid=LQQJ4d" target="_blank"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
               <a href={instagram} target="_blank"><FaTiktok className="contacto__icon mx-2" size={32}></FaTiktok></a>
             </div>
           </div>:''}
