@@ -6,6 +6,10 @@
     background: #FFF!important;
 }
 
+video::-webkit-media-controls {
+    display:none !important;
+}
+
 .item{
     min-height: 75vh;
     background-repeat: no-repeat;
