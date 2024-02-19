@@ -55,8 +55,8 @@ export default function TopBanner(){
     const renderBanners = () => banners?.map((v, i) => <CardBanner info={v} key={i}></CardBanner>)
 
     return (
-        <section className='top-banner w-100' style={{width: "100%"}}>
-        {/* <section className='top-banner' style={{backgroundImage: `url(${bannerGif})`, width: "100%"}}> */}
+        // <section id="topBanner" className='top-banner w-100' style={{width: "100%"}}>
+        <section id="topBanner" className='top-banner' style={{backgroundImage: `url(${bannerGif})`, width: "100%"}}>
             {renderBanners()} 
             {/* {width>768? renderBanners(): ''}  */}
             {/* {banners? <OwlCarousel className='banner__carousel owl-theme' loop {...options}>

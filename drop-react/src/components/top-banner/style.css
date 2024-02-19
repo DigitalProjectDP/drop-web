@@ -7,11 +7,11 @@
     margin-bottom: 7rem;
 }
 
-@media screen and (min-width: 960px){ 
+/* @media screen and (min-width: 960px){ 
     .top-banner{
        background-image: none!important;
     }
-}
+} */
 
 @media screen and (max-width: 1000px){ 
     .top-banner{

@@ -12,19 +12,39 @@ export default function CardBanner({info}: InfoProps){
 
     useEffect(() => {
         setInfo(info);
+        const topBanner = document.getElementById("topBanner") as HTMLMediaElement;
         const bannerVideo = document.getElementById("bannerVideo") as HTMLMediaElement;
+
         bannerVideo.src = infoBanner?.imagenUrl || "https://placehold.co/640x360?text=...";
         bannerVideo.muted = true;
+        
         setTimeout(() => {
-            //bannerVideo.pause();
             bannerVideo.play();
+            bannerVideo?.addEventListener('playing', function(){
+                console.log("video is playing")
+                topBanner.style.background = `transparent`;
+                bannerVideo.style.display = "block"
+            })
+
+            // bannerVideo.play()
+            // .then(() => {console.log("video ok")})
+            // .catch((error) => {                
+            //     console.log(error)
+            // });
+          
         }, 300);
     }, []);
+    
+    const videoOnLoadHandler = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {        
+        const topBanner = document.getElementById("topBanner") as HTMLMediaElement;
+        topBanner.style.background = `url(${bannerGif})`
+        //event.currentTarget.src = dropLogo;
+    };
 
     return(
         <div className='banner__container fill' style={{width: "100%"}}>  
             <div className="video-overlay no-click fill hide-for-medium"></div>
-            <video id="bannerVideo" playsInline preload="auto" className='banner__video fill no-click w-100' muted loop controls={true}>
+            <video id="bannerVideo" playsInline muted loop className='banner__video fill no-click w-100' controls={false}   onError={() => videoOnLoadHandler}>
                 <source src={infoBanner?.imagenUrl} type="video/mp4"/>
             </video>
             <div className="section-bg-overlay absolute fill item"></div>

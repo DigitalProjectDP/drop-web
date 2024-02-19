@@ -18,7 +18,6 @@ export default function HomeInstagram() {
 
     const fetchInstagramPosts = async () => {
         let vInstagramPosts = await GetAllInstagramPosts();
-        console.log(vInstagramPosts)
         setInstagramPosts(vInstagramPosts.slice(0,6));
     }
     
