@@ -106,7 +106,7 @@ export default function Contacto({data, isModal}: ConsultaProps){
                 <IoMail className="mx-3" size={24}></IoMail>
                 <div>
                     <h5>Email</h5>
-                    <p>ventas@dropmodular.com</p>
+                    <p><a href="mailto:ventas@dropmodular.com" target="_blank">ventas@dropmodular.com</a></p>                    
                 </div>
               </li>
             </ul>

@@ -29,7 +29,7 @@ export default function CardModelo({data}: ModelosProps) {
                 <img className="card__imagen__modelo" src={modelo?.imagenes[0].url} alt="LogoModelo"/>
 
                 <div className="card__overlay__modelo d-flex flex-column gap-2 justify-content-between text-center">
-                    <h6 className="card__titulo__modelo">
+                    <h6 className="card__titulo__modelo notranslate">
                         {modelo?.nombre}
                     </h6>   
                     <ul className="card__caracteristica__modelo p-0 d-flex flex-column justify-content-center align-items-center text-center">

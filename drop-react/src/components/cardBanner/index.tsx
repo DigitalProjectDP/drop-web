@@ -1,7 +1,7 @@
 import "./style.css";
 import { useEffect, useState } from "react";
 import { Imagen } from "../../interfaces/imagen";
-import bannerGif from "../../media/img/home/banner.gif"
+import banner from "../../media/img/home/banner.jpg"
 
 interface InfoProps{
     info?: Imagen;
@@ -37,14 +37,14 @@ export default function CardBanner({info}: InfoProps){
     
     const videoOnLoadHandler = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {        
         const topBanner = document.getElementById("topBanner") as HTMLMediaElement;
-        topBanner.style.background = `url(${bannerGif})`
+        topBanner.style.background = `url(${banner})`
         //event.currentTarget.src = dropLogo;
     };
 
     return(
         <div className='banner__container fill' style={{width: "100%"}}>  
             <div className="video-overlay no-click fill hide-for-medium"></div>
-            <video id="bannerVideo" playsInline muted loop className='banner__video fill no-click w-100' controls={false}   onError={() => videoOnLoadHandler}>
+            <video id="bannerVideo" playsInline muted loop className='banner__video fill no-click w-100' controls={false} onError={() => videoOnLoadHandler}>
                 <source src={infoBanner?.imagenUrl} type="video/mp4"/>
             </video>
             <div className="section-bg-overlay absolute fill item"></div>

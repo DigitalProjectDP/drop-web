@@ -46,6 +46,12 @@ h1,h2,h3,h4,h5,h6{
     background-color: rgba(0, 0, 0, 0.0);
 }
 
+@media screen and (min-width: 999px){
+    #bannerVideo{
+        display:block;
+    }
+}
+
 @media screen and (max-width: 768px){
     .item{
         min-height: 35vh;

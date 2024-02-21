@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { GetAllImagesByType } from "../../services/imagenService";
 import { Imagen } from "../../interfaces/imagen";
 import { MockBanners } from "../../mocks/banners";
-import bannerGif from "../../media/img/home/bannerNew.gif"
+import banner from "../../media/img/home/banner.jpg"
 
 export default function TopBanner(){
     const [banners, setBanners] = useState<Imagen[]>();
@@ -56,7 +56,7 @@ export default function TopBanner(){
 
     return (
         // <section id="topBanner" className='top-banner w-100' style={{width: "100%"}}>
-        <section id="topBanner" className='top-banner' style={{backgroundImage: `url(${bannerGif})`, width: "100%"}}>
+        <section id="topBanner" className='top-banner' style={{backgroundImage: `url(${banner})`, width: "100%"}}>
             {renderBanners()} 
             {/* {width>768? renderBanners(): ''}  */}
             {/* {banners? <OwlCarousel className='banner__carousel owl-theme' loop {...options}>

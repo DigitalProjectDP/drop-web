@@ -1,4 +1,5 @@
 import Contacto from '../../components/contacto'
+import Copyright from '../../components/copyright'
 import Footer from '../../components/footer'
 import Header from '../../components/header'
 import HeaderSpace from '../../components/header-space'

@@ -37,7 +37,7 @@ export default function CardProyecto({data, openModal, setProyectoId}: Proyectos
             <img className="card__imagen__proyecto" src={proyecto?.imagenes[0].url} alt="LogoProyecto"/>
 
             <div className="card__overlay__proyecto flex-column gap-2 justify-content-start">
-                <h5 className="card__titulo__proyecto">
+                <h5 className="card__titulo__proyecto notranslate">
                     {proyecto?.nombre}
                 </h5> 
                 <h6>{proyecto?.categoria?.descripcion}</h6>  

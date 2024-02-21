@@ -85,7 +85,7 @@ export const MockModelos: Modelo[] = [
     {
         id: 3,
         nombre: 'Dosdor',
-        descripcion: `2 dormitorios | 6 módulos.\n116 m2 totales.\n70 m2 cubiertos + 46 m2 deck.\n\nLa casa que siempre quisiste.\n\nFuncional a una vida funcional, abierta al parque y amplia. \n\nSe puede personalizar según intenciones del cliente , implantación y orientación del terrino.\n\nComo todos nuestros modelos, puede ser fácilmente ampliable para sumar ambientes independientes o rediseñarlo interiormente, según deseo del cliente. \n\nEste modelo permite al usuario elegir distintas tipologias de diseño. `,
+        descripcion: `2 dormitorios | 6 módulos.\n105 m2 totales.\n70 m2 cubiertos + 35 m2 deck.\n\nLa casa que siempre quisiste.\n\nFuncional a una vida funcional, abierta al parque y amplia. \n\nSe puede personalizar según intenciones del cliente , implantación y orientación del terreno.\n\nComo todos nuestros modelos, puede ser fácilmente ampliable para sumar ambientes independientes o rediseñarlo interiormente, según deseo del cliente. \n\nEste modelo permite al usuario elegir distintas tipologias de diseño. `,
         valor: 40000,
         moneda: 'USD$',
         brochure: brochure03,

@@ -61,10 +61,10 @@ export default function Header({opacity}: HeaderProps) {
             <a className="nav-link" href="#/inicio">Inicio</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/inicio/?id=section__modelos" onClick={redirect} >Modelos</a>
+            <a className="nav-link" href="#/inicio/?id=section__modelos" >Modelos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/inicio/?id=section__inversiones" onClick={redirect}>Inversiones</a>
+            <a className="nav-link" href="#/inicio/?id=section__inversiones">Inversiones</a>
           </li>
 
           <li className="d-none d-xl-flex w-25 justify-content-center align-items-center">
