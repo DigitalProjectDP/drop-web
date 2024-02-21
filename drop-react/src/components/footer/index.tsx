@@ -33,7 +33,7 @@ const [telefono, setTelefono] = useState('');
               <div className="d-flex flex-row gap-1 justify-content-center pt-2">
                 <a href={instagram} target="_blank"><FaInstagram className="footer__icon mx-2" size={24}></FaInstagram></a>
                 <a href="https://www.facebook.com/profile.php?id=100084131770712&mibextid=LQQJ4d" target="_blank"><FaFacebook className="footer__icon mx-2" size={24}></FaFacebook></a>
-                <a href={instagram} target="_blank"><FaTiktok className="footer__icon mx-2" size={24}></FaTiktok></a>
+                <a href="https://www.tiktok.com/@drop.modular" target="_blank"><FaTiktok className="footer__icon mx-2" size={24}></FaTiktok></a>
               </div>
           </div>
 

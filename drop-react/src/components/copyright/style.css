@@ -1,28 +1,25 @@
 .copyright {
     display: block;
     overflow: hidden;
-    padding: 0.5rem 0 0.5rem;
-    color: var(--light-color);
-    background-color: rgba(0, 0, 0, 0.2);
-    font-family: var(--font-secondary);
-    color: var(--light-color);
-}
-
-.copyright span {
-    color: var(--copyright-span-color);
+    padding: 0.25rem 0 0.25rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    color: #000;
 }
 
 .floatLeft{
     float: left;
     display: flex;
-    line-height: 40px;
+    line-height: 20px;
     align-items: center;
 }
 
 .floatLeft p, .floatRight p{
-    line-height: 40px;
+    line-height: 20px;
     margin: 0;
     padding-left: 0.5rem;
+    font-size: 10px;
+    color: rgba(255,255,255,0.5);
 }
 
 .floatRight{    
@@ -33,16 +30,31 @@
     color: #FFF;
     background-color: black;
     border: 1px solid grey;
-    padding: 0.5rem;
+    padding: 0.3rem 0.5rem;
     font-weight: 600;
+    font-size: 8px;
     text-decoration: none;
-    line-height: 20px;
+    line-height: 10px;
 }
 
 .logo__dp:hover{
     cursor: pointer;
     background-color: white;
     color: black;
+}
+
+@media screen and (min-width: 1600px){
+    .copyright {
+        font-size: 14px;
+    }
+
+    .floatLeft p, .floatRight p{
+        font-size: 12px;
+    }
+
+    .logo__dp{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 479px){
@@ -56,13 +68,17 @@
 
     .floatLeft{
         margin-bottom: 0!important;
-        line-height: 40px;
+        line-height: 20px;
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .copyright {
         font-size: 14px;
+    }
+
+    .floatLeft p, .floatRight p{
+        font-size: 12px;
     }
 }
 

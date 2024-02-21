@@ -25,13 +25,6 @@ export default function CardBanner({info}: InfoProps){
                 topBanner.style.background = `transparent`;
                 bannerVideo.style.display = "block"
             })
-
-            // bannerVideo.play()
-            // .then(() => {console.log("video ok")})
-            // .catch((error) => {                
-            //     console.log(error)
-            // });
-          
         }, 300);
     }, []);
     

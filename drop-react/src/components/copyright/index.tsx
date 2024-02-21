@@ -5,7 +5,7 @@ export default function Copyright(){
         <div className="copyright">
             <div className="container">
                 <div className="floatLeft fw-bold">
-                    © DROP <p className="d-none d-md-block fw-light ">Todos Los Derechos Reservados</p>
+                    © DROP <p className="d-none d-md-block fw-light ">Todos Los Derechos Reservados.</p><p className="fw-light"> N° Referencia web 1781810</p>
                 </div>
                 <div className="floatRight d-flex gap-2">
                     <p className="d-none d-md-block">Desarrollado por:</p>

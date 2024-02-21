@@ -113,7 +113,7 @@ export default function Contacto({data, isModal}: ConsultaProps){
             <div className="d-flex flex-row gap-1 justify-content-center py-4 mt-4">
               <a href={instagram} target="_blank"><FaInstagram className="contacto__icon mx-2" size={32}></FaInstagram></a>
               <a href="https://www.facebook.com/profile.php?id=100084131770712&mibextid=LQQJ4d" target="_blank"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
-              <a href={instagram} target="_blank"><FaTiktok className="contacto__icon mx-2" size={32}></FaTiktok></a>
+              <a href="https://www.tiktok.com/@drop.modular" target="_blank"><FaTiktok className="contacto__icon mx-2" size={32}></FaTiktok></a>
             </div>
           </div>:''}
 

@@ -94,7 +94,7 @@ export const MockModelos: Modelo[] = [
         {id: 5, nombre: 'Imagen05', url: imgDosdor05}, {id: 6, nombre: 'Imagen06', url: imgDosdor06}, {id: 7, nombre: 'Imagen07', url: imgDosdor07}, {id: 8, nombre: 'Imagen08', url: imgDosdor08},
         {id: 9, nombre: 'Imagen09', url: imgDosdor09}, {id: 10, nombre: 'Imagen10', url: imgDosdor10}, {id: 11, nombre: 'Imagen11', url: imgDosdor11}, {id: 12, nombre: 'Imagen12', url: imgDosdor12}
         ],
-        caracteristicas: [{id: 1, descripcion: '1 Dormitorio | 116 m2'},{id: 2, descripcion: 'Personalizable'}]
+        caracteristicas: [{id: 1, descripcion: '1 Dormitorio | 105 m2'},{id: 2, descripcion: 'Personalizable'}]
     },
     {
         id: 4,
