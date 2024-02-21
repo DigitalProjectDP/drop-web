@@ -31,7 +31,7 @@ export default function ModeloPage() {
         responsiveClass: true,
         nav: true,
         dots: true,
-        autoplay: true,
+        autoplay: false,
         navContainerClass: `owl-nav`,
         navClass: ['owl-prev','owl-next'],
         dotsClass: `owl-dots customDots`,
@@ -48,9 +48,21 @@ export default function ModeloPage() {
             900:{
                 items:3
             },
+            1200:{
+                items:4
+            },
         }
     };
 
+    const viewBrochure = async () => {
+        //const url = edificio?.archivoPDF?.url?.includes('https://')? edificio?.archivoPDF?.url: `https://www.estudiomayocchi.com/static/media/files/${edificio?.archivoPDF?.url}`        
+        const url = modelo?.brochure!;
+        let alink = document.createElement("a");
+        alink.href = url;
+        alink.target = "_blank";
+        alink.rel = "noreferrer"
+        alink.click();
+    }
       
     const htmlString = () => (
         <div dangerouslySetInnerHTML={{ __html: modelo?.descripcion || '' }} />
@@ -58,6 +70,8 @@ export default function ModeloPage() {
 
     const renderListModelos = () => modelo?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
     const renderImagenes = () => modelo?.imagenes.map((v, i) => <img src={v.url} key={i}></img>)
+    const renderImagenesCover = () => modelo?.imagenes.map((v, i) => <img className="img__cover" src={v.url} key={i}></img>)
+    const renderImagenesFill = () => modelo?.imagenes.map((v, i) => <img className ="img__fill" src={v.url} key={i}></img>)
     return (
         <div>
             <div className="row">
@@ -73,15 +87,31 @@ export default function ModeloPage() {
                     <div className="section__descripcion">
                         {modelo?.descripcion? htmlString(): ''}
                     </div>
-                    <p className="py-3 fw-bold ">{modelo?.moneda} {modelo?.valor}</p>
-                    <div className="d-flex justify-content-around py-2">
-                        <button className="button__primary">Brochure</button>
+                    {/* <p className="py-3 fw-bold ">{modelo?.moneda} {modelo?.valor}</p> */}
+                    <div className="d-flex justify-content-around py-5">
+                        {modelo?.brochure? <button className="button__primary" onClick={viewBrochure}>Brochure</button>: ''}
                         <button className="button__primary" data-bs-toggle="modal" data-bs-target="#modal-contacto-modelo">Contacto</button>
                     </div>
                 </section>
                 <section className="container-fluid my-5">
-                    {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
+                    {/* {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
                         {renderImagenes()} 
+                    </OwlCarousel> : ''}
+                    {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
+                        {renderImagenesCover()} 
+                    </OwlCarousel> : ''}
+                    {modelo?.imagenes? <OwlCarousel className='modelos__container' loop {...options}>
+                        {renderImagenesFill()} 
+                    </OwlCarousel> : ''}
+                    {modelo?.imagenes? <OwlCarousel className='modelos__container wide__container' loop {...options}>
+                        {renderImagenesFill()} 
+                    </OwlCarousel> : ''}
+                    <br />
+                    {modelo?.imagenes? <OwlCarousel className='modelos__container wide__container' loop {...options}>
+                        {renderImagenesCover()} 
+                    </OwlCarousel> : ''} */}
+                    {modelo?.imagenes? <OwlCarousel className='modelos__container wide__container' loop {...options}>
+                        {renderImagenesCover()} 
                     </OwlCarousel> : ''}
                 </section>
 

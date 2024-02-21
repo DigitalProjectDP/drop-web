@@ -62,8 +62,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 6,
     titulo: "VERDE",
-    descripcion: `Generamos el mínimo impacto posible en el lugar de implantación ya que no se debe realizar ningún movimiento de suelo, a lo sumo se trabaja 1 semana en el lugar.
-    Por otro lado, la aislación de nuestros paneles permite generar un ahorro de energía sustancial.`,
+    descripcion: `Generamos el mínimo impacto posible en el lugar de implantación, ya que no conlleva movimiento de suelo. Además, la aislación de nuestros paneles permite generar un ahorro de energía sustancial.`,
     imagen: imgBeneficio6,
     caracteristicas: [
       { id: 1, descripcion: "Altos estándares de calidad y seguridad." },

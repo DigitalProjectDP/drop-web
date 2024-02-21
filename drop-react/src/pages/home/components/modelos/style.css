@@ -29,10 +29,18 @@
 .card__container__modelos{
     position: relative;
     text-align: start;
+    height: 14rem;
+    max-width: 650px;
+}
+
+.card__container__modelos>div{
+    height: 100%;
 }
 
 .card__imagen__modelo{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card__container__modelos:hover{
@@ -65,7 +73,7 @@
     /* background: rgba(50, 70, 150, 0.6); */
     /* background: rgba(200, 200, 200, 0.7);     */
     /* background: linear-gradient(to right, rgba(200,200,200,0.5), rgba(200,200,200,0.7)); */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
     backdrop-filter: blur(2px);
     color: #f1f1f1;
     width: 100%;
@@ -77,7 +85,7 @@
     font-size: 20px;
     padding: 0.5rem 0;    
     text-align: center;
-    z-index: 100;
+    z-index: 2;
     overflow-y: scroll;
 }
 
@@ -96,4 +104,29 @@
     font-size: 0.8rem;
     margin: 0;
     padding: 0 1rem;
+}
+
+@media screen and (max-width: 1280px){
+    .modelos__container{     
+        padding: 0;
+    }
+
+    .card__overlay__modelo {
+        height: 5rem;
+    }
+
+    .card__caracteristica__modelo li{
+        font-size: 12px!important;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .card__imagen__modelo{        
+        object-fit: contain;
+        object-position: bottom;
+    }
+    
+    .card__container__modelos{
+        height: 100%;
+    }
 }

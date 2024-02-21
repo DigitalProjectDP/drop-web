@@ -116,7 +116,11 @@
         text-align: center;
     }
 }
-@media screen and (max-width: 479px){ 
+@media screen and (max-width: 479px){     
+    .about{
+        padding: 25px 0;
+    }
+
     .sectionTitle span {
         margin-bottom: 15px;
     }
@@ -155,6 +159,12 @@
         
     .imagen{
         min-height: 200px;
+    }
+}
+
+@media screen and (max-width: 769px){    
+    .section__descripcion{
+        padding-right: 0!important;
     }
 }
 

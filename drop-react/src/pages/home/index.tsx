@@ -14,6 +14,7 @@ import HomeProyectos from './components/proyectos/proyectos';
 import WhatsappButton from '../../components/whatsapp-button';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import Copyright from '../../components/copyright';
 
 export default function Home() {
   const { search } = useLocation();  
@@ -25,9 +26,9 @@ export default function Home() {
     setTimeout(() => {
       document.querySelector(`#${id}`)?.scrollIntoView({
           behavior: 'smooth',
-          block: 'center',
+          block: 'start',          
         });
-    }, 100);
+    }, 0);
   },[id])
   
 

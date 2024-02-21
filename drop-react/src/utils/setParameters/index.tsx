@@ -15,8 +15,8 @@ export const SetParameters = async () => {
   let logoHeader = '/static/media/Mateicos-48.b55486906fe20fa7bfe0.png';
   let logoFooter = '/static/media/Mateicos-45.9feed3e0ab85f3d03583.png';
   let nombre = 'Drop';
-  let correo = 'maximiliano_hermosilla@hotmail.com';
-  let instagram = 'https://www.instagram.com/drop.houses/';
+  let correo = 'ventas@dropmodular.com;gestion@dropmodular.com;maximiliano_hermosilla@hotmail.com';
+  let instagram = 'https://www.instagram.com/drop.modular/';
   let whatsapp = '1132357543';
   let telefono = '1132357543';
   

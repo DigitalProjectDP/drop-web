@@ -32,8 +32,13 @@
 
 .timeline__container h5{
     font-weight: 600;
-    padding-bottom: 3rem;
     padding-right: 3rem;
+    height: 100%;
+}
+
+.timeline__titulo{
+    min-height: 63px;
+    margin-bottom: 3rem;
 }
 
 .timeline__container p{
@@ -66,10 +71,21 @@
     }
 }
 
+@media screen and (max-width:1281px){    
+    .timeline__titulo{
+        margin-bottom: 1.5rem;
+    }
+}
+
 @media screen and (max-width:1025px){
     .timeline__arrow::after{
         top: 4.5rem;
     }
+    
+    .timeline__container h5{
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (max-width:732px){
@@ -98,5 +114,10 @@
 
     .timeline__container{
         margin: 1rem!important;
+    }
+
+    .timeline__titulo{
+        min-height: 50px;
+        margin-bottom: 0;
     }
 }

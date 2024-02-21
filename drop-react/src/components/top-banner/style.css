@@ -1,10 +1,43 @@
 .top-banner{
-    /* margin-top: 70px; */
-    min-height: 50vh;
+    display: block;
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    margin-bottom: 7rem;
+}
+
+/* @media screen and (min-width: 960px){ 
+    .top-banner{
+       background-image: none!important;
+    }
+} */
+
+@media screen and (max-width: 1000px){ 
+    .top-banner{
+        min-height: 50vw;
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px){ 
     .top-banner{
-        min-height: 10vh;
+        min-height: 60vw;
+    }
+
+    .banner__carousel{
+        display: none!important;
+        visibility: hidden!important;
+        z-index: -100!important;
+    }
+
+    .top-banner{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 361px){ 
+    .top-banner{
+        min-height: 200px;
     }
 }

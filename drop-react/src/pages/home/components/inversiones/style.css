@@ -101,7 +101,7 @@
 
 
 @media screen and (max-width: 479px){
-    .tag__container{
+    .card__descripcion{
         display: none;
     }
 }

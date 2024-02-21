@@ -12,7 +12,6 @@ export default function HomeInversiones() {
   const listInfo = MockInversiones;
 
   const openModal = (nombre: string) => {
-    console.log(nombre)
     setInversionNombre(nombre);
     const buttonModal = document.getElementById("buttonModalContacto");
     //buttonModal?.click();
@@ -38,18 +37,7 @@ export default function HomeInversiones() {
           <Modal.Body>
             {inversionNombre?<Contacto data={`Hola. Quiero recibir más información sobre ${inversionNombre}`} isModal={true}></Contacto>:''}
           </Modal.Body>        
-        </Modal>
-      {/* <div className="modal fade" id="modal-contacto" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog modal-lg">
-                <div className="modal-content">  
-                    <button type="button" className="btn-close button__close" data-bs-dismiss="modal" aria-label="Close"></button>          
-                    <div className="modal-body p-0 text-align-start">
-                      {inversionNombre?<Contacto data={`Hola. Quiero recibir más información sobre ${inversionNombre}`} isModal={true}></Contacto>:''}
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button type="button" id="buttonModalContacto" className="d-none" data-bs-toggle="modal" data-bs-target="#modal-contacto"></button>             */}        
+        </Modal>    
     </section>
   )
 }

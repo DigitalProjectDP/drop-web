@@ -5,15 +5,16 @@ import { useNavigate } from 'react-router';
 
 interface ProyectosProps{
     data?: Modelo;
+    openModal?: any;
     setProyectoId: any;
 }
 
-export default function CardProyecto({data, setProyectoId}: ProyectosProps) {
+export default function CardProyecto({data, openModal, setProyectoId}: ProyectosProps) {
     const [proyecto, setProyecto] = useState(data);
 
     useEffect(() => {
         setProyecto(data);
-    }, []);
+    }, [data]);
     
     const navigate = useNavigate();
 
@@ -25,14 +26,18 @@ export default function CardProyecto({data, setProyectoId}: ProyectosProps) {
         setProyectoId(proyecto?.id);
     }
 
+    const callback = () => {
+        openModal(data);
+    }
+
     const renderListProyectos = () => proyecto?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
 
     return(
-        <div className="d-flex flex-column gap-2 align-items-center card__container__proyectos" onClick={callbackProyectoId}>
+        <div className="d-flex flex-column gap-2 align-items-center card__container__proyectos" onClick={callback}>
             <img className="card__imagen__proyecto" src={proyecto?.imagenes[0].url} alt="LogoProyecto"/>
 
             <div className="card__overlay__proyecto flex-column gap-2 justify-content-start">
-                <h5 className="card__titulo__proyecto">
+                <h5 className="card__titulo__proyecto notranslate">
                     {proyecto?.nombre}
                 </h5> 
                 <h6>{proyecto?.categoria?.descripcion}</h6>  

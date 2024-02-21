@@ -26,5 +26,6 @@
 }
 
 .link__blog:hover{
-    color: var(--second-color);
+    color: var(grey);
+    opacity: 0.5;
 }

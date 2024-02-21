@@ -18,7 +18,7 @@ export const GetAllInstagramPosts = async (): Promise<InstagramPost[]> => {
     // if (ENV_DEMO){
     //     return MockInstagramPosts;        
     // }
-    const url = `${BASE_URL}${USER_ID}/media?access_token=${ACCESS_TOKEN}&fields=media_url,permalink`;
+    const url = `${BASE_URL}${USER_ID}/media?access_token=${ACCESS_TOKEN}&fields=media_url,permalink,media_type`;
     try {
         const response = await fetch(url, {
             method: "GET",

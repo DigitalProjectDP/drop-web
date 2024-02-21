@@ -1,7 +1,7 @@
 import './style.css';
 import imgLogo from "../../media/logo/logo_drop.png";
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 interface HeaderProps{
   opacity?: boolean;
@@ -10,6 +10,8 @@ interface HeaderProps{
 export default function Header({opacity}: HeaderProps) {
   const [logo, setLogo] = useState(imgLogo);
   const [bgColor, setBgColor] = useState(opacity? 'rgba(0,0,0,1)': 'rgba(0,0,0,0.0)'); 
+   
+  const { search } = useLocation();  
 
   useEffect(() => {
     let parametros = localStorage.getItem("parametros") ? JSON.parse(localStorage.getItem("parametros")!) : {};
@@ -26,7 +28,7 @@ export default function Header({opacity}: HeaderProps) {
   const onScroll = (e: Event) => {
     const window = e.currentTarget as Window
     const header = document.getElementById("navHeader");
-
+    
     if (window.scrollY > 0) {
         setBgColor('var(--first-color)');
     }
@@ -34,6 +36,8 @@ export default function Header({opacity}: HeaderProps) {
         let colorBackground = opacity? 'rgba(0,0,0,1)': 'rgba(0,0,0,0.0)';
         setBgColor(colorBackground);
     }
+
+    document.getElementById("navbarNav")?.classList.remove("show");
   }
 
   const changeBgColor = () => {
@@ -43,29 +47,34 @@ export default function Header({opacity}: HeaderProps) {
   const navigate = useNavigate();
 
   const redirect = () => {
-      navigate(`#/inicio/`);        
+      navigate(`#/inicio/`);
+      document.getElementById('btnToggleNavbar')?.click();    
   }
+
+  const returnTop = () => {
+    window.scrollTo(0, 0);
+}
 
   return (
     <nav className="navbar navbar-expand-xl navbar__bg" id="navHeader" style={{backgroundColor : bgColor}}>
-      <a href="#/inicio" className="navbar-toggler"><img src={imgLogo} alt="Logo" width={44} height={44} /></a>
-      <button className="navbar-toggler bg-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={changeBgColor}>
+      <a href="#/inicio" className="header__logo navbar-toggler"><img src={imgLogo} alt="Logo" width={44} height={44} /></a>
+      <button id="btnToggleNavbar" className="navbar-toggler bg-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={changeBgColor}>
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#/inicio">Inicio</a>
+            <a className="nav-link" href="#/inicio" onClick={returnTop}>Inicio</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/inicio/?id=section__modelos" onClick={redirect}>Modelos</a>
+            <a className="nav-link" href="#/inicio/?id=section__modelos" >Modelos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/inicio/?id=section__inversiones" onClick={redirect}>Inversiones</a>
+            <a className="nav-link" href="#/inicio/?id=section__inversiones">Inversiones</a>
           </li>
 
           <li className="d-none d-xl-flex w-25 justify-content-center align-items-center">
-            <a href="#/inicio" className="navbar-brand"><img src={imgLogo} className="header__logo" alt="Logo" width={44} height={44} /></a>
+            <a href="#/inicio" className="navbar-brand"><img src={imgLogo} className="header__logo" alt="Logo" width={44} height={44} onClick={returnTop}/></a>
           </li>
 
           <li className="nav-item">
