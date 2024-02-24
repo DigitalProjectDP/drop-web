@@ -57,7 +57,7 @@ export default function Header({opacity}: HeaderProps) {
 
   return (
     <nav className="navbar navbar-expand-xl navbar__bg" id="navHeader" style={{backgroundColor : bgColor}}>
-      <a href="#/inicio" className="header__logo navbar-toggler"><img src={imgLogo} alt="Logo" width={44} height={44} /></a>
+      <a href="#/inicio" className="header__logo navbar-toggler" onClick={returnTop}><img src={imgLogo} alt="Logo" width={44} height={44} /></a>
       <button id="btnToggleNavbar" className="navbar-toggler bg-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={changeBgColor}>
         <span className="navbar-toggler-icon"></span>
       </button>

@@ -8,7 +8,7 @@
 }
 
 .header__logo:focus{
-    box-shadow: 0;
+    box-shadow: 0 0 0 transparent;
 }
 
 a.navbar-toggler{

@@ -1,7 +1,7 @@
 import './style.css'
 import { Imagen } from '../../../../interfaces/imagen'
 import SectionTextImage from '../../../../components/sectionTextImage'
-import imgDrop from '../../../../media/img/home/drop-arquitecturamodular.jpg'
+import imgDrop from '../../../../media/img/home/drop-arquitecturamodular.webp'
 
 export default function HomePrincipal() {   
     const seccionNosotros: Imagen = {
