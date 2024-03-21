@@ -5,6 +5,7 @@ import Header from '../../../components/header';
 import HeaderSpace from '../../../components/header-space';
 import { Imagen } from '../../../interfaces/imagen';
 import { GetBlogById } from '../../../services/blogService';
+import ReactGA from 'react-ga';
 
 export default function BlogArticle() {
     const [blog, setBlog] = useState<Imagen>();
@@ -19,6 +20,7 @@ export default function BlogArticle() {
     const fetchBlog = async () => {
         let vBlog = id? await GetBlogById(Number(id)): undefined;
         setBlog(vBlog);
+        ReactGA.pageview(window.location.pathname + "/" + vBlog?.titulo);
     }
     
     const htmlString = () => (

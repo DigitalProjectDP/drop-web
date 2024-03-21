@@ -15,11 +15,15 @@ import WhatsappButton from '../../components/whatsapp-button';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Copyright from '../../components/copyright';
+import ReactGA from 'react-ga';
 
 export default function Home() {
   const { search } = useLocation();  
   const id = new URLSearchParams(search).get("id");
+
   useEffect(() => {
+    //ReactGA.initialize('G-MVTJ9F4F2L'); 
+    ReactGA.pageview(window.location.pathname);
     if(id == undefined || id==""){
       window.scrollTo(0, 0);
     }

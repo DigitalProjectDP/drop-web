@@ -2,6 +2,7 @@ import './style.css';
 import imgLogo from "../../media/logo/logo_drop.png";
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 interface HeaderProps{
   opacity?: boolean;
@@ -13,7 +14,8 @@ export default function Header({opacity}: HeaderProps) {
    
   const { search } = useLocation();  
 
-  useEffect(() => {
+  useEffect(() => {    
+    ReactGA.initialize('G-MVTJ9F4F2L');
     let parametros = localStorage.getItem("parametros") ? JSON.parse(localStorage.getItem("parametros")!) : {};
     let logoHeader = parametros?.logoHeader || imgLogo;    
     setLogo(logoHeader);

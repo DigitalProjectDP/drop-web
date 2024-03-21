@@ -7,7 +7,7 @@ import Header from '../../components/header';
 import OwlCarousel from 'react-owl-carousel';
 import Contacto from '../../components/contacto'
 import WhatsappButton from '../../components/whatsapp-button';
-
+import ReactGA from 'react-ga';
 
 export default function ModeloPage() {
     const [modelo, setModelo] = useState<Modelo>();
@@ -15,14 +15,15 @@ export default function ModeloPage() {
     const { search } = useLocation();
     const id = new URLSearchParams(search).get("id");
 
-    useEffect(() => {
+    useEffect(() => {        
         fetchModelo();
         window.scrollTo(0, 0)
     }, []);
 
     const fetchModelo = async () => {
         let modelo = id? await GetModeloById(Number(id)): undefined;
-        setModelo(modelo);
+        setModelo(modelo);   
+        ReactGA.pageview(window.location.pathname + "/" + modelo?.nombre);
         //setMessage(`Hola, quiero recibir más información por el emprendimiento ${propiedad?.nombre}. ¡Muchas gracias!`);
     }
 
