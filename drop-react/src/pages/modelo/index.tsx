@@ -22,7 +22,8 @@ export default function ModeloPage() {
 
     const fetchModelo = async () => {
         let modelo = id? await GetModeloById(Number(id)): undefined;
-        setModelo(modelo);   
+        setModelo(modelo); 
+        document.title = 'Drop - Modelo ' + modelo?.nombre;  
         ReactGA.pageview(window.location.pathname + "/" + modelo?.nombre);
         //setMessage(`Hola, quiero recibir más información por el emprendimiento ${propiedad?.nombre}. ¡Muchas gracias!`);
     }

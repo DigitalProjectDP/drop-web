@@ -20,6 +20,7 @@ export default function BlogArticle() {
     const fetchBlog = async () => {
         let vBlog = id? await GetBlogById(Number(id)): undefined;
         setBlog(vBlog);
+        document.title = 'Drop - ' + vBlog?.titulo;
         ReactGA.pageview(window.location.pathname + "/" + vBlog?.titulo);
     }
     

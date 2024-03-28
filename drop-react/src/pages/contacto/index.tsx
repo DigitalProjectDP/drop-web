@@ -11,6 +11,7 @@ import './styles.css'
 
 export default function ContactoPage(){
     useEffect(() => {
+        document.title = 'Drop - Contacto';
         ReactGA.pageview(window.location.pathname);
     }, []);
     

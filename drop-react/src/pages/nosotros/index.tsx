@@ -11,6 +11,7 @@ import './styles.css'
 
 export default function NosotrosPage(){
     useEffect(() => {
+        document.title = 'Drop - Nosotros';
         ReactGA.pageview(window.location.pathname);
     }, []);
     

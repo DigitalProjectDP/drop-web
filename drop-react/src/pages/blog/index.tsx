@@ -11,6 +11,7 @@ import { useEffect } from 'react'
 
 export default function BlogPage(){
     useEffect(() => {
+        document.title = 'Drop - Blogs';
         ReactGA.pageview(window.location.pathname);
     }, []);
 

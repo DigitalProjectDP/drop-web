@@ -14,11 +14,14 @@ export default function Header({opacity}: HeaderProps) {
    
   const { search } = useLocation();  
 
-  useEffect(() => {    
+  useEffect(() => {   
+    document.title = 'Drop'; 
     ReactGA.initialize('G-MVTJ9F4F2L');
     let parametros = localStorage.getItem("parametros") ? JSON.parse(localStorage.getItem("parametros")!) : {};
     let logoHeader = parametros?.logoHeader || imgLogo;    
     setLogo(logoHeader);
+
+    onHeaderItemClick(document.querySelectorAll(".header__link"))
     
     window.addEventListener('scroll', onScroll);
     
@@ -55,6 +58,14 @@ export default function Header({opacity}: HeaderProps) {
 
   const returnTop = () => {
     window.scrollTo(0, 0);
+  }
+  function onHeaderItemClick(elements: any){
+    elements.forEach((element: any) => {
+        element.addEventListener('click', () =>{  
+          document.title = 'Drop - ' + element?.id;
+          ReactGA.pageview(window.location.pathname + "/" + element?.id);
+        });
+    });
 }
 
   return (
@@ -69,10 +80,10 @@ export default function Header({opacity}: HeaderProps) {
             <a className="nav-link" href="#/inicio" onClick={returnTop}>Inicio</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/inicio/?id=section__modelos" >Modelos</a>
+            <a className="nav-link header__link" id="Modelos" href="#/inicio/?id=section__modelos" >Modelos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/inicio/?id=section__inversiones">Inversiones</a>
+            <a className="nav-link header__link" id="Inversiones" href="#/inicio/?id=section__inversiones">Inversiones</a>
           </li>
 
           <li className="d-none d-xl-flex w-25 justify-content-center align-items-center">

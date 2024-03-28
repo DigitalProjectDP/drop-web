@@ -23,6 +23,7 @@ export default function Home() {
 
   useEffect(() => {
     //ReactGA.initialize('G-MVTJ9F4F2L'); 
+    document.title = 'Drop';
     ReactGA.pageview(window.location.pathname);
     if(id == undefined || id==""){
       window.scrollTo(0, 0);
