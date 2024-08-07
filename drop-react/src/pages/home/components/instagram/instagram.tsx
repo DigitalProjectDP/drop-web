@@ -14,6 +14,9 @@ export default function HomeInstagram() {
         fetchInstagramPosts();
         let windowDimension = getWindowDimensions()
         setWidth(windowDimension?.width);
+        
+        // window.addEventListener('load', videoScroll);
+        // window.addEventListener('scroll', videoScroll);
     }, [width]);
 
     const fetchInstagramPosts = async () => {
@@ -27,14 +30,38 @@ export default function HomeInstagram() {
             width,
             height
         };
+    }        
+
+    const videoScroll = (e: Event) => {
+
+        if ( document.querySelectorAll('video[autoplay]').length > 0) {
+            var windowHeight = window.innerHeight,
+                videoEl = document.querySelectorAll('video[autoplay]');
+
+            for (var i = 0; i < videoEl.length; i++) {
+
+            var thisVideoEl = videoEl[i],
+                videoHeight = thisVideoEl.clientHeight,
+                videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+            if ( videoClientRect <= ( (windowHeight) - (videoHeight*.5) ) && videoClientRect >= ( 0 - ( videoHeight*.5 ) ) ) {
+                (thisVideoEl as HTMLVideoElement).play();
+            } else {
+                (thisVideoEl as HTMLVideoElement).pause();
+            }
+
+            }
+        }
+
     }
+    
 
     const imageOnLoadHandler = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {        
         event.currentTarget.src = dropLogo;
     };
 
     const renderInstagramPosts = () => instagramPosts?.map((v, i) => <a id={"instagramPost_"+i.toString()} key={i} href={v?.permalink} target="_blank" className="">
-        {v?.media_type! == "VIDEO" && width>768?
+        {v?.media_type! == "VIDEO"?
         <video playsInline className="instagram__card" src={v?.media_url} autoPlay muted loop></video>:
         <img className={`instagram__card instagram__${v?.media_type}`} src={v?.media_url}  onError={imageOnLoadHandler}/>}
     </a>)

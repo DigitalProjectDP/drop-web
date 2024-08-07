@@ -57,6 +57,7 @@ export default function Contacto({data, isModal}: ConsultaProps){
             ...formData,
             destinatario: vDestinatario?.valor,
             Datetime: today.toISOString(),
+            idSistema: 5,
             Id: 0
         }
         let response = await SendMail(formData);        

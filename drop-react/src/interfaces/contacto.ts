@@ -8,4 +8,5 @@ export interface Contacto{
     mensaje?: string,
     destinatario?: string,
     datetime?: string,
+    idSistema?: number
 }

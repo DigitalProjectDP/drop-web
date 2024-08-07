@@ -34,9 +34,12 @@
 .instagram__card {
     padding: 1rem;
     width: 100%;
-    max-width: 330px;
-    max-height: 330px;
-    object-fit: contain;
+    object-fit: contain;        
+    max-height: 500px;
+}
+
+.instagram__card video::-webkit-media-controls {
+    display:block !important;
 }
 
 .instagram__card:hover{
@@ -77,5 +80,15 @@ video.instagram__card{
         padding: 2rem;
     }
 
+    .instagram__card {        
+        max-height: 500px;
+    }
 }
 
+@media (max-width: 400px) {
+    
+    .instagram__card {        
+        max-height: 500px;
+        padding: 0;
+    }
+}
