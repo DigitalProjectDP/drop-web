@@ -16,6 +16,7 @@ import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Copyright from '../../components/copyright';
 import ReactGA from 'react-ga';
+import HomeReseñas from './components/reseñas/reseñas';
 
 export default function Home() {
   const { search } = useLocation();  
@@ -46,7 +47,8 @@ export default function Home() {
       <HomeModelos></HomeModelos>
       <HomeBeneficiosNew></HomeBeneficiosNew>
       <HomeInversiones></HomeInversiones>
-      <HomeProceso></HomeProceso>      
+      <HomeProceso></HomeProceso>
+      <HomeReseñas></HomeReseñas>
       <HomeInstagram></HomeInstagram>
       <Contacto data={''}></Contacto>
       <div className="spacer"></div>    
