@@ -5,6 +5,10 @@ import imgArticulo01_01 from "../media/img/blogs/articulo01_01.jpeg"
 import imgArticulo01_02 from "../media/img/blogs/articulo01_02.JPEG"
 import imgArticulo02_01 from "../media/img/blogs/articulo02_01.jpg"
 import imgArticulo03_01 from "../media/img/blogs/articulo03_01.jpg"
+import imgArticulo01_01_webp from "../media/img/blogs/articulo01_01.webp"
+import imgArticulo01_02_webp from "../media/img/blogs/articulo01_02.webp"
+import imgArticulo02_01_webp from "../media/img/blogs/articulo02_01.webp"
+import imgArticulo03_01_webp from "../media/img/blogs/articulo03_01.webp"
 
 export const MockBlogs: Imagen[] = 
 [
@@ -54,7 +58,7 @@ export const MockBlogs: Imagen[] =
         Si necesitas ayuda, no dudes en <a class="text-dark" style="font-weight: 600; " href="#/contacto" target="_blank">contactarnos</a>
 
         `,
-        imagenUrl: imgArticulo01_01,
+        imagenUrl: imgArticulo01_01_webp,
         tipoSeccion: {
             id: 2,
             descripcion: 'Blog'
@@ -93,7 +97,7 @@ export const MockBlogs: Imagen[] =
         En resumen, la construcción modular está evolucionando rápidamente entre los desarrolladores de la industria hotelera. En todo el mundo, está demostrando ser un método eficiente de construcción de hotelería, en todos sus formatos, que permite una finalización de proyectos mucho más rápida, una reducción de los costos generales y una rentabilidad más rápida para los propietarios. A medida que se extiende la adopción, muchos más propietarios y desarrolladores están destinados a aprovechar sus ventajas.
         `,
         
-        imagenUrl: imgArticulo02_01,
+        imagenUrl: imgArticulo02_01_webp,
         tipoSeccion: {
             id: 2,
             descripcion: 'Blog'
@@ -121,7 +125,7 @@ export const MockBlogs: Imagen[] =
         ¡Cualquiera sea tu consulta, <a class="text-dark" style="font-weight: 600; " href="#/contacto" target="_blank">contáctanos</a> ! Estamos para ayudarte.
 
         `,
-        imagenUrl: imgArticulo03_01,
+        imagenUrl: imgArticulo03_01_webp,
         tipoSeccion: {
             id: 2,
             descripcion: 'Blog'

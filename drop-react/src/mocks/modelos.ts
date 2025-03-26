@@ -65,7 +65,7 @@ export const MockModelos: Modelo[] = [
         {id: 5, nombre: 'Imagen05', url: imgCabin05}, {id: 6, nombre: 'Imagen06', url: imgCabin06}, {id: 7, nombre: 'Imagen07', url: imgCabin07}, {id: 8, nombre: 'Imagen08', url: imgCabin08},
         {id: 9, nombre: 'Imagen09', url: imgCabin09}, {id: 10, nombre: 'Imagen10', url: imgCabin10}, {id: 11, nombre: 'Imagen11', url: imgCabin11}
         ],
-        caracteristicas: [{id: 1, descripcion: '1 Ambiente | 38 m2'},{id: 2, descripcion: 'Personalizable'}]
+        caracteristicas: [{id: 1, descripcion: '1 Ambiente | 18 m2 cubiertos'},{id: 2, descripcion: 'Personalizable'}]
     },
     {
         id: 2,
@@ -80,7 +80,7 @@ export const MockModelos: Modelo[] = [
                     {id: 7, nombre: 'Imagen07', url: imgChillout07}, {id: 8, nombre: 'Imagen08', url: imgChillout08}, {id: 9, nombre: 'Imagen09', url: imgChillout09},
                     {id: 10, nombre: 'Imagen10', url: imgChillout10}, {id: 11, nombre: 'Imagen11', url: imgChillout11}
                 ],
-        caracteristicas: [{id: 1, descripcion: '1 Dormitorio | 58m2'},{id: 2, descripcion: 'Personalizable'}]
+        caracteristicas: [{id: 1, descripcion: '1 Dormitorio | 35 m2 cubiertos'},{id: 2, descripcion: 'Personalizable'}]
     },
     {
         id: 3,
@@ -94,7 +94,7 @@ export const MockModelos: Modelo[] = [
         {id: 5, nombre: 'Imagen05', url: imgDosdor05}, {id: 6, nombre: 'Imagen06', url: imgDosdor06}, {id: 7, nombre: 'Imagen07', url: imgDosdor07}, {id: 8, nombre: 'Imagen08', url: imgDosdor08},
         {id: 9, nombre: 'Imagen09', url: imgDosdor09}, {id: 10, nombre: 'Imagen10', url: imgDosdor10}, {id: 11, nombre: 'Imagen11', url: imgDosdor11}, {id: 12, nombre: 'Imagen12', url: imgDosdor12}
         ],
-        caracteristicas: [{id: 1, descripcion: '1 Dormitorio | 105 m2'},{id: 2, descripcion: 'Personalizable'}]
+        caracteristicas: [{id: 1, descripcion: '1 Dormitorio | 70 m2 cubiertos'},{id: 2, descripcion: 'Personalizable'}]
     },
     {
         id: 4,

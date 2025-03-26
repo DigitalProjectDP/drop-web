@@ -14,8 +14,10 @@ export default function CardBanner({info}: InfoProps){
         setInfo(info);
         const topBanner = document.getElementById("topBanner") as HTMLMediaElement;
         const bannerVideo = document.getElementById("bannerVideo") as HTMLMediaElement;
-
+        
         bannerVideo.src = infoBanner?.imagenUrl || "https://placehold.co/640x360?text=...";
+        bannerVideo.src = "https://i.imgur.com/ehrjoT0.mp4";
+        //bannerVideo.src = "https://res.cloudinary.com/dundcrnii/video/upload/v1742608521/drop/dwllsjxadazr49lohg2n.mp4";
         bannerVideo.muted = true;
         
         setTimeout(() => {
@@ -25,7 +27,7 @@ export default function CardBanner({info}: InfoProps){
                 topBanner.style.background = `transparent`;
                 bannerVideo.style.display = "block"
             })
-        }, 300);
+        }, 500);
     }, []);
     
     const videoOnLoadHandler = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {        
@@ -37,7 +39,7 @@ export default function CardBanner({info}: InfoProps){
     return(
         <div className='banner__container fill' style={{width: "100%"}}>  
             <div className="video-overlay no-click fill hide-for-medium"></div>
-            <video id="bannerVideo" playsInline muted loop className='banner__video fill no-click w-100' controls={false} onError={() => videoOnLoadHandler}>
+            <video id="bannerVideo" playsInline muted loop className='banner__video fill no-click w-100' controls={false} onError={() => videoOnLoadHandler} poster={banner}>
                 <source src={infoBanner?.imagenUrl} type="video/mp4"/>
             </video>
             <div className="section-bg-overlay absolute fill item"></div>

@@ -75,7 +75,7 @@ export default function HomeInstagram() {
                 <h3 className="d-flex justify-content-center align-items-center mx-3 text-dark"><strong>drop.modular</strong></h3>
             </a>
         </div>
-        <div className="instagram__container">
+        <div className="instagram__container px-2">
             {instagramPosts? renderInstagramPosts(): ''}
         </div>
     </section>

@@ -167,7 +167,7 @@ body.react-confirm-alert-body-element {
 } */
 
 .main__height{
-  animation: fadein 2s;
+  animation: fadein 1s;
 }
 
 @keyframes fadein {

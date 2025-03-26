@@ -11,7 +11,7 @@ export const SendMail = async (data: Contacto): Promise<any> => {
     //     return "Email enviado con éxito";
     // }
     //const url = BASE_URL;
-    const url = `https://mayicuervo-001-site2.atempurl.com/Email`;
+    const url = `https://mayicuervo-001-site1.atempurl.com/Email`;
         let result;
 
         const response = await fetch(url, {

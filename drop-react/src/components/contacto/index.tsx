@@ -2,8 +2,8 @@ import './style.css'
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { GetParametroByClave } from "../../services/parametroService";
-import { ResendEmail, SendMail } from "../../services/mailService";
-import { FaFacebook, FaInstagram, FaLocationDot, FaPhone, FaYoutube, FaTiktok } from 'react-icons/fa6';
+import { SendMail } from "../../services/mailService";
+import { FaFacebook, FaInstagram, FaLocationDot, FaTiktok, FaWhatsapp } from 'react-icons/fa6';
 import { IoMail } from "react-icons/io5";
 import SpinnerLoading from '../spinner';
 import { confirmAlert } from 'react-confirm-alert';
@@ -32,7 +32,7 @@ export default function Contacto({data, isModal}: ConsultaProps){
         setTelefono(telefonoParametro);
     }, [])  
     
-    const { register, formState: {errors}, watch, handleSubmit } = useForm({
+    const { register, formState: {errors}, handleSubmit } = useForm({
         defaultValues: {
             Nombre: '',
             Apellido: '',
@@ -47,7 +47,7 @@ export default function Contacto({data, isModal}: ConsultaProps){
 
     useEffect(() => {
         setMessage(data);        
-    }, []);  
+    }, [data]);  
 
     const enviarContacto = async (formData: any) => {
         setLoading(true);
@@ -81,6 +81,8 @@ export default function Contacto({data, isModal}: ConsultaProps){
         
     }
 
+    let iconStyles = { color: "white" };
+
     return (
       <section className="container-fluid section__contacto">
         <div className="section__title text-center py-5">
@@ -93,28 +95,32 @@ export default function Contacto({data, isModal}: ConsultaProps){
                 <FaLocationDot className="mx-3" size={24}></FaLocationDot>
                 <div>
                     <h5>Ubicación</h5>
-                    <p>12 779, B1900 La Plata, Provincia de Buenos Aires <br /> Cita previa requerida</p>
+                    {/* <p>12 779, B1900 La Plata, Provincia de Buenos Aires <br /> Cita previa requerida</p> */}
+                    <p>Av. 520 3171, B1902 La Plata, Provincia de Buenos Aires<br /> Cita previa requerida</p>
                 </div>
               </li>
               <li>
-                <FaPhone className="mx-3" size={24}></FaPhone>
+                <div className="whatsapp__icon__container p-0 rounded-circle d-flex justify-content-center align-center mx-3">
+                    <FaWhatsapp className="mt-1" size={16} style={iconStyles}></FaWhatsapp>
+                </div>
+                {/* <FaPhone className="mx-3" size={24}></FaPhone> */}
                 <div>
                     <h5>Teléfono</h5>
-                    <p><a href="tel:+2212200007" target="_blank">2212200007</a></p>
+                    <p><a href="tel:+2212200007" target="_blank" rel="noreferrer">2212200007</a></p>
                 </div>
               </li>
               <li>
                 <IoMail className="mx-3" size={24}></IoMail>
                 <div>
                     <h5>Email</h5>
-                    <p><a href="mailto:ventas@dropmodular.com" target="_blank">ventas@dropmodular.com</a></p>                    
+                    <p><a href="mailto:ventas@dropmodular.com" target="_blank" rel="noreferrer">ventas@dropmodular.com</a></p>                    
                 </div>
               </li>
             </ul>
             <div className="d-flex flex-row gap-1 justify-content-center py-4 mt-4">
-              <a href={instagram} target="_blank"><FaInstagram className="contacto__icon mx-2" size={32}></FaInstagram></a>
-              <a href="https://www.facebook.com/profile.php?id=100084131770712&mibextid=LQQJ4d" target="_blank"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
-              <a href="https://www.tiktok.com/@drop.modular" target="_blank"><FaTiktok className="contacto__icon mx-2" size={32}></FaTiktok></a>
+              <a href={instagram} target="_blank" rel="noreferrer"><FaInstagram className="contacto__icon mx-2" size={32}></FaInstagram></a>
+              <a href="https://www.facebook.com/profile.php?id=100084131770712&mibextid=LQQJ4d" target="_blank" rel="noreferrer"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
+              <a href="https://www.tiktok.com/@drop.modular" target="_blank" rel="noreferrer"><FaTiktok className="contacto__icon mx-2" size={32}></FaTiktok></a>
             </div>
           </div>:''}
 
