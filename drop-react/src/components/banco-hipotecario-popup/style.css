@@ -1,0 +1,8 @@
+.popup__container{
+    position: absolute;
+    margin-top: 10vh;
+    right: 0;
+    margin-right: 2rem;
+    z-index: 1;
+    min-width: 300px;
+}

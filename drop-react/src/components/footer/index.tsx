@@ -1,28 +1,19 @@
 import './style.css'
 import React, { useEffect, useState } from 'react'
 import imgLogo from '../../media/logo/logo_drop.png'
+import imgLogoCacmi from '../../media/logo/logo_cacmi.png'
 import { GrMail } from "react-icons/gr";
-import { FaFacebook, FaInstagram, FaPhone, FaTiktok, FaYoutube  } from 'react-icons/fa6'
+import { FaFacebook, FaInstagram, FaPhone, FaTiktok  } from 'react-icons/fa6'
 import Copyright from '../copyright';
 
 export default function Footer() {
-const [logo, setLogo] = useState(imgLogo);
 const [instagram, setInstagram] = useState('');
-const [whatsapp, setWhatsapp] = useState('');
-const [telefono, setTelefono] = useState('');
 
   useEffect(() => {
     let parametros = localStorage.getItem("parametros") ? JSON.parse(localStorage.getItem("parametros")!) : {};
-
-    let logoHeader = parametros?.logoFooter || imgLogo;
     let instagramParametro = parametros?.instagram || '';
-    let whatsappParametro = parametros?.whatsapp || '';
-    let telefonoParametro = parametros?.telefono || '';
 
-    setLogo(logoHeader);
     setInstagram(instagramParametro);
-    setWhatsapp(whatsappParametro);
-    setTelefono(telefonoParametro);
   }, [])  
 
   return (
@@ -31,20 +22,21 @@ const [telefono, setTelefono] = useState('');
           <div className="col-lg-4 col-sm-12 d-flex flex-column px-5 pt-5 gap-1">
               <h6>Encontranos en:</h6>
               <div className="d-flex flex-row gap-1 justify-content-center pt-2">
-                <a href={instagram} target="_blank"><FaInstagram className="footer__icon mx-2" size={24}></FaInstagram></a>
-                <a href="https://www.facebook.com/profile.php?id=100084131770712&mibextid=LQQJ4d" target="_blank"><FaFacebook className="footer__icon mx-2" size={24}></FaFacebook></a>
-                <a href="https://www.tiktok.com/@drop.modular" target="_blank"><FaTiktok className="footer__icon mx-2" size={24}></FaTiktok></a>
+                <a href={instagram} target="_blank" rel="noreferrer"><FaInstagram className="footer__icon mx-2" size={24}></FaInstagram></a>
+                <a href="https://www.facebook.com/profile.php?id=100084131770712&mibextid=LQQJ4d" target="_blank" rel="noreferrer"><FaFacebook className="footer__icon mx-2" size={24}></FaFacebook></a>
+                <a href="https://www.tiktok.com/@drop.modular" target="_blank" rel="noreferrer"><FaTiktok className="footer__icon mx-2" size={24}></FaTiktok></a>
               </div>
+              <a href="" rel="noreferrer" className="mt-3"><img src={imgLogoCacmi} alt="" width={64} height={64}/></a>
           </div>
 
           <div className="col-lg-4 col-sm-12 d-flex flex-column justify-content-start align-items-center pt-5">
-              <a href=""><img src={imgLogo} alt="" width={100} height={100}/></a>            
+              <a href="https://cacmi.com.ar/" target="_blank" rel="noreferrer"><img src={imgLogo} alt="" width={100} height={100}/></a>
           </div>
 
           <div className="col-lg-4 col-sm-12 d-flex flex-column justify-content-start align-items-center py-5">
             <div className="d-flex flex-column align-items-start gap-3">
-              <a href="mailto:ventas@dropmodular.com" target="_blank"><GrMail className="footer__icon mx-3" size={24}></GrMail>ventas@dropmodular.com</a>
-              <a href="tel:+2212200007" target="_blank"><FaPhone  className="footer__icon mx-3" size={24}></FaPhone >221-2200007</a>
+              <a href="mailto:ventas@dropmodular.com" target="_blank" rel="noreferrer"><GrMail className="footer__icon mx-3" size={24}></GrMail>ventas@dropmodular.com</a>
+              <a href="tel:+2212200007" target="_blank" rel="noreferrer"><FaPhone  className="footer__icon mx-3" size={24}></FaPhone >221-2200007</a>
             </div>
           </div>
       </footer>

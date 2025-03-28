@@ -20,9 +20,7 @@
     padding: 1rem 0;
 }
 
-.proyectos__container{
-    display: flex;
-    justify-content: center;
+.reseñas__container{
     padding: 0!important;
 }
 
@@ -90,18 +88,18 @@
     font-size: 0.75rem;
 }
 
-.proyectos__container .owl-stage-outer{
+.reseñas__container .owl-stage-outer{
     z-index: 0;
 }
 
-.proyectos__container .owl-nav{
+.reseñas__container .owl-nav{
     z-index: 0;
     height: 1px;    
     top: 35%;
 }
 
-.proyectos__container .owl-prev, 
-.proyectos__container .owl-next{
+.reseñas__container .owl-prev, 
+.reseñas__container .owl-next{
     z-index: 100;
 }
 

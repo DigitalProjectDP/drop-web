@@ -2,6 +2,7 @@ import "./style.css";
 import { useEffect, useState } from "react";
 import { Imagen } from "../../interfaces/imagen";
 import banner from "../../media/img/home/banner.jpg"
+import BancoHipotecarioPopUp from "../banco-hipotecario-popup";
 
 interface InfoProps{
     info?: Imagen;
@@ -43,6 +44,8 @@ export default function CardBanner({info}: InfoProps){
                 <source src={infoBanner?.imagenUrl} type="video/mp4"/>
             </video>
             <div className="section-bg-overlay absolute fill item"></div>
+            
+            <BancoHipotecarioPopUp></BancoHipotecarioPopUp>
         </div>
     )
 }

@@ -17,6 +17,7 @@ import { useEffect } from 'react';
 import Copyright from '../../components/copyright';
 import ReactGA from 'react-ga';
 import HomeReseñas from './components/reseñas/reseñas';
+import BancoHipotecarioPopUp from '../../components/banco-hipotecario-popup';
 
 export default function Home() {
   const { search } = useLocation();  

@@ -66,7 +66,7 @@ export const MockReseñas: Reseña[] = [
     {
         id: 1,
         nombreUsuario: 'Juan Pérez',
-        fotoUsuario: 'https://placeholder.com/150',
+        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/80.jpg',
         fecha: '2023-01-01 13:55',
         descripcion: 'Increíble experiencia con Drop. Nuestra casa modular superó todas las expectativas. ¡Calidad, rapidez y diseño espectacular!',
         puntuacion: 5,
@@ -75,7 +75,7 @@ export const MockReseñas: Reseña[] = [
     {
         id: 2,
         nombreUsuario: 'María González',
-        fotoUsuario: 'https://placeholder.com/150',
+        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/125.jpg',
         fecha: '2023-02-15 09:30',
         descripcion: 'Contratamos un estudio modular para nuestro jardín y quedamos encantados. El equipo fue profesional y el resultado es muy funcional.',
         puntuacion: 4,
@@ -84,7 +84,7 @@ export const MockReseñas: Reseña[] = [
     {
         id: 3,
         nombreUsuario: 'Carlos Rojas',
-        fotoUsuario: 'https://placeholder.com/150',
+        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/104.jpg',
         fecha: '2023-03-10 18:22',
         descripcion: 'Buen precio y acabados decentes, aunque el tiempo de entrega se retrasó un poco. En general, satisfecho.',
         puntuacion: 3,
@@ -93,7 +93,7 @@ export const MockReseñas: Reseña[] = [
     {
         id: 4,
         nombreUsuario: 'Ana López',
-        fotoUsuario: 'https://placeholder.com/150',
+        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/97.jpg',
         fecha: '2023-04-05 11:45',
         descripcion: '¡Nuestra cabaña de containers es el sueño de cualquier minimalista! Diseño moderno, eficiente y eco-friendly. 100% recomendado.',
         puntuacion: 5,
@@ -102,7 +102,7 @@ export const MockReseñas: Reseña[] = [
     {
         id: 5,
         nombreUsuario: 'Luis Mendoza',
-        fotoUsuario: 'https://placeholder.com/150',
+        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/91.jpg',
         fecha: '2023-05-20 16:10',
         descripcion: 'El proyecto fue bueno, pero el servicio postventa podría mejorar. Tuve un pequeño problema con la instalación y tardaron en responder.',
         puntuacion: 3,
@@ -111,7 +111,7 @@ export const MockReseñas: Reseña[] = [
     {
         id: 6,
         nombreUsuario: 'Sofía Ramírez',
-        fotoUsuario: 'https://placeholder.com/150',
+        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/111.jpg',
         fecha: '2023-06-30 14:00',
         descripcion: 'Drop transformó un container en una oficina increíble para mi emprendimiento. ¡Todos mis clientes quedan impresionados!',
         puntuacion: 5,
