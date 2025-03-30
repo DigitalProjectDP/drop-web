@@ -41,6 +41,7 @@ export default function CardProyecto({data, openModal, setProyectoId}: Proyectos
                     {proyecto?.nombre}
                 </h5> 
                 <h6>{proyecto?.categoria?.descripcion}</h6>  
+                <span className="proyecto__descripcion mt-3">{proyecto?.descripcion}</span>
                 {/* <ul className="card__caracteristica__proyecto">
                     {proyecto?.caracteristicas? renderListProyectos(): ''}
                 </ul> */}

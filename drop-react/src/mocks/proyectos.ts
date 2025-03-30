@@ -66,9 +66,8 @@ export const MockProyectos: Modelo[] = [
     {
         id: 1,
         nombre: 'Cabañas de mar',
-        // descripcion: `El concepto orientativo planteado ene l brochure puede ser modificado por el cliente, según conveniencia.
-        //               Este modelo de fabricación estandar, permite elegir al usuario si desea toilette + baño, 2 dormitorios, dormitorio, vestidor y estudio, opciones de ubicaciones, cantidades y morfología de carpinterías.`,
-        descripcion: '',
+        descripcion: `Ubicación: Buenos Aires
+        Demora: 6 meses`,
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
@@ -81,7 +80,8 @@ export const MockProyectos: Modelo[] = [
     {
         id: 2,
         nombre: 'Casa Matheu',
-        descripcion: ``,
+        descripcion: `Ubicación: Tandil
+        Demora: 3 meses`,
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
@@ -95,7 +95,8 @@ export const MockProyectos: Modelo[] = [
     {
         id: 3,
         nombre: 'Guest',
-        descripcion: ``,
+        descripcion: `Ubicación: Córdoba
+        Demora: 12 meses`,
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
@@ -109,7 +110,8 @@ export const MockProyectos: Modelo[] = [
     {
         id: 4,
         nombre: 'Sueño Joven',
-        descripcion: ``,
+        descripcion: `Ubicación: Mar del Plata
+        Demora: 5 meses`,
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
@@ -123,7 +125,8 @@ export const MockProyectos: Modelo[] = [
     {
         id: 5,
         nombre: 'Vino Andino',
-        descripcion: ``,
+        descripcion: `Ubicación: Mendoza
+        Demora: 9 meses`,
         valor: 40000,
         moneda: 'USD$',
         brochure: '',

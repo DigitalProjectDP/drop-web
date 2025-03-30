@@ -26,11 +26,11 @@ const [instagram, setInstagram] = useState('');
                 <a href="https://www.facebook.com/profile.php?id=100084131770712&mibextid=LQQJ4d" target="_blank" rel="noreferrer"><FaFacebook className="footer__icon mx-2" size={24}></FaFacebook></a>
                 <a href="https://www.tiktok.com/@drop.modular" target="_blank" rel="noreferrer"><FaTiktok className="footer__icon mx-2" size={24}></FaTiktok></a>
               </div>
-              <a href="" rel="noreferrer" className="mt-3"><img src={imgLogoCacmi} alt="" width={64} height={64}/></a>
+              <a href="https://cacmi.com.ar/" target="_blank" rel="noreferrer" className="mt-3"><img src={imgLogoCacmi} alt="" width={80} height={80}/></a>
           </div>
 
           <div className="col-lg-4 col-sm-12 d-flex flex-column justify-content-start align-items-center pt-5">
-              <a href="https://cacmi.com.ar/" target="_blank" rel="noreferrer"><img src={imgLogo} alt="" width={100} height={100}/></a>
+              <a href="/#inicio"><img src={imgLogo} alt="" width={100} height={100}/></a>
           </div>
 
           <div className="col-lg-4 col-sm-12 d-flex flex-column justify-content-start align-items-center py-5">
