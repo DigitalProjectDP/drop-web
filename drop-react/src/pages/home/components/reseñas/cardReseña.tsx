@@ -14,13 +14,13 @@ export default function CardReseña({data}: ReseñasProps) {
     }, [data]);    
 
     return(
-        <div className="d-flex flex-column gap-2 align-items-center h-100">
+        <div className="d-flex flex-column gap-2 align-items-center h-100" style={{backgroundColor : reseña?.color || "#FFF"}}>
 
-            <div className="bg-light flex-column gap-2 justify-content-start align-center h-100 p-4 border border-1">
+            <div className="flex-column gap-2 justify-content-start align-center h-100 p-4 border border-1">
                 <div className="d-flex flex-row justify-content-center gap-2">
-                    <div>
+                    {/* <div>
                         <img src={reseña?.fotoUsuario} alt="LogoReseña" width={48} height={48}/>
-                    </div>
+                    </div> */}
                     <div>
                         <h5 className="fw-bold notranslate">
                             {reseña?.nombreUsuario}

@@ -1,6 +1,3 @@
-import { Caracteristica } from "./caracteristica";
-import { ImagenModelo } from "./imagenModelo";
-
 export interface Reseña{
     id?: number,
     nombreUsuario?: string,
@@ -8,5 +5,6 @@ export interface Reseña{
     fecha?: string,
     descripcion?: string,
     puntuacion?: number,
-    imagenes: string[]
+    imagenes: string[],
+    color?: string
 }

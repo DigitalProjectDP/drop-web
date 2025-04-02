@@ -67,7 +67,7 @@ export const MockProyectos: Modelo[] = [
         id: 1,
         nombre: 'Cabañas de mar',
         descripcion: `Ubicación: Buenos Aires
-        Demora: 6 meses`,
+        Demora en ejecución: 6 meses`,
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
@@ -81,7 +81,7 @@ export const MockProyectos: Modelo[] = [
         id: 2,
         nombre: 'Casa Matheu',
         descripcion: `Ubicación: Tandil
-        Demora: 3 meses`,
+        Tiempo de ejecución: 3 meses`,
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
@@ -96,7 +96,7 @@ export const MockProyectos: Modelo[] = [
         id: 3,
         nombre: 'Guest',
         descripcion: `Ubicación: Córdoba
-        Demora: 12 meses`,
+        Ejecución: 12 meses`,
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
@@ -111,7 +111,7 @@ export const MockProyectos: Modelo[] = [
         id: 4,
         nombre: 'Sueño Joven',
         descripcion: `Ubicación: Mar del Plata
-        Demora: 5 meses`,
+        Tiempo: 5 meses`,
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
@@ -126,7 +126,7 @@ export const MockProyectos: Modelo[] = [
         id: 5,
         nombre: 'Vino Andino',
         descripcion: `Ubicación: Mendoza
-        Demora: 9 meses`,
+        Tiempo Ejecución: 9 meses`,
         valor: 40000,
         moneda: 'USD$',
         brochure: '',

@@ -22,13 +22,14 @@ export default function BancoHipotecarioPopUp() {
 
     const redirect = () => {
         navigate(`#/inicio/?id=section__modelos`);
+        setVisible(false);
     }
 
     return (
         <>
-            {visible ? <article className="popup__container bg-light p-4 w-50" >
+            {visible ? <article className="popup__container p-4 w-50" >
                 <Modal.Header closeButton className="border-0" onClick={() => setVisible(false)}></Modal.Header>
-                <h1 className="text-center">¿Sabías que podés acceder a un crédito hipotecario para construir tu casa?</h1>
+                <h2 className="text-center">¿Sabías que podés acceder a un crédito hipotecario para construir tu DROP?</h2>
                 <div className="d-flex flex-column justify-content-center align-items-center gap-2 py-3">
                     <img src={imgLogoHipotecario} alt="Logo_Hipotecario" height={50} />
                     <a className="button__secondary mt-4 fs-5" id="ver-modelos" href="#inicio/?id=section__modelos" onClick={redirect}>Conocer más</a>

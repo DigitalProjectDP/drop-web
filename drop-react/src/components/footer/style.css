@@ -18,7 +18,7 @@ footer a:hover{
 
 .section__footer{
     background-color: var(--first-color);
-    min-height: 220px;
+    min-height: 210px;
     color: #FFF;
 }
 
