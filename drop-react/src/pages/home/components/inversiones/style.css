@@ -48,7 +48,7 @@
 .card__imagen__inversion{
     width: 100%;
     max-height: 155px;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .card__descripcion{

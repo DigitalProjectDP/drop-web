@@ -1,74 +1,89 @@
 import { Reseña } from "../interfaces/reseña";
-import imgCabañas01 from "../media/img/proyectos/cabanas/Portada.jpg";
-import imgCabañas02 from "../media/img/proyectos/cabanas/Converted_WebP/40 (1).webp";
-import imgMatheu01 from "../media/img/proyectos/matheu/Portada.jpeg";
-import imgMatheu02 from "../media/img/proyectos/matheu/Converted_WebP/33.webp";
-import imgMatheu03 from "../media/img/proyectos/matheu/Converted_WebP/34.webp";
-import imgGuest01 from "../media/img/proyectos/guest/Portada.jpg";
-import imgSueño01 from "../media/img/proyectos/suenojoven/Portada.jpg";
-import imgSueño02 from "../media/img/proyectos/suenojoven/14.jpg";
-import imgSueño04 from "../media/img/proyectos/suenojoven/717cf03a-c1bb-4885-b236-db2686fc01a5.jpg";
-import imgVino01 from "../media/img/proyectos/vinoandino/Portada.jpg";
+import imgCB from "../media/img/reseñas/CB.webp";
+import imgCP from "../media/img/reseñas/CP.webp";
+import imgFP from "../media/img/reseñas/FP.webp";
+import imgGF from "../media/img/reseñas/GF.webp";
+import imgGP from "../media/img/reseñas/GP.webp";
+import imgRS from "../media/img/reseñas/RS.webp";
+import imgSL from "../media/img/reseñas/SL.webp";
 
-export const MockReseñas: Reseña[] = [
+export const MockReseñas: Reseña[] = 
+[
     {
-        id: 1,
-        nombreUsuario: 'Juan Pérez',
-        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/80.jpg',
-        fecha: '2023-01-01 13:55',
-        descripcion: 'Increíble experiencia con Drop. Nuestra casa modular superó todas las expectativas. ¡Calidad, rapidez y diseño espectacular!',
-        puntuacion: 5,
-        imagenes: [imgCabañas01, imgCabañas02],
-        color: 'rgb(209, 198, 193)'
+        modelo: "CANARIO",
+        nombreUsuario: "S.L.",
+        imagenes: [imgSL],
+        descripcion: "El proceso fue muy rápido y eficiente. Obtuvimos la casa en la costa que siempre quisimos y sin inconvenientes. Desde la elaboración del proyecto a la instalación definitiva. ",
+        color: '#457d99'
     },
     {
-        id: 2,
-        nombreUsuario: 'María González',
-        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/125.jpg',
-        fecha: '2023-02-15 09:30',
-        descripcion: 'Contratamos un estudio modular para nuestro jardín y quedamos encantados. El equipo fue profesional y el resultado es muy funcional.',
-        puntuacion: 4,
-        imagenes: [imgMatheu01, imgMatheu02, imgMatheu03],
+        modelo: "MATHEU",
+        nombreUsuario: "C.P.",
+        imagenes: [imgCP],
+        descripcion: "¡Muy feliz, es un sueño cumplido! El proceso fue super ameno, muchas gracias a DROP. Siempre tuvieron en cuenta nuestras indicaciones, anímense a construir en un nuevo sistema constructivo. ",
         color: '#FFF'
     },
     {
-        id: 3,
-        nombreUsuario: 'Carlos Rojas',
-        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/104.jpg',
-        fecha: '2023-03-10 18:22',
-        descripcion: 'Buen precio y acabados decentes, aunque el tiempo de entrega se retrasó un poco. En general, satisfecho.',
-        puntuacion: 3,
-        imagenes: [imgGuest01],
-        color: '#dedede'
+        modelo: "BARILOCHE",
+        nombreUsuario: "G.F.",
+        imagenes: [imgGF],
+        descripcion: "¡Muchas gracias a todos los chicos, se portaron increíble! para ustedes puede ser un proyecto más pero para mí es mi casa, estoy muy contenta ¡GRACIAS! ",
+        color: '#006F6A'
     },
     {
-        id: 4,
-        nombreUsuario: 'Ana López',
-        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/97.jpg',
-        fecha: '2023-04-05 11:45',
-        descripcion: '¡Nuestra cabaña de containers es el sueño de cualquier minimalista! Diseño moderno, eficiente y eco-friendly. 100% recomendado.',
-        puntuacion: 5,
-        imagenes: [imgSueño04],
+        modelo: "PEDEFLOUS",
+        nombreUsuario: "G.P.",
+        imagenes: [imgGP],
+        descripcion: "Nos contactamos con DROP y desde un principio fueron muy claros y transparentes, nos mostraron sus proyectos, elegimos uno de ellos y le hicimos algunas modificaciones. A los 3 meses nos trajeron los módulos y a la semana ya la podíamos usar. Recomiendo la empresa y su servicio, estamos muy contentos con la casa.",
         color: '#FFF'
     },
     {
-        id: 5,
-        nombreUsuario: 'Luis Mendoza',
-        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/91.jpg',
-        fecha: '2023-05-20 16:10',
-        descripcion: 'El proyecto fue bueno, pero el servicio postventa podría mejorar. Tuve un pequeño problema con la instalación y tardaron en responder.',
-        puntuacion: 3,
-        imagenes: [imgVino01],
-        color: 'rgb(209, 198, 193)'
+        modelo: "VINO ANDINO",
+        nombreUsuario: "R.S.",
+        imagenes: [imgRS],
+        descripcion: "Inicialmente fue un proyecto para irnos a vivir a Valle de Uco y luego se transformó en un ingreso, comenzamos alquilando uno de los módulos y ahora los estamos alquilando todos. Estamos muy contentos con el proyecto. ",
+        color: '#457d99'
     },
     {
-        id: 6,
-        nombreUsuario: 'Sofía Ramírez',
-        fotoUsuario: 'https://mighty.tools/mockmind-api/content/human/111.jpg',
-        fecha: '2023-06-30 14:00',
-        descripcion: 'Drop transformó un container en una oficina increíble para mi emprendimiento. ¡Todos mis clientes quedan impresionados!',
-        puntuacion: 5,
-        imagenes: [imgSueño01, imgSueño02],
+        modelo: "ROSWELL",
+        nombreUsuario: "M.C.",
+        imagenes: [],
+        descripcion: "Muy buena solución para mi taller, fue rápido y quedó buenísimo! ",
         color: '#FFF'
+    },
+    {
+        modelo: "HERNANDEZ",
+        nombreUsuario: "D.M.F.",
+        imagenes: [],
+        descripcion: "Hicimos la casa que siempre quisimos tratando de optimizar la cantidad de m2 pero haciéndola funcional y pensando en todos los detalles, estamos super contentos y felices con el resultado. ",
+        color: '#006F6A'
+    },
+    {
+        modelo: "MARINA",
+        nombreUsuario: "R.B.",
+        imagenes: [],
+        descripcion: "Nuestro proyecto es un proyecto de gamping en la costa argentina, los módulos ya se están alquilando y esperamos hacer más para hacer crecer el emprendimiento.  ",
+        color: '#FFF'
+    },
+    {
+        modelo: "KILI",
+        nombreUsuario: "C.B.",
+        imagenes: [imgCB],
+        descripcion: "Los chicos lograron hacer el proyecto como quería y me ayudaron a tomar decisiones para que el resultado sea óptimo en función del precio y la calidad de la casa.  ",
+        color: '#457d99'
+    },
+    {
+        modelo: "ANA MARIA",
+        nombreUsuario: "A.M.B.",
+        imagenes: [],
+        descripcion: "Fue todo muy práctico y muy rápido. La casa es super cómoda y luminosa. Yo estuve en obra anteriormente y este proceso es superador. Para los jóvenes y para los más grandes es una excelente opción. ¡La empresa se encarga de todo!",
+        color: '#FFF'
+    },
+    {
+        modelo: "508",
+        nombreUsuario: "F.P.",
+        imagenes: [imgFP],
+        descripcion: "Nuestra experiencia con la empresa Drop Modular ha sido sumamente positiva. Destacamos el trabajo realizado en la construcción de nuestra casa, con compromiso y buena comunicación en todo momento. Si bien en toda obra pueden surgir desafíos, lo importante es cómo se resuelven, y en este caso, siempre encontramos predisposición y profesionalismo. Se cumplió con todo lo prometido, y lo más valioso fue haber construido una relación de confianza con los constructores. Muy recomendable para quienes buscan seriedad y cumplimiento en su proyecto.",
+        color: '#006F6A'
     }
-];
+]

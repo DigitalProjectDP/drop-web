@@ -28,7 +28,7 @@ export default function CardInversiones({data, openModal}: InversionesProps) {
                 <h5 className="card__titulo__inversion">
                     {inversion?.titulo}
                 </h5>
-                <img src={inversion?.imagen} alt="Imagen" className="card__imagen__inversion"/>
+                <img src={inversion?.imagen} alt="Imagen" className="card__imagen__inversion" height="150px"/>
             </div>
             <p className="card__descripcion">
                 {inversion?.descripcion} 

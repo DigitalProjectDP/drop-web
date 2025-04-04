@@ -4,6 +4,7 @@ import { ImagenModelo } from "./imagenModelo";
 export interface Modelo{
     id?: number,
     nombre?: string,
+    subtitulo?: string,
     descripcion?: string,
     valor: number,
     moneda: string,

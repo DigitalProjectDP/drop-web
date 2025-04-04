@@ -1,5 +1,6 @@
 export interface Reseña{
     id?: number,
+    modelo?: string,
     nombreUsuario?: string,
     fotoUsuario?: any,
     fecha?: string,

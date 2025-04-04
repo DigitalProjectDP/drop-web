@@ -27,15 +27,26 @@ export default function Home() {
     //ReactGA.initialize('G-MVTJ9F4F2L'); 
     document.title = 'Drop';
     ReactGA.pageview(window.location.pathname);
-    if(id == undefined || id==""){
+    if(id === undefined || id === ""){
       window.scrollTo(0, 0);
     }
-    setTimeout(() => {
-      document.querySelector(`#${id}`)?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',          
-        });
-    }, 0);
+    else{
+      setTimeout(() => {
+        if(id === "section__hipotecario"){
+          document.querySelector(`#${id}`)?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+          });
+        }
+        else{
+          document.querySelector(`#${id}`)?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+        
+      }, 0);
+    }    
   },[id])
   
 

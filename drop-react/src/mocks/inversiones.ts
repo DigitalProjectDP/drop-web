@@ -1,7 +1,7 @@
 import { Inversion } from "../interfaces/inversion";
 import imgGastronomia from "../media/img/home/gastronomia.webp";
 import imgHoteleria from "../media/img/home/hoteleria.webp";
-import imgComercios from "../media/img/home/comercios.jpg";
+import imgComercios from "../media/img/home/comercios.webp";
 import imgResidencial from "../media/img/home/residencial.webp";
 
 export const MockInversiones: Inversion[] = [

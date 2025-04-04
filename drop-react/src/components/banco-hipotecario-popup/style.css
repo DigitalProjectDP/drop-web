@@ -1,7 +1,7 @@
 .popup__container{
     position: fixed;
     margin-top: 12vh;
-    min-width: 300px;
+    width: clamp(40vw, 500px, 300px);
     z-index: 100;
     left: 50%;
     transform: translateX(-50%);
