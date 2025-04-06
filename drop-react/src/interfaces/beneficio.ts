@@ -5,5 +5,6 @@ export interface Beneficio{
     titulo?: string,
     descripcion?: string,
     imagen?: string,
+    color?: string
     caracteristicas: Caracteristica[]
 }

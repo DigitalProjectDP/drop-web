@@ -1,18 +1,18 @@
-.owl-carousel .owl-item {
+.section__reseñas .owl-carousel .owl-item {
     display: flex;
     justify-content: center;
     align-items: stretch;
 }
 
 .reseña__container{
-    min-height: 75vh;
+    min-height: 420px;
 }
 
 .reseña__fecha{
     font-size: 0.75rem;
 }
 
-.section__proyectos{
+.section__reseñas{
     text-align: center;
     padding: 1rem;
     padding-top: 100px;
@@ -26,7 +26,7 @@
     color: var(--second-color);
 }
 
-.proyectos__title{
+.reseñas__title{
     padding: 1rem 0;
 }
 
@@ -38,7 +38,7 @@
     padding: 0;
 }
 
-.card__container__proyectos{
+.card__container__reseñas{
     position: relative;
     text-align: start;
     max-height: 230px;
@@ -50,12 +50,12 @@
     object-fit: cover;
 }
 
-.card__container__proyectos:hover{
+.card__container__reseñas:hover{
     cursor: pointer;
     opacity: 0.7;
 }
 
-.card__container__proyectos:hover .card__overlay__proyecto{
+.card__container__reseñas:hover .card__overlay__proyecto{
     display: flex;
 }
 
@@ -148,17 +148,25 @@
 
 .reseña__descripcion{
     font-size: 12px;
+    font-style: oblique;
+    text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
+}
+
+.reseña__descripcion__big{
+    font-size: 20px;
+    text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
+
 }
 
 @media screen and (max-width: 1100px){
-    .card__container__proyectos, .card__imagen__proyecto{
+    .card__container__reseñas, .card__imagen__proyecto{
         max-height: 195px;
     }
 }
 
 
 @media screen and (max-width: 900px){
-    .card__container__proyectos, .card__imagen__proyecto{
+    .card__container__reseñas, .card__imagen__proyecto{
         max-height: 180px;
     }
 }

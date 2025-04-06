@@ -52,7 +52,7 @@ export default function HomeReseñas() {
 
   const renderReseñas = () => listInfo?.map((v, i) => <CardReseña data={v} key={i}></CardReseña>)
   return (
-    <section className="section__proyectos" id="section__proyectos"> 
+    <section className="section__reseñas" id="section__reseñas"> 
       <h3 className="mb-3">Reseñas</h3>
       {listInfo? <OwlCarousel className='reseñas__container container-fluid' loop {...options}>
           {renderReseñas()} 
