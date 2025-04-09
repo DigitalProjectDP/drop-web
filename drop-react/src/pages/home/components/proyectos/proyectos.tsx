@@ -72,8 +72,9 @@ export default function HomeProyectos() {
 
   const renderproyectos = () => listInfo?.map((v, i) => <CardProyecto setProyectoId={getProyecto} openModal={openModal} data={v} key={i}></CardProyecto>)
   return (
-    <section className="section__proyectos" id="section__proyectos">
+    <section className="section__proyectos pt-3" id="section__proyectos">
       <h3 className="modelos__title">Últimos Proyectos</h3>
+      <p className="text-secondary mb-1">Haz click para ver la galería de fotos del proyecto.</p> 
       {listInfo? <OwlCarousel className='proyectos__container container-fluid' loop {...options}>
           {renderproyectos()} 
       </OwlCarousel> : ''}

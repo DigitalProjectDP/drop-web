@@ -37,7 +37,7 @@ import imgCabin08 from "../media/img/modelos/cabin/interior camara blanco.jpg";
 import imgCabin09 from "../media/img/modelos/cabin/Converted_WebP/whatsapp image 2024-02-06 at 10.38.29.webp";
 import imgCabin10 from "../media/img/modelos/cabin/Converted_WebP/whatsapp image 2024-02-06 at 10.38.31.webp";
 import imgCabin11 from "../media/img/modelos/cabin/Converted_WebP/whatsapp image 2024-02-06 at 10.48.50 (1).webp";
-import imgCabinNewPortada from "../media/img/modelos/cabin/new/Portada.webp";
+import imgCabinNewPortada from "../media/img/modelos/cabin/new/PORTADA 1.webp";
 import imgCabinNew01 from "../media/img/modelos/cabin/new/IMG_0424 (2).webp";
 import imgCabinNew02 from "../media/img/modelos/cabin/new/IMG_0825 (1).webp";
 import imgCabinNew03 from "../media/img/modelos/cabin/new/IMG_0923.webp";

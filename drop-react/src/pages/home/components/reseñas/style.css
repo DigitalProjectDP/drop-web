@@ -5,7 +5,8 @@
 }
 
 .reseña__container{
-    min-height: 420px;
+    min-height: 360px;
+    border: 1px solid rgba(0,0,0,0.1);
 }
 
 .reseña__fecha{
@@ -44,58 +45,9 @@
     max-height: 230px;
 }
 
-.card__imagen__proyecto{
-    width: 100%;
-    max-height: 230px;
-    object-fit: cover;
-}
-
 .card__container__reseñas:hover{
     cursor: pointer;
     opacity: 0.7;
-}
-
-.card__container__reseñas:hover .card__overlay__proyecto{
-    display: flex;
-}
-
-.card__titulo__proyecto{
-    color: var(--background-color);
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.card__overlay__proyecto h5, .card__overlay__proyecto h6{
-    margin-top: 1rem!important;
-}
-
-.card__overlay__proyecto {
-    position: absolute;
-    bottom: 0;
-    background: rgba(50, 70, 150, 0.6); /* Black see-through */    
-    color: #f1f1f1;
-    width: 100%;
-    height: 100%;
-    text-align: start;
-    transition: .5s ease;
-    opacity:1;
-    color: white;
-    font-size: 20px;
-    padding: 0.25rem;
-    text-align: center;
-    display: none;
-    z-index: 3;
-}
-
-
-.card__overlay__proyecto ul{
-    min-height: 50%;
-}
-
-.card__overlay__proyecto li{
-    text-align: start;
-    list-style: none;
-    font-size: 0.75rem;
 }
 
 .reseñas__container .owl-stage-outer{
@@ -129,19 +81,6 @@
     background-color: rgba(0,0,0,0.8);
 }
 
-.modal__proyecto{
-    min-width: 65vw;
-}
-
-.modal__proyecto .modal-dialog{
-    height: 100vh;
-    min-width: 65vw;
-    max-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .background__reseña{
     background-color: rgb(209, 198, 193)
 }
@@ -158,15 +97,6 @@
 
 }
 
-@media screen and (max-width: 1100px){
-    .card__container__reseñas, .card__imagen__proyecto{
-        max-height: 195px;
-    }
-}
-
-
-@media screen and (max-width: 900px){
-    .card__container__reseñas, .card__imagen__proyecto{
-        max-height: 180px;
-    }
+.reseña__img{
+    object-fit: cover;
 }

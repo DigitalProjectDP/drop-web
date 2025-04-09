@@ -7,7 +7,7 @@ export default function BancoHipotecarioLink() {
             <div className="d-flex flex-column justify-content-center align-items-center gap-2 py-3">
                 <h5 className="px-3">Nueva línea de préstamo para casas industrializadas de diseño. <br></br> Elegí tu casa modular a medida y contáctanos.</h5>
                 
-                <a className="bg-light border shadow p-1 mt-4 fs-5" id="ver-modelos" href="https://www.hipotecario.com.ar/personas/prestamos-hipotecarios/viviendas-industrializadas"
+                <a className="bg-light border shadow p-1 mt-4 fs-5" id="ver-modelos" href="https://www.hipotecario.com.ar/personas/prestamos-a-la-vivienda/viviendas-industrializadas/"
                     target="_blank" rel="noreferrer"><img src={imgLogoHipotecario} alt="Logo_Hipotecario" height={64} /></a>
             </div>
         </article>

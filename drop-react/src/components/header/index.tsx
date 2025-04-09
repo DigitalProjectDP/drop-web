@@ -61,7 +61,8 @@ export default function Header({opacity}: HeaderProps) {
   }
   function onHeaderItemClick(elements: any){
     elements.forEach((element: any) => {
-        element.addEventListener('click', () =>{  
+        element.addEventListener('click', () =>{
+          sessionStorage.removeItem("homeVisited");
           document.title = 'Drop - ' + element?.id;
           ReactGA.pageview(window.location.pathname + "/" + element?.id);
         });

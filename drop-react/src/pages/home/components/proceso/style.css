@@ -58,6 +58,7 @@
     background: url(../../../../media/img/arrow_right.png);
     background-repeat: no-repeat;
     background-size: contain;
+    filter: var(--filter-green-color);
 }
 
 .text-transparent{
@@ -80,6 +81,7 @@
 @media screen and (max-width:1025px){
     .timeline__arrow::after{
         top: 4.5rem;
+        filter: var(--filter-green-color);
     }
     
     .timeline__container h5{
@@ -104,6 +106,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 2;    
+        filter: var(--filter-green-color);
     }
 }
 

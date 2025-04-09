@@ -29,13 +29,13 @@
     text-align: center;
     line-height: 40px;
     margin-right: 35px;
-    background-color: var(--first-color);
+    background-color: #006F6A;
     width: 3rem;
     height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 15px #FFF;
+    /* box-shadow: 1px 1px 15px #FFF; */
 }
 
 .whatsapp__container a:hover{

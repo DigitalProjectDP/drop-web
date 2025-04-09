@@ -1,9 +1,9 @@
 import { Beneficio } from "../interfaces/beneficio";
-import imgBeneficio1 from "../media/img/beneficios/velocidad_blue.png";
-import imgBeneficio2 from "../media/img/beneficios/expansion_green.png";
+import imgBeneficio1 from "../media/img/beneficios/velocidad.png";
+import imgBeneficio2 from "../media/img/beneficios/expansion.png";
 import imgBeneficio3 from "../media/img/beneficios/ahorro.png";
-import imgBeneficio4 from "../media/img/beneficios/calidad_blue.png";
-import imgBeneficio5 from "../media/img/beneficios/transportable_green.png";
+import imgBeneficio4 from "../media/img/beneficios/calidad.png";
+import imgBeneficio5 from "../media/img/beneficios/transportable.png";
 import imgBeneficio6 from "../media/img/beneficios/sustentabilidad.png";
 
 export const MockBeneficiosHome: Beneficio[] = [

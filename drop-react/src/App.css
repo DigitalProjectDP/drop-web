@@ -12,6 +12,10 @@
   --filter-fifth-color: invert(51%) sepia(7%) saturate(387%) hue-rotate(202deg) brightness(93%) contrast(85%);
   --filter-grey-color: invert(28%) sepia(6%) saturate(1276%) hue-rotate(37deg) brightness(97%) contrast(88%);
 
+  --filter-green-color: invert(31%) sepia(95%) saturate(440%) hue-rotate(129deg) brightness(92%) contrast(103%);
+  --filter-blue-color: invert(46%) sepia(34%) saturate(583%) hue-rotate(155deg) brightness(91%) contrast(90%);
+
+
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Inter', sans-serif;
   --font-third: 'Inter', sans-serif;
@@ -60,7 +64,7 @@ a:hover{
 }
 
 .button__primary:hover{
-  background-color: #000;
+  background-color: #006F6A;
   color: #FFF;
   opacity: 1;
 }
