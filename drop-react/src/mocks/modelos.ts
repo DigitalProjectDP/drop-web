@@ -23,7 +23,7 @@ import imgChillout08 from "../media/img/modelos/chillout/Converted_WebP/717cf03a
 import imgChillout09 from "../media/img/modelos/chillout/Converted_WebP/captura de pantalla (81).webp";
 import imgChillout10 from "../media/img/modelos/chillout/Converted_WebP/po2.webp";
 import imgChillout11 from "../media/img/modelos/chillout/Converted_WebP/whatsapp image 2022-11-14 at 11.46.19.webp";
-import imgChilloutNewCaratula from "../media/img/modelos/chillout/new/Carátula.webp";
+import imgChilloutNewCaratula from "../media/img/modelos/chillout/new/Caratula.webp";
 import imgChilloutNew01 from "../media/img/modelos/chillout/new/IMG_0882.webp";
 
 import imgCabin01 from "../media/img/modelos/cabin/Converted_WebP/portada (1).webp";

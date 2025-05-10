@@ -18,10 +18,10 @@ export default function CardReseña({ data }: ReseñasProps) {
         <div className="d-flex flex-column gap-2 align-items-center reseña__container" style={{ backgroundColor: reseña?.color || "#FFF" }}>
 
             <div className={"d-flex flex-column gap-1 align-center p-3 border border-1 h-100 " + (reseña!.imagenes!.length > 0 ? 'justify-content-between' : 'justify-content-center')}>
-                <div className="d-flex flex-column justify-content-between gap-1 h-100">
+                <div className="d-flex flex-column justify-content-start gap-1 h-100">
                         {/* <p className="reseña__fecha fw-light">{reseña!.fecha}</p> */}
                         <p className={"fw-light mt-2 mb-0 "  + (reseña!.descripcion!.length > 100 ? 'reseña__descripcion': 'reseña__descripcion')}><FaQuoteLeft /> {reseña?.descripcion} <FaQuoteRight /></p>
-                        <h5 className="fw-bold notranslate">{reseña?.nombreUsuario}</h5>
+                        <h6 className="mt-1 notranslate"><strong>{reseña?.nombreUsuario}</strong></h6>
                 </div>
 
 

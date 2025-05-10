@@ -33,7 +33,7 @@ const [instagram, setInstagram] = useState('');
               <a href="/#inicio"><img src={imgLogo} alt="" width={100} height={100}/></a>
           </div>
 
-          <div className="col-lg-4 col-sm-12 d-flex flex-column justify-content-start align-items-center pt-5">
+          <div className="col-lg-4 col-sm-12 d-flex flex-column justify-content-start align-items-center py-5">
             <div className="d-flex flex-column align-items-start gap-3">
               <a href="mailto:ventas@dropmodular.com" target="_blank" rel="noreferrer"><GrMail className="footer__icon mx-3" size={24}></GrMail>ventas@dropmodular.com</a>
               <a href="tel:+2212200007" target="_blank" rel="noreferrer"><FaPhone  className="footer__icon mx-3" size={24}></FaPhone >221-2200007</a>

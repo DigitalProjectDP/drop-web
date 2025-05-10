@@ -4,68 +4,69 @@
     align-items: stretch;
 }
 
-.reseña__container{
+.reseña__container {
     min-height: 360px;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.reseña__fecha{
+.reseña__fecha {
     font-size: 0.75rem;
 }
 
-.section__reseñas{
+.section__reseñas {
     text-align: center;
     padding: 1rem;
     padding-top: 100px;
 }
 
-.text__paragraph{
+.text__paragraph {
     white-space: pre-line;
 }
 
-.text__secondary{
+.text__secondary {
     color: var(--second-color);
 }
 
-.reseñas__title{
+.reseñas__title {
     padding: 1rem 0;
 }
 
-.reseñas__container{
-    padding: 0!important;
+.reseñas__container {
+    padding: 0 !important;
 }
 
-.row>div, .row>div>div{
+.row>div,
+.row>div>div {
     padding: 0;
 }
 
-.card__container__reseñas{
+.card__container__reseñas {
     position: relative;
     text-align: start;
     max-height: 230px;
 }
 
-.card__container__reseñas:hover{
+.card__container__reseñas:hover {
     cursor: pointer;
     opacity: 0.7;
 }
 
-.reseñas__container .owl-stage-outer{
+.reseñas__container .owl-stage-outer {
     z-index: 0;
 }
 
-.reseñas__container .owl-nav{
+.reseñas__container .owl-nav {
     z-index: 0;
-    height: 1px;    
-    top: 35%;
+    height: 1px;
+    top: 40%;
 }
 
-.reseñas__container .owl-prev, 
-.reseñas__container .owl-next{
+.reseñas__container .owl-prev,
+.reseñas__container .owl-next {
     z-index: 100;
 }
 
-.owl-nav{
+.owl-nav {
     position: absolute;
     top: 45%;
     width: 100%;
@@ -73,30 +74,36 @@
     justify-content: space-between;
 }
 
-.owl-nav span{
+.owl-nav span {
     color: white;
     padding: 0 10px 6px 10px;
     margin: 0 0.5rem;
     font-size: 2rem;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.background__reseña{
+.background__reseña {
     background-color: rgb(209, 198, 193)
 }
 
-.reseña__descripcion{
+.reseña__descripcion {
     font-size: 12px;
     font-style: oblique;
-    text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
+    text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.5);
 }
 
-.reseña__descripcion__big{
+.reseña__descripcion__big {
     font-size: 20px;
-    text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
+    text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.5);
 
 }
 
-.reseña__img{
+.reseña__img {
     object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .reseña__container {
+        min-height: 390px;
+    }
 }
