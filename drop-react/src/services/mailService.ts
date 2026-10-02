@@ -11,23 +11,23 @@ export const SendMail = async (data: Contacto): Promise<any> => {
     //     return "Email enviado con éxito";
     // }
     //const url = BASE_URL;
-    const url = `https://mayicuervo-001-site1.atempurl.com/Email`;
-        let result;
+    const url = `https://api.mayidev.com/Email`;
+    let result;
 
-        const response = await fetch(url, {
-            method: "POST",
-            headers:{
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data) 
-        })
-        result = await response.text();
-        
-        if(response.ok){
-            return result;
-        }
+    const response = await fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    result = await response.text();
 
-        return "Ocurrió un error al enviar el correo";
+    if (response.ok) {
+        return result;
+    }
+
+    return "Ocurrió un error al enviar el correo";
 
 }
 
@@ -42,11 +42,11 @@ export const ResendEmail = async (data: Contacto): Promise<any> => {
             headers: {
                 "Access-Control-Allow-Origin": "*",
                 'X-Entity-Ref-ID': 'Y6sYT857_EkroVg5ZscfgqDa5qEXneE1g',
-              },
+            },
         });
         alert("Email enviado")
     } catch (error) {
         alert(error);
     }
-   
+
 }

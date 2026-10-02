@@ -1,5 +1,5 @@
 import "./style.css";
-import imgLogoHipotecario from "../../media/logo/logo_hipotecario.png"
+import imgLogoHipotecario from "../../media/logo/logo_banco_provincia.png"
 import { useEffect, useState } from "react";
 import { Modal } from "react-bootstrap";
 import ReactGA from 'react-ga';

@@ -4,34 +4,68 @@ import { MockInstagramPosts } from "../mocks/instagramPosts";
 
 const ENV_DEMO: boolean = enviroment.demo();
 const BASE_URL: string = "https://graph.instagram.com/";
-//const USER_ID: string = "25009521585305506";
-const USER_ID: string = "17841450550013988";
-const ACCESS_TOKEN: string = "IGAAH756DZBT5BBZAFEtSHZAVRGZADUUNCM1VObXhOUXE4ZAkRObWxVd2t5ZAnB6V1NYQUVaMXdpT0Fyb3IxZAjFxTU9UTUU1N0tQOENUZAWtWWXFtSlV6cXpJR0M1MW5pQzVpV1B1MXF5eG9XXzdQNG16Y1lzS19oMDF6bGdmQ0drU0J2TQZDZD";
 
-interface InstagramJSON{
+interface InstagramJSON {
     data: any;
     pagin: any;
 }
+
+export const GetInstagramUserId = async (): Promise<string> => {
+    try {
+        const response = await fetch("https://api.mayidev.com/ParametroConfiguracion/IG_USER_ID/5");
+        if (!response.ok) {
+            return "";
+        }
+        const data = await response.json();
+        return data.valor;
+    } catch (error) {
+        return "";
+    }
+};
+
+export const GetInstagramToken = async (): Promise<string> => {
+    try {
+        const response = await fetch("https://api.mayidev.com/ParametroConfiguracion/IG_TOKEN/5");
+        if (!response.ok) {
+            return "";
+        }
+        const data = await response.json();
+        return data.valor;
+    } catch (error) {
+        return "";
+    }
+};
 
 export const GetAllInstagramPosts = async (): Promise<InstagramPost[]> => {
     // if (ENV_DEMO){
     //     return MockInstagramPosts;        
     // }
-    const url = `${BASE_URL}${USER_ID}/media?access_token=${ACCESS_TOKEN}&fields=media_url,permalink,media_type`;
+
+    const accessToken = await GetInstagramToken();
+    if (!accessToken) {
+        return [];
+    }
+
+    const userId = await GetInstagramUserId();
+    if (!userId) {
+        return [];
+    }
+
+    const url = `${BASE_URL}${userId}/media?access_token=${accessToken}&fields=media_url,permalink,media_type`;
     try {
         const response = await fetch(url, {
             method: "GET",
-            headers:{
+            headers: {
                 "Access-Control-Allow-Origin": "*",
             }
         });
-        if (!response.ok){
-            throw new Error(response.statusText);        
+        if (!response.ok) {
+            throw new Error(response.statusText);
         }
         const data: InstagramJSON = await response.json();
         const posts: InstagramPost[] = data?.data;
         return posts;
     } catch (error) {
         return [];
-    }    
+    }
 }
