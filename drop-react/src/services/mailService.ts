@@ -4,7 +4,6 @@ import { Contacto } from "../interfaces/contacto";
 
 const BASE_URL: string = enviroment.urlBase() + "Email";
 const ENV_DEMO: boolean = enviroment.demo();
-const API_KEY: string = "";
 
 export const SendMail = async (data: Contacto): Promise<any> => {
     // if (ENV_DEMO){
@@ -28,25 +27,5 @@ export const SendMail = async (data: Contacto): Promise<any> => {
     }
 
     return "Ocurrió un error al enviar el correo";
-
-}
-
-export const ResendEmail = async (data: Contacto): Promise<any> => {
-    const resend = new Resend(API_KEY);
-    try {
-        const response = await resend.emails.send({
-            from: 'maxi_nomemolesten@hotmail.com',
-            to: 'noreply@maximilianohermosilla.website',
-            subject: "Consulta",
-            html: data?.mensaje!,
-            headers: {
-                "Access-Control-Allow-Origin": "*",
-                'X-Entity-Ref-ID': 'Y6sYT857_EkroVg5ZscfgqDa5qEXneE1g',
-            },
-        });
-        alert("Email enviado")
-    } catch (error) {
-        alert(error);
-    }
 
 }
