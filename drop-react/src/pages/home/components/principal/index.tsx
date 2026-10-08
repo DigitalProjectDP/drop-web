@@ -1,14 +1,14 @@
 import './style.css'
 import { Imagen } from '../../../../interfaces/imagen'
 import SectionTextImage from '../../../../components/sectionTextImage'
-import imgDrop from '../../../../media/img/home/drop-arquitecturamodular.webp'
+import imgDrop from '../../../../media/img/home/showroom.webp'
 
-export default function HomePrincipal() {   
+export default function HomePrincipal() {
     const seccionNosotros: Imagen = {
         id: 1,
         titulo: `DROP`,
         subtitulo: 'Arquitectura modular',
-        descripcion: `Con nuestro estudio de ingeniería y empresa constructora de más de 25 años de experiencia en el rubro, decidimos desarrollar un sistema constructivo que cambie el paradigma de la construcción tradicional.\n\nDROP es una nueva forma de entender la arquitectura moderna. Por esta razón sabíamos que teníamos que basarnos en 3 conceptos fundamentales, los cuales no podían fallar a la hora de desarrollar un nuevo sistema constructivo: CALIDAD, VELOCIDAD Y ECONOMÍA.\n\nSomos el socio ideal tanto para quienes estén buscando una vivienda, desarrolladores inmobiliarios, gastronómicos y comerciales.`,
+        descripcion: `Traemos el respaldo de más de 25 años de experiencia haciendo ingeniería y construyendo, pero quisimos ir por más y cambiamos las reglas del juego.\n\nEn DROP entendemos la arquitectura moderna de otra manera. Por eso, diseñamos un sistema constructivo basado en una tríada que no falla: calidad PREMIUM, tiempos súper ágiles y economía real.\n\nSi estás buscando tu vivienda propia, o tenés en mente un proyecto inmobiliario, turístico, comercial o gastronómico, tenemos el Drop perfecto para cada necesidad.`,
         imagenUrl: imgDrop,
         tipoSeccion: {
             id: 3,
@@ -18,7 +18,7 @@ export default function HomePrincipal() {
 
     return (
         <section className="home__principal">
-            <SectionTextImage info={seccionNosotros} inverse={false} idSeccion="seccion-principal" buttonText={"Leer más"} buttonLink={"nosotros"}></SectionTextImage>        
+            <SectionTextImage info={seccionNosotros} inverse={false} idSeccion="seccion-principal" buttonText={"Leer más"} buttonLink={"nosotros"}></SectionTextImage>
         </section>
     )
 }

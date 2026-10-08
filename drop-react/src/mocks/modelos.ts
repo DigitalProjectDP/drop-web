@@ -68,10 +68,23 @@ import imgKube10 from "../media/img/modelos/kube/Converted_WebP/image15 (1).webp
 import imgKube11 from "../media/img/modelos/kube/Converted_WebP/img_0621 (1).webp";
 import imgKube12 from "../media/img/modelos/kube/Converted_WebP/img_1991 (1).webp";
 
-import brochure01 from "../media/brochure/CABIN-comprimido.pdf";
-import brochure02 from "../media/brochure/CHILLOUT-comprimido.pdf";
-import brochure03 from "../media/brochure/DOSDOR-comprimido.pdf";
-import brochure04 from "../media/brochure/brochure01.pdf";
+import imgDosdor2Portada from "../media/img/modelos/dosdor2/Portada en Sección Modelos.webp";
+import imgDosdor2Foto01 from "../media/img/modelos/dosdor2/Foto 1.webp";
+import imgDosdor2Foto02 from "../media/img/modelos/dosdor2/Foto 2.webp";
+import imgDosdor2Foto03 from "../media/img/modelos/dosdor2/Foto 3.webp";
+import imgDosdor2Foto04 from "../media/img/modelos/dosdor2/Foto 4.webp";
+import imgDosdor2Foto05 from "../media/img/modelos/dosdor2/Foto 5.webp";
+import imgDosdor2Foto06 from "../media/img/modelos/dosdor2/Foto 6.webp";
+import imgDosdor2Foto07 from "../media/img/modelos/dosdor2/Foto 7.webp";
+import imgDosdor2Foto08 from "../media/img/modelos/dosdor2/Foto 8.webp";
+import imgDosdor2Foto09 from "../media/img/modelos/dosdor2/Foto 9.webp";
+import imgDosdor2Foto10 from "../media/img/modelos/dosdor2/Foto 10.webp";
+import imgDosdor2Foto11 from "../media/img/modelos/dosdor2/Foto 11.webp";
+import imgDosdor2Foto12 from "../media/img/modelos/dosdor2/Foto 12.webp";
+import imgDosdor2Foto13 from "../media/img/modelos/dosdor2/Foto 13.webp";
+import imgDosdor2Foto14 from "../media/img/modelos/dosdor2/Foto 14.webp";
+
+const BROCHURE_URL = "https://drive.google.com/uc?export=download&id=16pAbTH0Ndx35AOzoIXwkxDJd5oxJFb6p";
 
 export const MockModelos: Modelo[] = [
     {
@@ -79,65 +92,132 @@ export const MockModelos: Modelo[] = [
         nombre: 'Cabin',
         // descripcion: `El concepto orientativo planteado ene l brochure puede ser modificado por el cliente, según conveniencia.
         //               Este modelo de fabricación estandar, permite elegir al usuario si desea toilette + baño, 2 dormitorios, dormitorio, vestidor y estudio, opciones de ubicaciones, cantidades y morfología de carpinterías.`,
-        descripcion: `1 ambiente integrado | 1 módulo.\n38 m2 totales.\n18 m2 cubiertos + 20 m2 deck.\n\nUn espacio adaptable\n\nÚnico ambiente donde se integran todas las necesdidades de un hogar; cocina, baño, living, comedor y dormitorio. \n\nHotel boutique, refugios de montaña, glamping, casa de huéspedes, atelier... ¡el uso que vos quieras!\n\nPropio al espíritu DROP,  al estar compuesto por un solo módulo, terminado en fábrica facilita su velocidad de construcción y sencilla implantación. Llevalo a DONDE QUIERAS.`,
+        descripcion: `20m2\n
+Monoambiente - 1 baño - deck semicubierto\n
+Un espacio adaptable, un único ambiente donde se integran cocina, baño, living, comedor y dormitorio.\n
+Pensado para refugio, glamping, hotel boutique, casa de huéspedes o atelier.\n\n
+Propio al espíritu DROP, al estar compuesto por un solo módulo, terminado en fábrica, facilita su velocidad de construcción y sencilla implantación. Llevalo a DONDE QUIERAS.`,
         valor: 40000,
         moneda: 'USD$',
-        brochure: brochure01,
-        categoria: { id: 1, descripcion: 'Alquiler temporario'},
-        imagenes: [{id: 1, nombre: 'Imagen01', url: imgCabinNewPortada}, {id: 2, nombre: 'Imagen02', url: imgCabin02}, {id: 3, nombre: 'Imagen03', url: imgCabin03}, {id: 4, nombre: 'Imagen04', url: imgCabin04},
-        {id: 5, nombre: 'Imagen05', url: imgCabin05}, {id: 6, nombre: 'Imagen06', url: imgCabin06}, {id: 7, nombre: 'Imagen07', url: imgCabin07}, {id: 8, nombre: 'Imagen08', url: imgCabin08},
-        {id: 9, nombre: 'Imagen09', url: imgCabin09}, {id: 10, nombre: 'Imagen10', url: imgCabin10}, {id: 11, nombre: 'Imagen11', url: imgCabin11},
+        brochure: BROCHURE_URL,
+        categoria: { id: 1, descripcion: 'Alquiler temporario' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgCabinNewPortada }, { id: 2, nombre: 'Imagen02', url: imgCabin02 }, { id: 3, nombre: 'Imagen03', url: imgCabin03 }, { id: 4, nombre: 'Imagen04', url: imgCabin04 },
+        { id: 5, nombre: 'Imagen05', url: imgCabin05 }, { id: 6, nombre: 'Imagen06', url: imgCabin06 }, { id: 7, nombre: 'Imagen07', url: imgCabin07 }, { id: 8, nombre: 'Imagen08', url: imgCabin08 },
+        { id: 9, nombre: 'Imagen09', url: imgCabin09 }, { id: 10, nombre: 'Imagen10', url: imgCabin10 }, { id: 11, nombre: 'Imagen11', url: imgCabin11 },
 
-        {id: 1, nombre: 'Imagen01', url: imgCabinNew01}, {id: 2, nombre: 'Imagen02', url: imgCabinNew02}, {id: 3, nombre: 'Imagen03', url: imgCabinNew03}, 
-        {id: 4, nombre: 'Imagen04', url: imgCabinNew04}, {id: 5, nombre: 'Imagen05', url: imgCabinNew05}, {id: 6, nombre: 'Imagen06', url: imgCabinNew06},
-        {id: 7, nombre: 'Imagen07', url: imgCabinNew07}, {id: 8, nombre: 'Imagen08', url: imgCabinNew08}, {id: 9, nombre: 'Imagen09', url: imgCabinNew09}, 
-        {id: 10, nombre: 'Imagen10', url: imgCabinNew10}, {id: 11, nombre: 'Imagen11', url: imgCabinNew11},  {id: 12, nombre: 'Imagen12', url: imgCabinNew12},
-        {id: 13, nombre: 'Imagen13', url: imgCabinNew13}, {id: 14, nombre: 'Imagen14', url: imgCabinNew14},  {id: 15, nombre: 'Imagen15', url: imgCabinNew15},
+        { id: 1, nombre: 'Imagen01', url: imgCabinNew01 }, { id: 2, nombre: 'Imagen02', url: imgCabinNew02 }, { id: 3, nombre: 'Imagen03', url: imgCabinNew03 },
+        { id: 4, nombre: 'Imagen04', url: imgCabinNew04 }, { id: 5, nombre: 'Imagen05', url: imgCabinNew05 }, { id: 6, nombre: 'Imagen06', url: imgCabinNew06 },
+        { id: 7, nombre: 'Imagen07', url: imgCabinNew07 }, { id: 8, nombre: 'Imagen08', url: imgCabinNew08 }, { id: 9, nombre: 'Imagen09', url: imgCabinNew09 },
+        { id: 10, nombre: 'Imagen10', url: imgCabinNew10 }, { id: 11, nombre: 'Imagen11', url: imgCabinNew11 }, { id: 12, nombre: 'Imagen12', url: imgCabinNew12 },
+        { id: 13, nombre: 'Imagen13', url: imgCabinNew13 }, { id: 14, nombre: 'Imagen14', url: imgCabinNew14 }, { id: 15, nombre: 'Imagen15', url: imgCabinNew15 },
         ],
-        caracteristicas: [{id: 1, descripcion: '1 Ambiente | 18 m2 cubiertos'},{id: 2, descripcion: 'Personalizable'}]
+        caracteristicas: [{ id: 1, descripcion: 'Monombiente | 20 m2' }, { id: 2, descripcion: 'Personalizable' }]
     },
     {
         id: 2,
         nombre: 'Chillout',
-        descripcion: `1 dormitorio | 3 módulos.\n58 m2 totales. \n35 m2 cubiertos + 23 m2 deck.\n\nEs el modelo habitacional más práctico que desarrollamos. Puede modularse de la forma que prefiera el cliente, generando un amplio loft o un dormitorio independiente de cocina-living-comedor.\n\nPuede ser una primera implantación en el terreno que hoy cumpla con los requisitos mínimos para mudarse y luego facilmente ampliarlo para sumar ambientes independientes o rediseñarlo para que tenga uso de SUM o quincho.\n\nLa pérgola propone la extensión de los ambientes hacia el parque. `,
+        descripcion: `60m2\n
+32m2 cub + 28m2 semicub\n
+1 dormitorio + 1 baño + deck semicubierto\n
+Ideal para primera vivienda.\n
+El modelo habitacional más práctico puede modularse como amplio loft o con dormitorio independiente de la cocina-living-comedor.\n
+La versión completa del Chillout suma 28 m2 de deck semicubierto que extienden el estar hacia el parque. Escalable y ampliable a futuro.`,
         valor: 40000,
         moneda: 'USD$',
-        brochure: brochure02,
-        categoria: { id: 1, descripcion: 'Alquiler temporario'},
-        imagenes: [{id: 1, nombre: 'Imagen01', url: imgChilloutNewCaratula}, {id: 2, nombre: 'Imagen02', url: imgChillout02}, {id: 3, nombre: 'Imagen03', url: imgChillout03},
-                    {id: 4, nombre: 'Imagen04', url: imgChillout04}, {id: 5, nombre: 'Imagen05', url: imgChillout05}, {id: 6, nombre: 'Imagen06', url: imgChillout06},
-                    {id: 7, nombre: 'Imagen07', url: imgChillout07}, {id: 8, nombre: 'Imagen08', url: imgChillout08}, {id: 9, nombre: 'Imagen09', url: imgChillout09},
-                    {id: 10, nombre: 'Imagen10', url: imgChillout10}, {id: 11, nombre: 'Imagen11', url: imgChillout11}, {id: 12, nombre: 'Imagen12', url: imgChilloutNew01},
-                ],
-        caracteristicas: [{id: 1, descripcion: '1 Dormitorio | 35 m2 cubiertos'},{id: 2, descripcion: 'Personalizable'}]
+        brochure: BROCHURE_URL,
+        categoria: { id: 1, descripcion: 'Alquiler temporario' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgChilloutNewCaratula }, { id: 2, nombre: 'Imagen02', url: imgChillout02 }, { id: 3, nombre: 'Imagen03', url: imgChillout03 },
+        { id: 4, nombre: 'Imagen04', url: imgChillout04 }, { id: 5, nombre: 'Imagen05', url: imgChillout05 }, { id: 6, nombre: 'Imagen06', url: imgChillout06 },
+        { id: 7, nombre: 'Imagen07', url: imgChillout07 }, { id: 8, nombre: 'Imagen08', url: imgChillout08 }, { id: 9, nombre: 'Imagen09', url: imgChillout09 },
+        { id: 10, nombre: 'Imagen10', url: imgChillout10 }, { id: 11, nombre: 'Imagen11', url: imgChillout11 }, { id: 12, nombre: 'Imagen12', url: imgChilloutNew01 },
+        ],
+        caracteristicas: [{ id: 1, descripcion: '1 Dormitorio | 32 m2 cubiertos' }, { id: 2, descripcion: 'Personalizable' }]
     },
     {
         id: 3,
         nombre: 'Dosdor',
-        descripcion: `2 dormitorios | 6 módulos.\n105 m2 totales.\n70 m2 cubiertos + 35 m2 deck.\n\nLa casa que siempre quisiste.\n\nFuncional a una vida funcional, abierta al parque y amplia. \n\nSe puede personalizar según intenciones del cliente , implantación y orientación del terreno.\n\nComo todos nuestros modelos, puede ser fácilmente ampliable para sumar ambientes independientes o rediseñarlo interiormente, según deseo del cliente. \n\nEste modelo permite al usuario elegir distintas tipologias de diseño. `,
+        descripcion: `105m2\n
+70m2 cub + 35m2 semicub\n
+Una casa amplia y abierta al exterior.\n
+Funcional, con un dormitorio, vestidor/estudio/segundo dormitorio.\n
+Baño completo y toilette independiente.\n
+Un gran espacio social que se abre a un deck, ideal para una vida social o en familia.`,
         valor: 40000,
         moneda: 'USD$',
-        brochure: brochure03,
-        categoria: { id: 1, descripcion: 'Alquiler temporario'},
-        imagenes: [{id: 1, nombre: 'Imagen01', url: imgDosdor01}, {id: 2, nombre: 'Imagen02', url: imgDosdor02}, {id: 3, nombre: 'Imagen03', url: imgDosdor03}, {id: 4, nombre: 'Imagen04', url: imgDosdor04},
-        {id: 5, nombre: 'Imagen05', url: imgDosdor05}, {id: 6, nombre: 'Imagen06', url: imgDosdor06}, {id: 7, nombre: 'Imagen07', url: imgDosdor07}, {id: 8, nombre: 'Imagen08', url: imgDosdor08},
-        {id: 9, nombre: 'Imagen09', url: imgDosdor09}, {id: 10, nombre: 'Imagen10', url: imgDosdor10}, {id: 11, nombre: 'Imagen11', url: imgDosdor11}, {id: 12, nombre: 'Imagen12', url: imgDosdor12}
+        brochure: BROCHURE_URL,
+        categoria: { id: 1, descripcion: 'Alquiler temporario' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgDosdor01 }, { id: 2, nombre: 'Imagen02', url: imgDosdor02 }, { id: 3, nombre: 'Imagen03', url: imgDosdor03 }, { id: 4, nombre: 'Imagen04', url: imgDosdor04 },
+        { id: 5, nombre: 'Imagen05', url: imgDosdor05 }, { id: 6, nombre: 'Imagen06', url: imgDosdor06 }, { id: 7, nombre: 'Imagen07', url: imgDosdor07 }, { id: 8, nombre: 'Imagen08', url: imgDosdor08 },
+        { id: 9, nombre: 'Imagen09', url: imgDosdor09 }, { id: 10, nombre: 'Imagen10', url: imgDosdor10 }, { id: 11, nombre: 'Imagen11', url: imgDosdor11 }, { id: 12, nombre: 'Imagen12', url: imgDosdor12 }
         ],
-        caracteristicas: [{id: 1, descripcion: '1 Dormitorio | 70 m2 cubiertos'},{id: 2, descripcion: 'Personalizable'}]
+        caracteristicas: [{ id: 1, descripcion: '1 Dormitorio | 70 m2 cubiertos' }, { id: 2, descripcion: 'Personalizable' }]
     },
     {
         id: 4,
-        nombre: 'A medida',
-        descripcion: `La línea KUBE nace a partir de la decisión de DROP de que tus proyectos sean a la medida de tu necesidad. Viviendas modernas, con ambientes amplios e iluminados con ventilaciones cruzadas.\n\nAplicable tanto para proyectos en terrenos con mucho espacio disponible, como para terrenos entre medianeras donde se debe lograr una fachada estética que proteja las visuales y un contrafrente vidriado abierto al parque. La posibilidad de que patios internos queden incrustados en el interior de la casa y provean ventilación e iluminación atodos los ambientes circundantes. \n\nLa flexibilidad y amplitud de los ambientes permiten usos diversos, economizando espacios, propios de la versatilidad y velocidad de la vida moderna, provocando espacios acústica y térmicamente aislados sin perder iluminación natural.`,
+        nombre: 'Dosdor',
+        descripcion: `2 dormitorios + deck semicubierto (6 módulos)
+70m2\n
+La casa que siempre quisiste.\n
+Se personaliza según la implantación y orientación del terreno el espacio único cocina-living-comedor genera un ambiente amplio y con clara conexión al exterior.\n
+Se puede personalizar según intenciones del cliente, implantación y orientación del terreno.\n
+Como todos nuestros modelos, puede ser fácilmente ampliable para sumar ambientes independientes o rediseñarlo interiormente, según deseo del cliente.`,
         valor: 40000,
         moneda: 'USD$',
-        brochure: undefined,
-        categoria: { id: 1, descripcion: 'Alquiler temporario'},
-        imagenes: [{id: 0, nombre: 'Imagen00', url: imgKubePortada}, 
-        {id: 1, nombre: 'Imagen01', url: imgKube01}, {id: 2, nombre: 'Imagen02', url: imgKube02}, {id: 3, nombre: 'Imagen03', url: imgKube03}, {id: 4, nombre: 'Imagen04', url: imgKube04},
-        {id: 5, nombre: 'Imagen05', url: imgKube05}, {id: 6, nombre: 'Imagen06', url: imgKube06}, {id: 7, nombre: 'Imagen07', url: imgKube07}, {id: 8, nombre: 'Imagen08', url: imgKube08},
-        {id: 9, nombre: 'Imagen09', url: imgKube09}, {id: 10, nombre: 'Imagen10', url: imgKube10}, {id: 11, nombre: 'Imagen11', url: imgKube11}, {id: 12, nombre: 'Imagen12', url: imgKube12}
+        brochure: BROCHURE_URL,
+        categoria: { id: 1, descripcion: 'Alquiler temporario' },
+        imagenes: [
+            { id: 1, nombre: 'Portada', url: imgDosdor2Portada },
+            { id: 2, nombre: 'Foto 01', url: imgDosdor2Foto01 },
+            { id: 3, nombre: 'Foto 02', url: imgDosdor2Foto02 },
+            { id: 4, nombre: 'Foto 03', url: imgDosdor2Foto03 },
+            { id: 5, nombre: 'Foto 04', url: imgDosdor2Foto04 },
+            { id: 6, nombre: 'Foto 05', url: imgDosdor2Foto05 },
+            { id: 7, nombre: 'Foto 06', url: imgDosdor2Foto06 },
+            { id: 8, nombre: 'Foto 07', url: imgDosdor2Foto07 },
+            { id: 9, nombre: 'Foto 08', url: imgDosdor2Foto08 },
+            { id: 10, nombre: 'Foto 09', url: imgDosdor2Foto09 },
+            { id: 11, nombre: 'Foto 10', url: imgDosdor2Foto10 },
+            { id: 12, nombre: 'Foto 11', url: imgDosdor2Foto11 },
+            { id: 13, nombre: 'Foto 12', url: imgDosdor2Foto12 },
+            { id: 14, nombre: 'Foto 13', url: imgDosdor2Foto13 },
+            { id: 15, nombre: 'Foto 14', url: imgDosdor2Foto14 },
         ],
-        caracteristicas: [{id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad'}]
+        caracteristicas: [{ id: 1, descripcion: '2 dormitorios + deck semicubierto | 70 m2 cubiertos' }]
+    },
+    {
+        id: 5,
+        nombre: 'D60',
+        descripcion: `61m2\n 
+49m2 cub + 12m2 semicub\n 
+Una casa con dos dormitorios, baño completo y living comedor con cocina integrada.\n 
+Un deck semicubierto que funciona perfecto de espacio intermedio entre el living y el exterior.`,
+        valor: 40000,
+        moneda: 'USD$',
+        brochure: BROCHURE_URL,
+        categoria: { id: 1, descripcion: 'Alquiler temporario' },
+        imagenes: [{ id: 0, nombre: 'Imagen00', url: imgKubePortada },
+        { id: 1, nombre: 'Imagen01', url: imgKube01 }, { id: 2, nombre: 'Imagen02', url: imgKube02 }, { id: 3, nombre: 'Imagen03', url: imgKube03 }, { id: 4, nombre: 'Imagen04', url: imgKube04 },
+        { id: 5, nombre: 'Imagen05', url: imgKube05 }, { id: 6, nombre: 'Imagen06', url: imgKube06 }, { id: 7, nombre: 'Imagen07', url: imgKube07 }, { id: 8, nombre: 'Imagen08', url: imgKube08 },
+        { id: 9, nombre: 'Imagen09', url: imgKube09 }, { id: 10, nombre: 'Imagen10', url: imgKube10 }, { id: 11, nombre: 'Imagen11', url: imgKube11 }, { id: 12, nombre: 'Imagen12', url: imgKube12 }
+        ],
+        caracteristicas: [{ id: 1, descripcion: '2 dormitorios | 49 m2 cubiertos' }]
+    },
+    {
+        id: 6,
+        nombre: 'Tu Drop personalizado',
+        descripcion: `Desde DROP entendemos que la flexibilidad a tus necesidades es fundamental, por eso tenemos el objetivo firme de adaptar cada propuesta a las búsquedas particulares de cada uno. Desarrollamos propuestas residenciales contemporáneas, privilegiando espacios espaciosos, muy luminosos y equipados con excelente circulación de aire.\n
+Un planteo sumamente versátil, apto para lotes de dimensiones generosas o parcelas urbanas entre medianeras. En estas últimas, se logra un frente muy estético que cuida las vistas privadas, combinado con un contrafrente acristalado orientado al verde. Además, integra patios interiores que aportan luz natural y flujo de aire a los sectores contiguos.\n
+Esta adaptabilidad espacial admite múltiples configuraciones dinámicas optimizando la superficie, en respuesta al ritmo actual. El resultado: recintos con un gran aislamiento termoacústico que aprovechan al máximo el sol.\n
+Recordá que un Drop no es solamente una vivienda, puede ser la expansión de tu casa, un quincho, un taller, un local comercial o cualquier otro espacio que necesites.`,
+        valor: 40000,
+        moneda: 'USD$',
+        brochure: BROCHURE_URL,
+        categoria: { id: 1, descripcion: 'Alquiler temporario' },
+        imagenes: [{ id: 0, nombre: 'Imagen00', url: imgKubePortada },
+        { id: 1, nombre: 'Imagen01', url: imgKube01 }, { id: 2, nombre: 'Imagen02', url: imgKube02 }, { id: 3, nombre: 'Imagen03', url: imgKube03 }, { id: 4, nombre: 'Imagen04', url: imgKube04 },
+        { id: 5, nombre: 'Imagen05', url: imgKube05 }, { id: 6, nombre: 'Imagen06', url: imgKube06 }, { id: 7, nombre: 'Imagen07', url: imgKube07 }, { id: 8, nombre: 'Imagen08', url: imgKube08 },
+        { id: 9, nombre: 'Imagen09', url: imgKube09 }, { id: 10, nombre: 'Imagen10', url: imgKube10 }, { id: 11, nombre: 'Imagen11', url: imgKube11 }, { id: 12, nombre: 'Imagen12', url: imgKube12 }
+        ],
+        caracteristicas: [{ id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad' }]
     },
 ]

@@ -1,19 +1,25 @@
 import './style.css'
 import { Imagen } from '../../../interfaces/imagen'
 import SectionTextImage from '../../../components/sectionTextImage'
-import imgNosotros from '../../../media/img/nosotros/zPortada nosotros.jpg'
+import imgNosotros from '../../../media/img/nosotros/Socios.webp'
 import imagen001 from '../../../media/img/nosotros/fernando_magno.jpg';
 import imagen002 from '../../../media/img/nosotros/agustin_magno.jpg';
 import imagen003 from '../../../media/img/nosotros/juan_magno.jpg';
 import imagen004 from '../../../media/img/nosotros/dario-bardi.jpg';
 import { useEffect } from 'react';
 
-export default function NosotrosPrincipal() {   
+export default function NosotrosPrincipal() {
     const seccionNosotros: Imagen = {
         id: 1,
         titulo: `Nuestra historia`,
         subtitulo: '',
-        descripcion: `Con GRAUPEL SUR S.A., nuestro estudio de ingeniería y empresa constructora con más de 25 años de experiencia en la actividad de la construcción privada, decidimos desarrollar un proceso de ejecución de módulos habitacionales que cambie el paradigma de la construcción tradicional.\n\nDROP es un nuevo concepto dentro de los bienes raíces. Una nueva manera de entender la vida moderna, inteligente, segura y práctica. Utilizamos fabricantes y proveedores locales que se encuentran cerca denuestras instalaciones de producción, trabajamos apoyándonos en empresas locales para reducir la energía incorporada de cada una de nuestros proyectos.\n\nComo innovadores dentro del sector, los diseños internos únicos de DROP, los materiales de origen local y los proveedores alineados con el valor combinados con un modelo de construcción y fabricación eficiente, nos han permitido convertirnos en un fabricante líder de soluciones de construcciones modulares.`,
+        descripcion: `DROP nace dentro de GRAUPEL SUR S.A., una empresa familiar con más de 25 años de trayectoria en la construcción privada, que reúne un estudio de ingeniería y una empresa constructora bajo un mismo lema: **SABEMOS CONSTRUIR**. DROP es una de nuestras unidades de negocio. Surgió de la decisión de desarrollar un proceso de fabricación de módulos que cambiara el paradigma de la construcción tradicional.
+
+En su momento fue un desafío de vanguardia. Hoy es una realidad: nuestro sistema está probado y es sólido, y ya está consolidada la idea de que lo modular es el futuro de la construcción. Nosotros **sabemos cómo hacerlo**.
+
+Trabajamos con fabricantes y proveedores locales, cercanos a nuestra planta de producción. Así reducimos la energía incorporada de cada proyecto y apoyamos a la industria de nuestra región.
+
+Gracias a nuestros diseños propios, los materiales de origen local y un modelo de fabricación eficiente, hoy somos líderes en viviendas modulares premium. Y vamos más allá: también desarrollamos proyectos comerciales, hoteleros, gastronómicos, educativos y de salud.`,
         imagenUrl: imgNosotros,
         tipoSeccion: {
             id: 3,
@@ -21,9 +27,9 @@ export default function NosotrosPrincipal() {
         }
     }
 
-    useEffect(() => {        
+    useEffect(() => {
         window.scrollTo(0, 0)
-    },[])
+    }, [])
 
     return (
         <section className="section__nosotros">
@@ -55,7 +61,7 @@ export default function NosotrosPrincipal() {
                     <p>M.M.O.</p>
                 </div>
             </div>
-        
+
         </section>
     )
 }

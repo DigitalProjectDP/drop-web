@@ -15,15 +15,15 @@ export default function ModeloPage() {
     const { search } = useLocation();
     const id = new URLSearchParams(search).get("id");
 
-    useEffect(() => {        
+    useEffect(() => {
         fetchModelo();
         window.scrollTo(0, 0)
     }, []);
 
     const fetchModelo = async () => {
-        let modelo = id? await GetModeloById(Number(id)): undefined;
-        setModelo(modelo); 
-        document.title = 'Drop - Modelo ' + modelo?.nombre;  
+        let modelo = id ? await GetModeloById(Number(id)) : undefined;
+        setModelo(modelo);
+        document.title = 'Drop - Modelo ' + modelo?.nombre;
         ReactGA.pageview(window.location.pathname + "/" + modelo?.nombre);
         //setMessage(`Hola, quiero recibir más información por el emprendimiento ${propiedad?.nombre}. ¡Muchas gracias!`);
     }
@@ -35,23 +35,23 @@ export default function ModeloPage() {
         dots: true,
         autoplay: false,
         navContainerClass: `owl-nav`,
-        navClass: ['owl-prev','owl-next'],
+        navClass: ['owl-prev', 'owl-next'],
         dotsClass: `owl-dots customDots`,
         dotClass: `owl-dot buttonDot`,
-        controlsClass: "owl-controls",        
+        controlsClass: "owl-controls",
         smartSpeed: 2000,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:2
+            600: {
+                items: 2
             },
-            900:{
-                items:3
+            900: {
+                items: 3
             },
-            1200:{
-                items:4
+            1200: {
+                items: 4
             },
         }
     };
@@ -65,7 +65,7 @@ export default function ModeloPage() {
         alink.rel = "noreferrer"
         alink.click();
     }
-      
+
     const htmlString = () => (
         <div dangerouslySetInnerHTML={{ __html: modelo?.descripcion || '' }} />
     );
@@ -73,25 +73,25 @@ export default function ModeloPage() {
     const renderListModelos = () => modelo?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)
     const renderImagenes = () => modelo?.imagenes.map((v, i) => <img src={v.url} key={i}></img>)
     const renderImagenesCover = () => modelo?.imagenes.map((v, i) => <img className="img__cover" src={v.url} key={i}></img>)
-    const renderImagenesFill = () => modelo?.imagenes.map((v, i) => <img className ="img__fill" src={v.url} key={i}></img>)
+    const renderImagenesFill = () => modelo?.imagenes.map((v, i) => <img className="img__fill" src={v.url} key={i}></img>)
     return (
         <div>
             <div className="row">
                 <Header opacity={true}></Header>
                 <section className="img__modelo__container col-12 col-lg-6">
-                    <img src={modelo?.imagenes[0]?.url} alt={modelo?.imagenes[0]?.nombre} width="100%"/>
+                    <img src={modelo?.imagenes[0]?.url} alt={modelo?.imagenes[0]?.nombre} width="100%" />
                 </section>
                 <section className="modelo__container col-12 col-lg-6">
-                    <h4 className="text-center mb-3">{modelo?.nombre}</h4>
+                    <h1 className="text-center mb-3">{modelo?.nombre}</h1>
                     {/* <ul className="list__caracteristicas__modelo p-0">
                         {modelo?.caracteristicas? renderListModelos(): ''}
                     </ul> */}
                     <div className="section__descripcion">
-                        {modelo?.descripcion? htmlString(): ''}
+                        {modelo?.descripcion ? htmlString() : ''}
                     </div>
                     {/* <p className="py-3 fw-bold ">{modelo?.moneda} {modelo?.valor}</p> */}
                     <div className="d-flex justify-content-around py-5">
-                        {modelo?.brochure? <button className="button__primary" onClick={viewBrochure}>Brochure</button>: ''}
+                        {modelo?.brochure ? <button className="button__primary" onClick={viewBrochure}>Brochure</button> : ''}
                         <button className="button__primary" data-bs-toggle="modal" data-bs-target="#modal-contacto-modelo">Contacto</button>
                     </div>
                 </section>
@@ -112,8 +112,8 @@ export default function ModeloPage() {
                     {modelo?.imagenes? <OwlCarousel className='modelos__container wide__container' loop {...options}>
                         {renderImagenesCover()} 
                     </OwlCarousel> : ''} */}
-                    {modelo?.imagenes? <OwlCarousel className='modelos__container wide__container' loop {...options}>
-                        {renderImagenesCover()} 
+                    {modelo?.imagenes ? <OwlCarousel className='modelos__container wide__container' loop {...options}>
+                        {renderImagenesCover()}
                     </OwlCarousel> : ''}
                 </section>
 
@@ -121,9 +121,9 @@ export default function ModeloPage() {
                 <div className="modal fade" id="modal-contacto-modelo" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-lg">
                         <div className="modal-content">
-                            <button type="button" className="btn-close button__close" data-bs-dismiss="modal" aria-label="Close"></button>          
+                            <button type="button" className="btn-close button__close" data-bs-dismiss="modal" aria-label="Close"></button>
                             <div className="modal-body p-0 text-align-start">
-                                {modelo?<Contacto data={`Hola. Quiero recibir más información sobre ${modelo?.nombre!}`} isModal={true}></Contacto>:''}
+                                {modelo ? <Contacto data={`Hola. Quiero recibir más información sobre ${modelo?.nombre!}`} isModal={true}></Contacto> : ''}
                             </div>
                         </div>
                     </div>
@@ -131,11 +131,11 @@ export default function ModeloPage() {
 
                 <div className="modal fade" id="modal-contacto-confirmacion" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog">
-                        <div className="modal-content"> 
+                        <div className="modal-content">
                             <div className="modal-header">
                                 <h5 className="modal-title">Confirmación</h5>
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>           
+                            </div>
                             <div className="modal-body p-3 my-3 text-center">
                                 Email enviado con éxito
                             </div>
@@ -148,7 +148,7 @@ export default function ModeloPage() {
 
             </div>
 
-            <WhatsappButton></WhatsappButton> 
+            <WhatsappButton></WhatsappButton>
         </div>
     )
 }

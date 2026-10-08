@@ -17,8 +17,7 @@ export default function CardBanner({ info }: InfoProps) {
         const bannerVideo = document.getElementById("bannerVideo") as HTMLMediaElement;
 
         bannerVideo.src = infoBanner?.imagenUrl || "https://placehold.co/640x360?text=...";
-        bannerVideo.src = "https://yourimageshare.com/ib/u1R1Q9oZWu.mp4";
-        bannerVideo.src = "https://imgur.la/images/2026/10/02/Portada-banner.mp4";
+        bannerVideo.src = "https://imgur.la/images/2026/10/08/Web-Horizontal.mp4";
         //bannerVideo.src = "https://res.cloudinary.com/dundcrnii/video/upload/v1742608521/drop/dwllsjxadazr49lohg2n.mp4";
         bannerVideo.muted = true;
 

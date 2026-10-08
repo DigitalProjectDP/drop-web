@@ -100,9 +100,57 @@ import imgHeadQuarter06 from "../media/img/proyectos/headquarter/IMG_0921.webp";
 import imgHeadQuarter07 from "../media/img/proyectos/headquarter/IMG_0941.webp";
 import imgHeadQuarter08 from "../media/img/proyectos/headquarter/IMG_0237.webp";
 
+import imgCasaRio01 from "../media/img/proyectos/casarioii/Foto 1.webp";
+import imgCasaRio02 from "../media/img/proyectos/casarioii/Foto 2.webp";
+import imgCasaRio03 from "../media/img/proyectos/casarioii/Foto 3.webp";
+import imgCasaRio04 from "../media/img/proyectos/casarioii/Foto 4.webp";
+import imgCasaRio05 from "../media/img/proyectos/casarioii/Foto 5.webp";
+import imgCasaRio06 from "../media/img/proyectos/casarioii/Foto 6.webp";
+import imgCasaRio07 from "../media/img/proyectos/casarioii/Foto 7.webp";
+import imgCasaRio08 from "../media/img/proyectos/casarioii/Foto 8.webp";
+import imgCasaRio09 from "../media/img/proyectos/casarioii/Foto 9.webp";
+
 export const MockProyectos: Modelo[] = [
     {
         id: 1,
+        nombre: 'Casa G28',
+        subtitulo: '',
+        descripcion: `Ubicación: Gorina
+        Ejecución: 3 meses`,
+        valor: 0,
+        moneda: 'USD$',
+        brochure: '',
+        categoria: { id: 0, descripcion: '' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgCabañas01 }, { id: 2, nombre: 'Imagen02', url: imgCabañas02 }, { id: 3, nombre: 'Imagen03', url: imgCabañas03 }, { id: 4, nombre: 'Imagen04', url: imgCabañas04 },
+        { id: 5, nombre: 'Imagen05', url: imgCabañas05 }, { id: 6, nombre: 'Imagen06', url: imgCabañas06 }, { id: 7, nombre: 'Imagen07', url: imgCabañas07 }, { id: 8, nombre: 'Imagen08', url: imgCabañas08 },
+        { id: 9, nombre: 'Imagen09', url: imgCabañas09 }, { id: 10, nombre: 'Imagen10', url: imgCabañas10 }],
+        caracteristicas: [{ id: 1, descripcion: '2 dormitorios | 6 módulos' }, { id: 2, descripcion: '116 m2' }, { id: 3, descripcion: '70m2 cubiertos + 46m2 de deck' }]
+    },
+    {
+        id: 2,
+        nombre: 'Casa Río II',
+        subtitulo: '',
+        descripcion: `Ubicación: Río Santiago, Ensenada
+        Ejecución: 2 meses`,
+        valor: 0,
+        moneda: 'USD$',
+        brochure: '',
+        categoria: { id: 0, descripcion: '' },
+        imagenes: [
+            { id: 1, nombre: 'Imagen01', url: imgCasaRio01 },
+            { id: 2, nombre: 'Imagen02', url: imgCasaRio02 },
+            { id: 3, nombre: 'Imagen03', url: imgCasaRio03 },
+            { id: 4, nombre: 'Imagen04', url: imgCasaRio04 },
+            { id: 5, nombre: 'Imagen05', url: imgCasaRio05 },
+            { id: 6, nombre: 'Imagen06', url: imgCasaRio06 },
+            { id: 7, nombre: 'Imagen07', url: imgCasaRio07 },
+            { id: 8, nombre: 'Imagen08', url: imgCasaRio08 },
+            { id: 9, nombre: 'Imagen09', url: imgCasaRio09 }
+        ],
+        caracteristicas: [{ id: 1, descripcion: '2 dormitorios | 6 módulos' }, { id: 2, descripcion: '116 m2' }, { id: 3, descripcion: '70m2 cubiertos + 46m2 de deck' }]
+    },
+    {
+        id: 3,
         nombre: 'Cabañas de mar',
         subtitulo: 'Glamping',
         descripcion: `Ubicación: Mar de las pampas
@@ -110,14 +158,14 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Glamping'},
-        imagenes: [{id: 1, nombre: 'Imagen01', url: imgCabañas01}, {id: 2, nombre: 'Imagen02', url: imgCabañas02}, {id: 3, nombre: 'Imagen03', url: imgCabañas03}, {id: 4, nombre: 'Imagen04', url: imgCabañas04},
-        {id: 5, nombre: 'Imagen05', url: imgCabañas05}, {id: 6, nombre: 'Imagen06', url: imgCabañas06}, {id: 7, nombre: 'Imagen07', url: imgCabañas07}, {id: 8, nombre: 'Imagen08', url: imgCabañas08},
-        {id: 9, nombre: 'Imagen09', url: imgCabañas09}, {id: 10, nombre: 'Imagen10', url: imgCabañas10}],
-        caracteristicas: [{id: 1, descripcion: '2 dormitorios | 6 módulos'},{id: 2, descripcion: '116 m2'},{id: 3, descripcion: '70m2 cubiertos + 46m2 de deck'}]
+        categoria: { id: 1, descripcion: 'Glamping' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgCabañas01 }, { id: 2, nombre: 'Imagen02', url: imgCabañas02 }, { id: 3, nombre: 'Imagen03', url: imgCabañas03 }, { id: 4, nombre: 'Imagen04', url: imgCabañas04 },
+        { id: 5, nombre: 'Imagen05', url: imgCabañas05 }, { id: 6, nombre: 'Imagen06', url: imgCabañas06 }, { id: 7, nombre: 'Imagen07', url: imgCabañas07 }, { id: 8, nombre: 'Imagen08', url: imgCabañas08 },
+        { id: 9, nombre: 'Imagen09', url: imgCabañas09 }, { id: 10, nombre: 'Imagen10', url: imgCabañas10 }],
+        caracteristicas: [{ id: 1, descripcion: '2 dormitorios | 6 módulos' }, { id: 2, descripcion: '116 m2' }, { id: 3, descripcion: '70m2 cubiertos + 46m2 de deck' }]
     },
     {
-        id: 2,
+        id: 4,
         nombre: 'Casa Matheu',
         subtitulo: 'Residencial',
         descripcion: `Ubicación: Matheu
@@ -125,16 +173,16 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Residencial'},
-        imagenes: [{id: 1, nombre: 'Imagen01', url: imgMatheu01}, {id: 2, nombre: 'Imagen02', url: imgMatheu02}, {id: 3, nombre: 'Imagen03', url: imgMatheu03}, {id: 4, nombre: 'Imagen04', url: imgMatheu04},
-        {id: 5, nombre: 'Imagen05', url: imgMatheu05}, {id: 6, nombre: 'Imagen06', url: imgMatheu06}, {id: 7, nombre: 'Imagen07', url: imgMatheu07}, {id: 8, nombre: 'Imagen08', url: imgMatheu08},
-        {id: 9, nombre: 'Imagen09', url: imgMatheu09}, {id: 10, nombre: 'Imagen10', url: imgMatheu10}, {id: 11, nombre: 'Imagen11', url: imgMatheu11},
-        {id: 12, nombre: 'Imagen12', url: imgMatheu12}, {id: 13, nombre: 'Imagen13', url: imgMatheu13}
+        categoria: { id: 1, descripcion: 'Residencial' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgMatheu01 }, { id: 2, nombre: 'Imagen02', url: imgMatheu02 }, { id: 3, nombre: 'Imagen03', url: imgMatheu03 }, { id: 4, nombre: 'Imagen04', url: imgMatheu04 },
+        { id: 5, nombre: 'Imagen05', url: imgMatheu05 }, { id: 6, nombre: 'Imagen06', url: imgMatheu06 }, { id: 7, nombre: 'Imagen07', url: imgMatheu07 }, { id: 8, nombre: 'Imagen08', url: imgMatheu08 },
+        { id: 9, nombre: 'Imagen09', url: imgMatheu09 }, { id: 10, nombre: 'Imagen10', url: imgMatheu10 }, { id: 11, nombre: 'Imagen11', url: imgMatheu11 },
+        { id: 12, nombre: 'Imagen12', url: imgMatheu12 }, { id: 13, nombre: 'Imagen13', url: imgMatheu13 }
         ],
-        caracteristicas: [{id: 1, descripcion: '1 Dormitorio | 53m2'},{id: 2, descripcion: 'Personalizable'}]
+        caracteristicas: [{ id: 1, descripcion: '1 Dormitorio | 53m2' }, { id: 2, descripcion: 'Personalizable' }]
     },
     {
-        id: 3,
+        id: 5,
         nombre: 'Guest',
         subtitulo: 'Residencial',
         descripcion: `Ubicación: Gonnet
@@ -142,16 +190,16 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Residencial'},
-        imagenes: [{id: 1, nombre: 'Imagen01', url: imgGuest01}, {id: 2, nombre: 'Imagen02', url: imgGuest02}, {id: 3, nombre: 'Imagen03', url: imgGuest03}, {id: 4, nombre: 'Imagen04', url: imgGuest04},
-        {id: 5, nombre: 'Imagen05', url: imgGuest05}, {id: 6, nombre: 'Imagen06', url: imgGuest06}, {id: 7, nombre: 'Imagen07', url: imgGuest07}, {id: 8, nombre: 'Imagen08', url: imgGuest08},
-        {id: 9, nombre: 'Imagen09', url: imgGuest09}, {id: 10, nombre: 'Imagen10', url: imgGuest10}, {id: 11, nombre: 'Imagen11', url: imgGuest11},
-        {id: 12, nombre: 'Imagen12', url: imgGuest12}, {id: 13, nombre: 'Imagen13', url: imgGuest13}
+        categoria: { id: 1, descripcion: 'Residencial' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgGuest01 }, { id: 2, nombre: 'Imagen02', url: imgGuest02 }, { id: 3, nombre: 'Imagen03', url: imgGuest03 }, { id: 4, nombre: 'Imagen04', url: imgGuest04 },
+        { id: 5, nombre: 'Imagen05', url: imgGuest05 }, { id: 6, nombre: 'Imagen06', url: imgGuest06 }, { id: 7, nombre: 'Imagen07', url: imgGuest07 }, { id: 8, nombre: 'Imagen08', url: imgGuest08 },
+        { id: 9, nombre: 'Imagen09', url: imgGuest09 }, { id: 10, nombre: 'Imagen10', url: imgGuest10 }, { id: 11, nombre: 'Imagen11', url: imgGuest11 },
+        { id: 12, nombre: 'Imagen12', url: imgGuest12 }, { id: 13, nombre: 'Imagen13', url: imgGuest13 }
         ],
-        caracteristicas: [{id: 1, descripcion: 'Casa 1 dormitorio | 97m2'},{id: 2, descripcion: 'Personalizable'}]
+        caracteristicas: [{ id: 1, descripcion: 'Casa 1 dormitorio | 97m2' }, { id: 2, descripcion: 'Personalizable' }]
     },
     {
-        id: 4,
+        id: 6,
         nombre: 'Sueño Joven',
         subtitulo: 'Vivienda',
         descripcion: `Ubicación: Villa Castells
@@ -159,15 +207,15 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Vivienda'},
-        imagenes: [{id: 1, nombre: 'Imagen01', url: imgSueño01}, {id: 2, nombre: 'Imagen02', url: imgSueño02}, {id: 3, nombre: 'Imagen03', url: imgSueño03}, {id: 4, nombre: 'Imagen04', url: imgSueño04},
-        {id: 5, nombre: 'Imagen05', url: imgSueño05}, {id: 6, nombre: 'Imagen06', url: imgSueño06}, {id: 7, nombre: 'Imagen07', url: imgSueño07}, {id: 8, nombre: 'Imagen08', url: imgSueño08},
-        {id: 9, nombre: 'Imagen09', url: imgSueño09}, {id: 10, nombre: 'Imagen10', url: imgSueño10}, {id: 11, nombre: 'Imagen11', url: imgSueño11}, {id: 12, nombre: 'Imagen12', url: imgSueño12}
+        categoria: { id: 1, descripcion: 'Vivienda' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgSueño01 }, { id: 2, nombre: 'Imagen02', url: imgSueño02 }, { id: 3, nombre: 'Imagen03', url: imgSueño03 }, { id: 4, nombre: 'Imagen04', url: imgSueño04 },
+        { id: 5, nombre: 'Imagen05', url: imgSueño05 }, { id: 6, nombre: 'Imagen06', url: imgSueño06 }, { id: 7, nombre: 'Imagen07', url: imgSueño07 }, { id: 8, nombre: 'Imagen08', url: imgSueño08 },
+        { id: 9, nombre: 'Imagen09', url: imgSueño09 }, { id: 10, nombre: 'Imagen10', url: imgSueño10 }, { id: 11, nombre: 'Imagen11', url: imgSueño11 }, { id: 12, nombre: 'Imagen12', url: imgSueño12 }
         ],
-        caracteristicas: [{id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad'}]
+        caracteristicas: [{ id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad' }]
     },
     {
-        id: 5,
+        id: 7,
         nombre: 'Vino Andino',
         subtitulo: 'Alquiler temporario',
         descripcion: `Ubicación: Valle de uco
@@ -175,18 +223,18 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Alquiler temporario'},
-        imagenes: [{id: 1, nombre: 'Imagen01', url: imgVino01}, {id: 2, nombre: 'Imagen02', url: imgVino02}, {id: 3, nombre: 'Imagen03', url: imgVino03}, {id: 4, nombre: 'Imagen04', url: imgVino04},
-        {id: 5, nombre: 'Imagen05', url: imgVino05}, {id: 6, nombre: 'Imagen06', url: imgVino06}, {id: 7, nombre: 'Imagen07', url: imgVino07}, {id: 8, nombre: 'Imagen08', url: imgVino08},
-        {id: 9, nombre: 'Imagen09', url: imgVino09}, {id: 10, nombre: 'Imagen10', url: imgVino10}, {id: 11, nombre: 'Imagen11', url: imgVino11}, {id: 12, nombre: 'Imagen12', url: imgVino12},
-        {id: 13, nombre: 'Imagen13', url: imgVino13}, {id: 14, nombre: 'Imagen14', url: imgVino14}, {id: 15, nombre: 'Imagen15', url: imgVino15}, {id: 16, nombre: 'Imagen16', url: imgVino16},
-        {id: 17, nombre: 'Imagen17', url: imgVino17}, {id: 18, nombre: 'Imagen18', url: imgVino18}, {id: 19, nombre: 'Imagen19', url: imgVino19}, {id: 20, nombre: 'Imagen20', url: imgVino20}
+        categoria: { id: 1, descripcion: 'Alquiler temporario' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgVino01 }, { id: 2, nombre: 'Imagen02', url: imgVino02 }, { id: 3, nombre: 'Imagen03', url: imgVino03 }, { id: 4, nombre: 'Imagen04', url: imgVino04 },
+        { id: 5, nombre: 'Imagen05', url: imgVino05 }, { id: 6, nombre: 'Imagen06', url: imgVino06 }, { id: 7, nombre: 'Imagen07', url: imgVino07 }, { id: 8, nombre: 'Imagen08', url: imgVino08 },
+        { id: 9, nombre: 'Imagen09', url: imgVino09 }, { id: 10, nombre: 'Imagen10', url: imgVino10 }, { id: 11, nombre: 'Imagen11', url: imgVino11 }, { id: 12, nombre: 'Imagen12', url: imgVino12 },
+        { id: 13, nombre: 'Imagen13', url: imgVino13 }, { id: 14, nombre: 'Imagen14', url: imgVino14 }, { id: 15, nombre: 'Imagen15', url: imgVino15 }, { id: 16, nombre: 'Imagen16', url: imgVino16 },
+        { id: 17, nombre: 'Imagen17', url: imgVino17 }, { id: 18, nombre: 'Imagen18', url: imgVino18 }, { id: 19, nombre: 'Imagen19', url: imgVino19 }, { id: 20, nombre: 'Imagen20', url: imgVino20 }
         ],
-        caracteristicas: [{id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad'}]
+        caracteristicas: [{ id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad' }]
     }
     ,
     {
-        id: 6,
+        id: 8,
         nombre: 'Gala',
         subtitulo: 'Residencial',
         descripcion: `Ubicación: Bariloche
@@ -194,16 +242,16 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Residencial'},
-        imagenes: [{id: 1, nombre: 'Imagen01', url: imgGala01}, 
-        {id: 2, nombre: 'Imagen02', url: imgGala02}, {id: 3, nombre: 'Imagen03', url: imgGala03}, {id: 4, nombre: 'Imagen04', url: imgGala04},
-        {id: 5, nombre: 'Imagen05', url: imgGala05}, {id: 6, nombre: 'Imagen06', url: imgGala06}, {id: 7, nombre: 'Imagen07', url: imgGala07},
-        {id: 8, nombre: 'Imagen08', url: imgGala08}
+        categoria: { id: 1, descripcion: 'Residencial' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgGala01 },
+        { id: 2, nombre: 'Imagen02', url: imgGala02 }, { id: 3, nombre: 'Imagen03', url: imgGala03 }, { id: 4, nombre: 'Imagen04', url: imgGala04 },
+        { id: 5, nombre: 'Imagen05', url: imgGala05 }, { id: 6, nombre: 'Imagen06', url: imgGala06 }, { id: 7, nombre: 'Imagen07', url: imgGala07 },
+        { id: 8, nombre: 'Imagen08', url: imgGala08 }
         ],
-        caracteristicas: [{id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad'}]
+        caracteristicas: [{ id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad' }]
     },
     {
-        id: 7,
+        id: 9,
         nombre: 'Casa Canario',
         subtitulo: 'Residencial/Alquiler temporario',
         descripcion: `Ubicación: Costa del este
@@ -211,17 +259,17 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Residencial/Alquiler temporario'},
-        imagenes: [{id: 1, nombre: 'Imagen01', url: imgCasaCanario01}, {id: 2, nombre: 'Imagen02', url: imgCasaCanario02}, 
-        {id: 3, nombre: 'Imagen03', url: imgCasaCanario03}, {id: 4, nombre: 'Imagen04', url: imgCasaCanario04},
-        {id: 5, nombre: 'Imagen05', url: imgCasaCanario05}, {id: 6, nombre: 'Imagen06', url: imgCasaCanario06}, 
-        {id: 7, nombre: 'Imagen07', url: imgCasaCanario07}, {id: 8, nombre: 'Imagen08', url: imgCasaCanario08},
-        {id: 9, nombre: 'Imagen09', url: imgCasaCanario09}
+        categoria: { id: 1, descripcion: 'Residencial/Alquiler temporario' },
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgCasaCanario01 }, { id: 2, nombre: 'Imagen02', url: imgCasaCanario02 },
+        { id: 3, nombre: 'Imagen03', url: imgCasaCanario03 }, { id: 4, nombre: 'Imagen04', url: imgCasaCanario04 },
+        { id: 5, nombre: 'Imagen05', url: imgCasaCanario05 }, { id: 6, nombre: 'Imagen06', url: imgCasaCanario06 },
+        { id: 7, nombre: 'Imagen07', url: imgCasaCanario07 }, { id: 8, nombre: 'Imagen08', url: imgCasaCanario08 },
+        { id: 9, nombre: 'Imagen09', url: imgCasaCanario09 }
         ],
-        caracteristicas: [{id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad'}]
+        caracteristicas: [{ id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad' }]
     },
     {
-        id: 8,
+        id: 10,
         nombre: 'Head Quarter Graupel',
         subtitulo: 'Oficinas',
         descripcion: `Ubicación: La Plata
@@ -229,13 +277,13 @@ export const MockProyectos: Modelo[] = [
         valor: 40000,
         moneda: 'USD$',
         brochure: '',
-        categoria: { id: 1, descripcion: 'Oficinas'},
+        categoria: { id: 1, descripcion: 'Oficinas' },
         imagenes: [
-        {id: 1, nombre: 'Imagen01', url: imgHeadQuarter01}, {id: 2, nombre: 'Imagen02', url: imgHeadQuarter02}, 
-        {id: 3, nombre: 'Imagen03', url: imgHeadQuarter03}, {id: 4, nombre: 'Imagen04', url: imgHeadQuarter04},
-        {id: 5, nombre: 'Imagen05', url: imgHeadQuarter05}, {id: 6, nombre: 'Imagen06', url: imgHeadQuarter06}, 
-        {id: 7, nombre: 'Imagen07', url: imgHeadQuarter07}, {id: 8, nombre: 'Imagen08', url: imgHeadQuarter08}
+            { id: 1, nombre: 'Imagen01', url: imgHeadQuarter01 }, { id: 2, nombre: 'Imagen02', url: imgHeadQuarter02 },
+            { id: 3, nombre: 'Imagen03', url: imgHeadQuarter03 }, { id: 4, nombre: 'Imagen04', url: imgHeadQuarter04 },
+            { id: 5, nombre: 'Imagen05', url: imgHeadQuarter05 }, { id: 6, nombre: 'Imagen06', url: imgHeadQuarter06 },
+            { id: 7, nombre: 'Imagen07', url: imgHeadQuarter07 }, { id: 8, nombre: 'Imagen08', url: imgHeadQuarter08 }
         ],
-        caracteristicas: [{id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad'}]
+        caracteristicas: [{ id: 1, descripcion: 'Proyectos personalizados y adaptados según necesidad' }]
     }
 ]

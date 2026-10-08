@@ -4,6 +4,7 @@
   --third-color: #d696a8;
   --fourth-color: #115778;
   --fifth-color: #7b7b84;
+  --yellow-color: #fded04;
   --background-color: #FFFFFF;
 
   --filter-second-color: invert(27%) sepia(76%) saturate(1612%) hue-rotate(314deg) brightness(88%) contrast(89%);
@@ -13,12 +14,13 @@
   --filter-grey-color: invert(28%) sepia(6%) saturate(1276%) hue-rotate(37deg) brightness(97%) contrast(88%);
 
   --filter-green-color: invert(31%) sepia(95%) saturate(440%) hue-rotate(129deg) brightness(92%) contrast(103%);
+  --filter-yellow-color: invert(82%) sepia(91%) saturate(752%) hue-rotate(348deg) brightness(97%) contrast(105%);
   --filter-blue-color: invert(46%) sepia(34%) saturate(583%) hue-rotate(155deg) brightness(91%) contrast(90%);
 
 
-  --font-primary: 'Montserrat', sans-serif;
-  --font-secondary: 'Inter', sans-serif;
-  --font-third: 'Inter', sans-serif;
+  --font-primary: 'Aileron', sans-serif;
+  --font-secondary: 'Aileron', sans-serif;
+  --font-third: 'Aileron', sans-serif;
   --font-nova: ''
 
 }
@@ -26,7 +28,7 @@
 body{  
   margin: 0;
   background-color: #2d2d2d;
-  font-family: 'Montserrat', sans-serif!important;
+  font-family: 'Aileron', sans-serif!important;
   min-height: 100vh;
   height: 100%;
 }
@@ -59,22 +61,23 @@ a:hover{
   font-weight: 400;
   background-color: #FFF;
   padding: 0.3rem 1rem;
-  border: 1px solid black!important;
-  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+  border: 1px solid grey!important;
   transition: 0.5s background-color;
 }
 
 .button__primary:hover{
-  background-color: #006F6A;
+  background-color: #fded04;
   color: #FFF;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.9);
   opacity: 1;
 }
 
 .button__secondary{
-  background-color: var(--second-color);
+  background-color: var(--yellow-color);
   color: #FFF;
   padding: 0.5rem 1rem;
   border: 0;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.9);
 }
 
 .button__secondary:hover{

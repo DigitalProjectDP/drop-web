@@ -22,6 +22,7 @@ a.navbar-toggler{
 
 .navbar-nav li{
     min-height: 3rem;
+    margin-top: 0.5rem;
 }
 
 .navbar-brand{

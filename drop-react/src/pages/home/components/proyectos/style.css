@@ -185,7 +185,7 @@
 }
 
 @keyframes proyecto {
-    from {filter: var(--filter-green-color);}
+    from {filter: var(--filter-yellow-color);}
     to {filter: var(--filter-blue-color);}
 }
 
