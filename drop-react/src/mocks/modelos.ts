@@ -182,7 +182,7 @@ Como todos nuestros modelos, puede ser fácilmente ampliable para sumar ambiente
             { id: 14, nombre: 'Foto 13', url: imgDosdor2Foto13 },
             { id: 15, nombre: 'Foto 14', url: imgDosdor2Foto14 },
         ],
-        caracteristicas: [{ id: 1, descripcion: '2 dormitorios + deck semicubierto | 70 m2 cubiertos' }]
+        caracteristicas: [{ id: 1, descripcion: '2 dormitorios + deck semicubierto | 70 m2 cubiertos' }, { id: 2, descripcion: 'Personalizable' }]
     },
     {
         id: 5,
@@ -200,7 +200,7 @@ Un deck semicubierto que funciona perfecto de espacio intermedio entre el living
         { id: 5, nombre: 'Imagen05', url: imgKube05 }, { id: 6, nombre: 'Imagen06', url: imgKube06 }, { id: 7, nombre: 'Imagen07', url: imgKube07 }, { id: 8, nombre: 'Imagen08', url: imgKube08 },
         { id: 9, nombre: 'Imagen09', url: imgKube09 }, { id: 10, nombre: 'Imagen10', url: imgKube10 }, { id: 11, nombre: 'Imagen11', url: imgKube11 }, { id: 12, nombre: 'Imagen12', url: imgKube12 }
         ],
-        caracteristicas: [{ id: 1, descripcion: '2 dormitorios | 49 m2 cubiertos' }]
+        caracteristicas: [{ id: 1, descripcion: '2 dormitorios | 49 m2 cubiertos' }, { id: 2, descripcion: 'Personalizable' }]
     },
     {
         id: 6,

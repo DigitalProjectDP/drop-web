@@ -8,12 +8,12 @@ import { IoMail } from "react-icons/io5";
 import SpinnerLoading from '../spinner';
 import { confirmAlert } from 'react-confirm-alert';
 
-interface ConsultaProps{
+interface ConsultaProps {
     data: string;
     isModal?: boolean;
 }
 
-export default function Contacto({data, isModal}: ConsultaProps){
+export default function Contacto({ data, isModal }: ConsultaProps) {
     const [message, setMessage] = useState(data);
     const [loading, setLoading] = useState(false);
     const [instagram, setInstagram] = useState('');
@@ -30,9 +30,9 @@ export default function Contacto({data, isModal}: ConsultaProps){
         setInstagram(instagramParametro);
         setWhatsapp(whatsappParametro);
         setTelefono(telefonoParametro);
-    }, [])  
-    
-    const { register, formState: {errors}, handleSubmit } = useForm({
+    }, [])
+
+    const { register, formState: { errors }, handleSubmit } = useForm({
         defaultValues: {
             Nombre: '',
             Apellido: '',
@@ -46,8 +46,8 @@ export default function Contacto({data, isModal}: ConsultaProps){
     });
 
     useEffect(() => {
-        setMessage(data);        
-    }, [data]);  
+        setMessage(data);
+    }, [data]);
 
     const enviarContacto = async (formData: any) => {
         setLoading(true);
@@ -60,138 +60,138 @@ export default function Contacto({data, isModal}: ConsultaProps){
             idSistema: 5,
             Id: 0
         }
-        let response = await SendMail(formData);        
-        
+        let response = await SendMail(formData);
+
         setLoading(false);
-        
-        confirmAlert({            
+
+        confirmAlert({
             message: response,
             buttons: [{
                 label: 'Aceptar',
                 className: "button__primary",
                 onClick: () => window.location.reload()
-                }],
-            willUnmount: () => {window.location.reload()}
+            }],
+            willUnmount: () => { window.location.reload() }
         });
 
         setTimeout(() => {
             window.location.reload();
         }, 2000);
-        
-        
+
+
     }
 
     let iconStyles = { color: "white" };
 
     return (
-      <section className="container-fluid section__contacto">
-        <div className="section__title text-center py-5">
-          <h3>¡Hablemos!</h3>
-        </div>
-        <div className="row">
-          {!isModal?<div className="col-12 col-lg-6 text-start align-items-start">
-            <ul>
-              <li>
-                <FaLocationDot className="mx-3" size={24}></FaLocationDot>
-                <div>
-                    <h5>Ubicación</h5>
-                    {/* <p>12 779, B1900 La Plata, Provincia de Buenos Aires <br /> Cita previa requerida</p> */}
-                    <p>Av. 520 3171, B1902 La Plata, Provincia de Buenos Aires<br /> Cita previa requerida</p>
-                </div>
-              </li>
-              <li>
-                <div className="whatsapp__icon__container p-0 rounded-circle d-flex justify-content-center align-center mx-3">
-                    <FaWhatsapp className="mt-1" size={16} style={iconStyles}></FaWhatsapp>
-                </div>
-                {/* <FaPhone className="mx-3" size={24}></FaPhone> */}
-                <div>
-                    <h5>Teléfono</h5>
-                    <p><a href="tel:+2212200007" target="_blank" rel="noreferrer">2212200007</a></p>
-                </div>
-              </li>
-              <li>
-                <IoMail className="mx-3" size={24}></IoMail>
-                <div>
-                    <h5>Email</h5>
-                    <p><a href="mailto:ventas@dropmodular.com" target="_blank" rel="noreferrer">ventas@dropmodular.com</a></p>                    
-                </div>
-              </li>
-            </ul>
-            <div className="d-flex flex-row gap-1 justify-content-center py-4 mt-4">
-              <a href={instagram} target="_blank" rel="noreferrer"><FaInstagram className="contacto__icon mx-2" size={32}></FaInstagram></a>
-              <a href="https://www.facebook.com/profile.php?id=100084131770712&mibextid=LQQJ4d" target="_blank" rel="noreferrer"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
-              <a href="https://www.tiktok.com/@drop.modular" target="_blank" rel="noreferrer"><FaTiktok className="contacto__icon mx-2" size={32}></FaTiktok></a>
+        <section className="container-fluid section__contacto">
+            <div className="section__title text-center py-5">
+                <h3>¡Hablemos!</h3>
             </div>
-          </div>:''}
-
-          <form className={`col-12 ${isModal?'':'col-lg-6'} `} onSubmit={handleSubmit(enviarContacto)}>
             <div className="row">
-                <div className="col-md-6">
-                    <input
-                        type="text"
-                        {...register("Nombre", { required: true })}
-                        id="contacto_nombre"
-                        placeholder="* Nombre"
-                        className="form-control input__form"
-                    />
-                    {errors.Nombre?.type === "required" && (
-                        <p className="text-danger"> El campo nombre es requerido</p>
-                    )}
-                </div>
-                <div className="col-md-6">
-                    <input
-                        type="text"
-                        {...register("Apellido", { required: true })}
-                        id="contacto_apellido"
-                        placeholder="* Apellido"
-                        className="form-control input__form"
-                    />
-                    {errors.Apellido?.type === "required" && (
-                        <p className="text-danger"> El campo apellido es requerido</p>
-                    )}
-                </div>
-                <div className="col-md-6">
-                    <input
-                        type="text"
-                        {...register("Whatsapp")}
-                        id="contacto_telefono"
-                        placeholder="WhatsApp (sin 0 ni 15)"
-                        className="form-control input__form"
-                    />
-                </div>
-                <div className="col-md-6">
-                    <input
-                        type="email"
-                        {...register("Email", { required: true })}
-                        id="contacto_email"
-                        placeholder="* Email"
-                        className="form-control input__form"
-                    />
-                    {errors.Email?.type === "required" && (
-                        <p className="text-danger"> El campo email es requerido</p>
-                    )}
-                </div>
-                <div className="col-md-12">
-                    <textarea
-                        id="contacto_mensaje"
-                        {...register("Mensaje")}
-                        placeholder="Escriba aquí su mensaje"
-                        className="form-control input__form"
-                    ></textarea>
-                </div>
-                <div className="col-md-12 text-center">
-                    <button
-                        type="submit"
-                        id="contacto_submit"
-                        className="button__primary my-3"
-                    >
-                        Enviar
-                    </button>
-                </div>
+                {!isModal ? <div className="col-12 col-lg-6 text-start align-items-start">
+                    <ul>
+                        <li>
+                            <FaLocationDot className="mx-3" size={24}></FaLocationDot>
+                            <div>
+                                <h5>Ubicación</h5>
+                                {/* <p>12 779, B1900 La Plata, Provincia de Buenos Aires <br /> Cita previa requerida</p> */}
+                                <p>Av. 520 3171, B1902 La Plata, Provincia de Buenos Aires<br /> Cita previa requerida</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="whatsapp__icon__container p-0 rounded-circle d-flex justify-content-center align-center mx-3">
+                                <FaWhatsapp className="mt-1" size={16} style={iconStyles}></FaWhatsapp>
+                            </div>
+                            {/* <FaPhone className="mx-3" size={24}></FaPhone> */}
+                            <div>
+                                <h5>Teléfono</h5>
+                                <p><a href="tel:+2212200007" target="_blank" rel="noreferrer">221 220-0007</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <IoMail className="mx-3" size={24}></IoMail>
+                            <div>
+                                <h5>Email</h5>
+                                <p><a href="mailto:ventas@dropmodular.com" target="_blank" rel="noreferrer">ventas@dropmodular.com</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div className="d-flex flex-row gap-1 justify-content-center py-4 mt-4">
+                        <a href={instagram} target="_blank" rel="noreferrer"><FaInstagram className="contacto__icon mx-2" size={32}></FaInstagram></a>
+                        <a href="https://www.facebook.com/profile.php?id=100084131770712&mibextid=LQQJ4d" target="_blank" rel="noreferrer"><FaFacebook className="contacto__icon mx-2" size={32}></FaFacebook></a>
+                        <a href="https://www.tiktok.com/@drop.modular" target="_blank" rel="noreferrer"><FaTiktok className="contacto__icon mx-2" size={32}></FaTiktok></a>
+                    </div>
+                </div> : ''}
+
+                <form className={`col-12 ${isModal ? '' : 'col-lg-6'} `} onSubmit={handleSubmit(enviarContacto)}>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <input
+                                type="text"
+                                {...register("Nombre", { required: true })}
+                                id="contacto_nombre"
+                                placeholder="* Nombre"
+                                className="form-control input__form"
+                            />
+                            {errors.Nombre?.type === "required" && (
+                                <p className="text-danger"> El campo nombre es requerido</p>
+                            )}
+                        </div>
+                        <div className="col-md-6">
+                            <input
+                                type="text"
+                                {...register("Apellido", { required: true })}
+                                id="contacto_apellido"
+                                placeholder="* Apellido"
+                                className="form-control input__form"
+                            />
+                            {errors.Apellido?.type === "required" && (
+                                <p className="text-danger"> El campo apellido es requerido</p>
+                            )}
+                        </div>
+                        <div className="col-md-6">
+                            <input
+                                type="text"
+                                {...register("Whatsapp")}
+                                id="contacto_telefono"
+                                placeholder="WhatsApp (sin 0 ni 15)"
+                                className="form-control input__form"
+                            />
+                        </div>
+                        <div className="col-md-6">
+                            <input
+                                type="email"
+                                {...register("Email", { required: true })}
+                                id="contacto_email"
+                                placeholder="* Email"
+                                className="form-control input__form"
+                            />
+                            {errors.Email?.type === "required" && (
+                                <p className="text-danger"> El campo email es requerido</p>
+                            )}
+                        </div>
+                        <div className="col-md-12">
+                            <textarea
+                                id="contacto_mensaje"
+                                {...register("Mensaje")}
+                                placeholder="Escriba aquí su mensaje"
+                                className="form-control input__form"
+                            ></textarea>
+                        </div>
+                        <div className="col-md-12 text-center">
+                            <button
+                                type="submit"
+                                id="contacto_submit"
+                                className="button__primary my-3"
+                            >
+                                Enviar
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-          </form>
-        </div>
-        {loading? <SpinnerLoading></SpinnerLoading>: ''}
-      </section>
+            {loading ? <SpinnerLoading></SpinnerLoading> : ''}
+        </section>
     );
 }

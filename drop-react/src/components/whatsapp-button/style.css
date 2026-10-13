@@ -39,7 +39,8 @@
 }
 
 .whatsapp__container a:hover{
-    background-color: var(--fifth-color);
+    /* background-color: var(--fifth-color); */
+    opacity: 0.7;
     box-shadow: 3px 3px 10px var(--dark-second-color);
 }
 

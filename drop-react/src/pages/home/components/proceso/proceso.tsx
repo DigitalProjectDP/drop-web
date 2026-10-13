@@ -9,7 +9,7 @@ export default function HomeProceso() {
         id: 1,
         titulo: `Proceso de fabricación`,
         subtitulo: '',
-        descripcion: `El proceso productivo está enmarcado en un ambito industrializado con parámetros de control de materiales y calidad de terminaciones. Generando un proceso productivo eficiente, ahorrando materiales, plazos y por ende costos.\n\nUna vez que nuestros modelos están totalmente terminados en fábrica, a través del area de logística se embalan para el traslado y se cargan en los carretones de traslado para iniciar el camino a destino. Desde que nos encontramos en el terreno, si el proyecto puede ser transportado en un sólo módulo, se coloca sobre las fundaciones, se conectan los servicios y ya está listo para habitar. Si va en varios módulos, se realiza en ensamble y luego en no más de 7 días el proyecto ¡está listo para usar! `,
+        descripcion: `Desarrollamos la producción dentro de un esquema propio industrializado, rigurosa supervisión de insumos y terminaciones. Esto garantiza una elaboración ultra eficiente, optimizando materiales, tiempos de entrega y presupuestos finales.\nCon las unidades totalmente finalizadas en planta, la división logística las protege y posiciona en carretones de traslado rumbo al sitio indicado. Al llegar al terreno, si el diseño comprende una unidad individual, se apoya sobre bases, conectamos suministros y queda totalmente apta para instalarte. Cuando consta de múltiples partes, se acoplan en el lugar y en menos de una semana la obra está finalizada.`,
         imagenUrl: imgProceso,
         tipoSeccion: {
             id: 3,

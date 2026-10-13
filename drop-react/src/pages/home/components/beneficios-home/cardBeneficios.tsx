@@ -11,7 +11,7 @@ export default function CardBeneficioHome({data}: BeneficiosProps) {
 
     useEffect(() => {
         setBeneficio(data);
-    }, []);
+    }, [data]);
 
 
     const renderListBeneficios = () => beneficio?.caracteristicas.map((v, i) => <li key={i}>{v.descripcion}</li>)

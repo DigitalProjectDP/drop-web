@@ -19,7 +19,7 @@ import HomeReseñas from './components/reseñas/reseñas';
 export default function Home() {
   const { search } = useLocation();
   const [isVisited, setIsVisited] = useState(false);
-  
+
   let id = new URLSearchParams(search).get("id");
   //sessionStorage.removeItem("homeVisited");
 
@@ -38,27 +38,27 @@ export default function Home() {
     if (id === undefined || id === "" || id === null || homeVisited === "true") {
       navigate(`#`);
       setTimeout(() => {
-        window.scrollTo(0, 0);        
+        window.scrollTo(0, 0);
       }, 50);
     }
-    else {  
-        setTimeout(() => {
-          if (id === "section__hipotecario") {
-            document.querySelector(`#${id}`)?.scrollIntoView({
-              behavior: 'smooth',
-              block: 'center',
-            });
-          }
-          else {
-            sessionStorage.setItem("homeVisited", "true");  
-            document.querySelector(`#${id}`)?.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-            });
-          }
+    else {
+      setTimeout(() => {
+        if (id === "section__hipotecario") {
+          document.querySelector(`#${id}`)?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+          });
+        }
+        else {
+          sessionStorage.setItem("homeVisited", "true");
+          document.querySelector(`#${id}`)?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
 
-        }, 0);
-    } 
+      }, 0);
+    }
 
   }, [id])
 
@@ -70,8 +70,8 @@ export default function Home() {
       <HomePrincipal></HomePrincipal>
       <HomeProyectos></HomeProyectos>
       <HomeModelos></HomeModelos>
-      <HomeBeneficiosNew></HomeBeneficiosNew>
       <HomeInversiones></HomeInversiones>
+      <HomeBeneficiosNew></HomeBeneficiosNew>
       <HomeProceso></HomeProceso>
       <HomeReseñas></HomeReseñas>
       <HomeInstagram></HomeInstagram>

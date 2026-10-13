@@ -55,10 +55,10 @@
     height: 100%;
     width: 99%;
     z-index: 2;
-    background: url(../../../../media/img/arrow_right.png);
+    background: url(../../../../media/img/arrow_right_yellow.png);
     background-repeat: no-repeat;
     background-size: contain;
-    filter: var(--filter-yellow-color);
+    /* filter: var(--filter-yellow-color); */
 }
 
 .text-transparent{
@@ -81,7 +81,7 @@
 @media screen and (max-width:1025px){
     .timeline__arrow::after{
         top: 4.5rem;
-        filter: var(--filter-yellow-color);
+        /* filter: var(--filter-yellow-color); */
     }
     
     .timeline__container h5{
@@ -102,11 +102,11 @@
         left: 0;
         height: 100%;
         width: 5%;
-        background: url(../../../../media/img/arrow_down.png);
+        background: url(../../../../media/img/arrow-yellow.png);
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 2;    
-        filter: var(--filter-yellow-color);
+        /* filter: var(--filter-yellow-color); */
     }
 }
 

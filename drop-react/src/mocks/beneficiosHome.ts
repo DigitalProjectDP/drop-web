@@ -9,8 +9,8 @@ import imgBeneficio6 from "../media/img/beneficios/sustentabilidad.png";
 export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 1,
-    titulo: "VELOCIDAD",
-    descripcion: `Procesos constructivos de máximo 90 días en fábrica, instalaciones en el terreno muy veloces y con poco impacto.`,
+    titulo: "90 DÍAS",
+    descripcion: `Es solo el tiempo que necesitamos en fábrica, las instalaciones en el terreno son muy veloces y con poco impacto.`,
     imagen: imgBeneficio1,
     color: '#fded04',
     caracteristicas: [
@@ -21,7 +21,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 2,
     titulo: "EXPANSION",
-    descripcion: `Con nuestros modelos DROP, siempre vas a tener la posibilidad de expandir la vivienda o local que proyectes.`,
+    descripcion: `Nuestros DROPs están diseñados para que puedas ampliarlos siempre, ya sea una vivienda, un local comercial, u otro destino que elijas.`,
     imagen: imgBeneficio2,
     color: '#fded04',
     caracteristicas: [
@@ -33,7 +33,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 3,
     titulo: "AHORRO",
-    descripcion: `No sólo ahorrarás dinero, sino también disgustos y tiempo. Los plazos y valores pactados inicialmente no serán una variable.`,
+    descripcion: `No solo vas a ahorrar dinero, sino también tiempo y estrés. Los plazos y valores pactados inicialmente no van a ser una variable. Lo hacemos SIMPLE.`,
     imagen: imgBeneficio3,
     color: '#fded04',
     caracteristicas: [
@@ -44,8 +44,8 @@ export const MockBeneficiosHome: Beneficio[] = [
   },
   {
     id: 4,
-    titulo: "CALIDAD",
-    descripcion: `DROP posee todos materiales de primera calidad y en su conjunto pensado para que la durabilidad del proyecto sea la misma que la de la construcción tradicional.`,
+    titulo: "PREMIUM",
+    descripcion: `Trabajamos con materiales de primera calidad y tenemos un sistema constructivo diseñado por nosotros para que la durabilidad en el tiempo equipare a la construcción tradicional.`,
     imagen: imgBeneficio4,
     color: '#fded04',
     caracteristicas: [
@@ -55,7 +55,7 @@ export const MockBeneficiosHome: Beneficio[] = [
   {
     id: 5,
     titulo: "TRANSPORTABLE",
-    descripcion: `De la misma manera que trasladamos los módulos desde nuestra planta al terreno, en un futuro el mismo proyecto puede ser implantado en otro lugar.`,
+    descripcion: `De la misma manera que trasladamos los módulos desde nuestra fábrica al terreno, en un futuro, el mismo DROP puede ser implantado en otro lugar.`,
     imagen: imgBeneficio5,
     color: '#fded04',
     caracteristicas: [
@@ -66,8 +66,8 @@ export const MockBeneficiosHome: Beneficio[] = [
   },
   {
     id: 6,
-    titulo: "VERDE",
-    descripcion: `Generamos el mínimo impacto posible en el lugar de implantación, ya que no conlleva movimiento de suelo. Además, la aislación de nuestros paneles permite generar un ahorro de energía sustancial.`,
+    titulo: "PROPÓSITO",
+    descripcion: `Generamos el mínimo impacto posible en el lugar de implantación, ya que no conlleva movimiento de suelo. Además, la aislación de nuestros paneles permite generar un ahorro de energía sustancial. `,
     imagen: imgBeneficio6,
     color: '#fded04',
     caracteristicas: [

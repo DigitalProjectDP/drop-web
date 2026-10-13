@@ -67,8 +67,8 @@ a:hover{
 
 .button__primary:hover{
   background-color: #fded04;
-  color: #FFF;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+  color: #000;
+  /* text-shadow: 1px 1px 5px rgba(0,0,0,0.9); */
   opacity: 1;
 }
 
