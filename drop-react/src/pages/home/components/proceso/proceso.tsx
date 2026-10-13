@@ -1,5 +1,5 @@
 import './style.css'
-import imgProceso from '../../../../media/img/home/proceso-fabricacion.jpg'
+import imgProceso from '../../../../media/img/home/proceso-fabricacion.JPG'
 import { Imagen } from '../../../../interfaces/imagen';
 import SectionTextImage from '../../../../components/sectionTextImage';
 import ProcesoTimeline from './proceso-timeline';
