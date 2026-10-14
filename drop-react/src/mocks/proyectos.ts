@@ -10,6 +10,13 @@ import imgCabañas08 from "../media/img/proyectos/cabanas/dji_0909.webp";
 import imgCabañas09 from "../media/img/proyectos/cabanas/f925154b-7886-4dcf-88da-f82f348cfe93.webp";
 import imgCabañas10 from "../media/img/proyectos/cabanas/IMG_0090.webp";
 
+import imgG2801 from "../media/img/modelos/g28/1.webp";
+import imgG2802 from "../media/img/modelos/g28/2.webp";
+import imgG2803 from "../media/img/modelos/g28/3.webp";
+import imgG2804 from "../media/img/modelos/g28/4.webp";
+import imgG2805 from "../media/img/modelos/g28/5.webp";
+import imgG2806 from "../media/img/modelos/g28/6.webp";
+
 import imgMatheu01 from "../media/img/proyectos/matheu/Portada.jpeg";
 import imgMatheu02 from "../media/img/proyectos/matheu/Converted_WebP/33.webp";
 import imgMatheu03 from "../media/img/proyectos/matheu/Converted_WebP/34.webp";
@@ -121,9 +128,8 @@ export const MockProyectos: Modelo[] = [
         moneda: 'USD$',
         brochure: '',
         categoria: { id: 0, descripcion: '' },
-        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgCabañas01 }, { id: 2, nombre: 'Imagen02', url: imgCabañas02 }, { id: 3, nombre: 'Imagen03', url: imgCabañas03 }, { id: 4, nombre: 'Imagen04', url: imgCabañas04 },
-        { id: 5, nombre: 'Imagen05', url: imgCabañas05 }, { id: 6, nombre: 'Imagen06', url: imgCabañas06 }, { id: 7, nombre: 'Imagen07', url: imgCabañas07 }, { id: 8, nombre: 'Imagen08', url: imgCabañas08 },
-        { id: 9, nombre: 'Imagen09', url: imgCabañas09 }, { id: 10, nombre: 'Imagen10', url: imgCabañas10 }],
+        imagenes: [{ id: 1, nombre: 'Imagen01', url: imgG2801 }, { id: 2, nombre: 'Imagen02', url: imgG2802 }, { id: 3, nombre: 'Imagen03', url: imgG2803 }, { id: 4, nombre: 'Imagen04', url: imgG2804 },
+        { id: 5, nombre: 'Imagen05', url: imgG2805 }, { id: 6, nombre: 'Imagen06', url: imgG2806 }],
         caracteristicas: [{ id: 1, descripcion: '2 dormitorios | 6 módulos' }, { id: 2, descripcion: '116 m2' }, { id: 3, descripcion: '70m2 cubiertos + 46m2 de deck' }]
     },
     {

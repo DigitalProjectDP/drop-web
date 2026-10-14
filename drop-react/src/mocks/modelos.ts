@@ -84,7 +84,7 @@ import imgDosdor2Foto12 from "../media/img/modelos/dosdor2/Foto 12.webp";
 import imgDosdor2Foto13 from "../media/img/modelos/dosdor2/Foto 13.webp";
 import imgDosdor2Foto14 from "../media/img/modelos/dosdor2/Foto 14.webp";
 
-const BROCHURE_URL = "https://drive.google.com/uc?export=download&id=16pAbTH0Ndx35AOzoIXwkxDJd5oxJFb6p";
+const BROCHURE_URL = "https://drive.google.com/file/d/1YAy91ss8_aDBiCobdF5oDUYOg8GPbncK/view";
 
 export const MockModelos: Modelo[] = [
     {
@@ -135,7 +135,7 @@ La versión completa del Chillout suma 28 m2 de deck semicubierto que extienden 
     },
     {
         id: 3,
-        nombre: 'Dosdor',
+        nombre: 'H1',
         descripcion: `105m2\n
 70m2 cub + 35m2 semicub\n
 Una casa amplia y abierta al exterior.\n

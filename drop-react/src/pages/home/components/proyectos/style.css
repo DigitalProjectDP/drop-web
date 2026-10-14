@@ -84,8 +84,10 @@
     z-index: 5;
 }
 
+.proyecto__icon,
+.proyecto__icon > *,
 .proyecto__icon__principal > *{
-    animation: proyecto 1s infinite;
+    animation: proyecto 1s infinite alternate ease-in-out;
     z-index: 5;
 }
 
@@ -185,8 +187,14 @@
 }
 
 @keyframes proyecto {
-    from {filter: var(--filter-yellow-color);}
-    to {filter: var(--filter-blue-color);}
+    from {
+        color: #fded04;
+        stroke: #fded04;
+    }
+    to {
+        color: white;
+        stroke: white;
+    }
 }
 
 @keyframes zoom {

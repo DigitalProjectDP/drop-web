@@ -1,5 +1,6 @@
 import "./style.css";
-import imgLogoHipotecario from "../../media/logo/logo_banco_provincia.png"
+import imgLogoProvincia from "../../media/logo/logo_banco_provincia.png"
+import imgLogoHipotecario from "../../media/logo/logo_hipotecario.png"
 import { useEffect, useState } from "react";
 import { Modal } from "react-bootstrap";
 import ReactGA from 'react-ga';
@@ -49,9 +50,15 @@ export default function BancoHipotecarioPopUp() {
         <>
             {visible ? <article className="popup__container p-3" >
                 <Modal.Header closeButton className="border-0" onClick={closePopup}></Modal.Header>
-                <h3 className="text-center p-2">¿Sabías que podés acceder a un crédito hipotecario para construir tu DROP?</h3>
+                <h3 className="text-center p-2">Podés obtener tu Drop con las siguientes líneas de crédito</h3>
                 <div className="d-flex flex-column justify-content-center align-items-center gap-2 py-3">
-                    <img src={imgLogoHipotecario} alt="Logo_Hipotecario" height={50} />
+                    {/* <img src={imgLogoHipotecario} alt="Logo_Hipotecario" height={50} /> */}
+                    <div className="d-flex justify-content-center align-items-center gap-2 py-3">
+                        <a className="bg-light shadow p-1 mt-4 fs-5 border" id="banco-link" href="https://www.bancoprovincia.com.ar/web/prestamo_aca_viviendas_modulares"
+                            target="_blank" rel="noreferrer"><img src={imgLogoProvincia} alt="Logo_Hipotecario" height={64} /></a>
+                        <a className="bg-light shadow p-1 mt-4 fs-5 border" id="banco-link" href="https://www.hipotecario.com.ar/personas/prestamos-a-la-vivienda/viviendas-industrializadas/"
+                            target="_blank" rel="noreferrer"><img src={imgLogoHipotecario} alt="Logo_Hipotecario" height={64} /></a>
+                    </div>
                     <a className="button__secondary mt-4 fs-5" id="ver-modelos" href="#/inicio/?id=section__hipotecario" onClick={redirect}>Conocer más</a>
                 </div>
             </article> : ''}

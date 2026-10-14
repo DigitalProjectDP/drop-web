@@ -10,7 +10,7 @@ interface HeaderProps {
 
 export default function Header({ opacity }: HeaderProps) {
   const [logo, setLogo] = useState(imgLogo);
-  const [bgColor, setBgColor] = useState(opacity ? 'rgba(0,0,0,1)' : 'rgba(0,0,0,0.0)');
+  const [bgColor, setBgColor] = useState(opacity ? 'rgba(0,0,0,1)' : 'rgba(0,0,0,1)');
 
   const { search } = useLocation();
 
@@ -38,7 +38,7 @@ export default function Header({ opacity }: HeaderProps) {
       setBgColor('var(--first-color)');
     }
     else {
-      let colorBackground = opacity ? 'rgba(0,0,0,1)' : 'rgba(0,0,0,0.0)';
+      let colorBackground = opacity ? 'rgba(0,0,0,1)' : 'rgba(0,0,0,1)';
       setBgColor(colorBackground);
     }
 
@@ -95,7 +95,7 @@ export default function Header({ opacity }: HeaderProps) {
             <a className="nav-link" href="#/nosotros">Nosotros</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="https://drive.google.com/uc?export=download&id=16pAbTH0Ndx35AOzoIXwkxDJd5oxJFb6p">Brochure</a>
+            <a className="nav-link" href="https://drive.google.com/file/d/1YAy91ss8_aDBiCobdF5oDUYOg8GPbncK/view" target="_blank">Brochure</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#/contacto">Contacto</a>
