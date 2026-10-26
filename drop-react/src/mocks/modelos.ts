@@ -84,6 +84,21 @@ import imgDosdor2Foto12 from "../media/img/modelos/dosdor2/Foto 12.webp";
 import imgDosdor2Foto13 from "../media/img/modelos/dosdor2/Foto 13.webp";
 import imgDosdor2Foto14 from "../media/img/modelos/dosdor2/Foto 14.webp";
 
+import imgD60Portada from "../media/img/modelos/D60/Portada Sección Modelos.webp";
+import imgD60Foto01 from "../media/img/modelos/D60/Foto 1.webp";
+import imgD60Foto02 from "../media/img/modelos/D60/Foto 2.webp";
+import imgD60Foto03 from "../media/img/modelos/D60/Foto 3.webp";
+import imgD60Foto04 from "../media/img/modelos/D60/Foto 4.webp";
+import imgD60Foto05 from "../media/img/modelos/D60/Foto 5.webp";
+import imgD60Foto06 from "../media/img/modelos/D60/Foto 6.webp";
+import imgD60Foto07 from "../media/img/modelos/D60/Foto 7.webp";
+import imgD60Foto08 from "../media/img/modelos/D60/Foto 8.webp";
+import imgD60Foto09 from "../media/img/modelos/D60/Foto 9.webp";
+import imgD60Foto10 from "../media/img/modelos/D60/Foto 10.webp";
+import imgD60Foto11 from "../media/img/modelos/D60/Foto 11.webp";
+import imgD60Foto12 from "../media/img/modelos/D60/Foto 12.webp";
+import imgD60Foto13 from "../media/img/modelos/D60/Foto 13.webp";
+
 const BROCHURE_URL = "https://drive.google.com/file/d/1YAy91ss8_aDBiCobdF5oDUYOg8GPbncK/view";
 
 export const MockModelos: Modelo[] = [
@@ -195,10 +210,21 @@ Un deck semicubierto que funciona perfecto de espacio intermedio entre el living
         moneda: 'USD$',
         brochure: BROCHURE_URL,
         categoria: { id: 1, descripcion: 'Alquiler temporario' },
-        imagenes: [{ id: 0, nombre: 'Imagen00', url: imgKubePortada },
-        { id: 1, nombre: 'Imagen01', url: imgKube01 }, { id: 2, nombre: 'Imagen02', url: imgKube02 }, { id: 3, nombre: 'Imagen03', url: imgKube03 }, { id: 4, nombre: 'Imagen04', url: imgKube04 },
-        { id: 5, nombre: 'Imagen05', url: imgKube05 }, { id: 6, nombre: 'Imagen06', url: imgKube06 }, { id: 7, nombre: 'Imagen07', url: imgKube07 }, { id: 8, nombre: 'Imagen08', url: imgKube08 },
-        { id: 9, nombre: 'Imagen09', url: imgKube09 }, { id: 10, nombre: 'Imagen10', url: imgKube10 }, { id: 11, nombre: 'Imagen11', url: imgKube11 }, { id: 12, nombre: 'Imagen12', url: imgKube12 }
+        imagenes: [
+            { id: 1, nombre: 'Portada', url: imgD60Portada },
+            { id: 2, nombre: 'Foto 01', url: imgD60Foto01 },
+            { id: 3, nombre: 'Foto 02', url: imgD60Foto02 },
+            { id: 4, nombre: 'Foto 03', url: imgD60Foto03 },
+            { id: 5, nombre: 'Foto 04', url: imgD60Foto04 },
+            { id: 6, nombre: 'Foto 05', url: imgD60Foto05 },
+            { id: 7, nombre: 'Foto 06', url: imgD60Foto06 },
+            { id: 8, nombre: 'Foto 07', url: imgD60Foto07 },
+            { id: 9, nombre: 'Foto 08', url: imgD60Foto08 },
+            { id: 10, nombre: 'Foto 09', url: imgD60Foto09 },
+            { id: 11, nombre: 'Foto 10', url: imgD60Foto10 },
+            { id: 12, nombre: 'Foto 11', url: imgD60Foto11 },
+            { id: 13, nombre: 'Foto 12', url: imgD60Foto12 },
+            { id: 14, nombre: 'Foto 13', url: imgD60Foto13 },
         ],
         caracteristicas: [{ id: 1, descripcion: '2 dormitorios | 49 m2 cubiertos' }, { id: 2, descripcion: 'Personalizable' }]
     },

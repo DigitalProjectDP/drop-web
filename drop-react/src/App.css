@@ -1,4 +1,4 @@
-:root{
+:root {
   --first-color: #111111;
   --second-color: #bf345d;
   --third-color: #d696a8;
@@ -25,63 +25,64 @@
 
 }
 
-body{  
+body {
   margin: 0;
   background-color: #2d2d2d;
-  font-family: 'Aileron', sans-serif!important;
+  font-family: 'Aileron', sans-serif !important;
   min-height: 100vh;
   height: 100%;
 }
 
-a:hover{
+a:hover {
   cursor: pointer;
   opacity: 0.9;
 }
 
-#root{
+#root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.row{
-  margin: 0!important;
+.row {
+  margin: 0 !important;
 }
 
-.main__height{
+.main__height {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.button__primary{
-  color: var(--first-color);  
+.button__primary {
+  color: var(--first-color);
   font-weight: 400;
   background-color: #FFF;
   padding: 0.3rem 1rem;
-  border: 1px solid grey!important;
+  border: 1px solid grey !important;
   transition: 0.5s background-color;
 }
 
-.button__primary:hover{
+.button__primary:hover {
   background-color: #fded04;
   color: #000;
   /* text-shadow: 1px 1px 5px rgba(0,0,0,0.9); */
   opacity: 1;
 }
 
-.button__secondary{
-  background-color: var(--yellow-color);
-  color: #FFF;
-  padding: 0.5rem 1rem;
-  border: 0;
-  text-shadow: 1px 1px 10px rgba(0,0,0,0.9);
+.button__secondary {
+  background-color: lightgray;
+  border: 1px solid grey !important;
+  padding: 0.5rem 2rem;
+  color: #000;
+  /* text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9); */
 }
 
-.button__secondary:hover{
-  opacity: 1!important;
+.button__secondary:hover {
+  opacity: 1 !important;
+  color: #FFF;
   background-color: var(--first-color);
 }
 
@@ -128,9 +129,9 @@ body.react-confirm-alert-body-element {
   text-align: left;
   background: #fff;
   border-radius: 10px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
-  color: #FFF;    
+  color: #FFF;
 }
 
 .react-confirm-alert-svg {
@@ -139,13 +140,13 @@ body.react-confirm-alert-body-element {
   left: 0;
 }
 
-.react-confirm-alert-body > h1 {
+.react-confirm-alert-body>h1 {
   margin-top: 0;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.react-confirm-alert-body > h3 {
+.react-confirm-alert-body>h3 {
   margin: 0;
   font-size: 16px;
 }
@@ -174,19 +175,29 @@ body.react-confirm-alert-body-element {
   cursor: pointer;
 } */
 
-.main__height{
+.main__height {
   animation: fadein 1s;
 }
 
 @keyframes fadein {
-  from { opacity: 0;}
-  to   { opacity: 1}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 
 @keyframes maxHeightToMin {
-  from { min-height: 100vh;}
-  to   { min-height: auto;}
+  from {
+    min-height: 100vh;
+  }
+
+  to {
+    min-height: auto;
+  }
 }
 
 
@@ -195,6 +206,7 @@ body.react-confirm-alert-body-element {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -204,6 +216,7 @@ body.react-confirm-alert-body-element {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -213,6 +226,7 @@ body.react-confirm-alert-body-element {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -222,6 +236,7 @@ body.react-confirm-alert-body-element {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
