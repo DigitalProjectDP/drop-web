@@ -1,6 +1,6 @@
 import { Inversion } from "../interfaces/inversion";
-import imgGastronomia from "../media/img/home/inversiones/GASTRONOMÍA.webp";
-import imgHoteleria from "../media/img/home/inversiones/HOTELERÍA.webp";
+import imgGastronomia from "../media/img/home/inversiones/GASTRONOMIA.webp";
+import imgHoteleria from "../media/img/home/inversiones/HOTELERIA.webp";
 import imgComercios from "../media/img/home/inversiones/COMERCIOS.webp";
 import imgResidencial from "../media/img/home/inversiones/VIVIENDA.webp";
 

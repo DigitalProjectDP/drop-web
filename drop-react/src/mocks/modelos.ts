@@ -68,7 +68,7 @@ import imgKube10 from "../media/img/modelos/kube/Converted_WebP/image15 (1).webp
 import imgKube11 from "../media/img/modelos/kube/Converted_WebP/img_0621 (1).webp";
 import imgKube12 from "../media/img/modelos/kube/Converted_WebP/img_1991 (1).webp";
 
-import imgDosdor2Portada from "../media/img/modelos/dosdor2/Portada en Sección Modelos.webp";
+import imgDosdor2Portada from "../media/img/modelos/dosdor2/Portada en Seccion Modelos.webp";
 import imgDosdor2Foto01 from "../media/img/modelos/dosdor2/Foto 1.webp";
 import imgDosdor2Foto02 from "../media/img/modelos/dosdor2/Foto 2.webp";
 import imgDosdor2Foto03 from "../media/img/modelos/dosdor2/Foto 3.webp";
@@ -84,7 +84,7 @@ import imgDosdor2Foto12 from "../media/img/modelos/dosdor2/Foto 12.webp";
 import imgDosdor2Foto13 from "../media/img/modelos/dosdor2/Foto 13.webp";
 import imgDosdor2Foto14 from "../media/img/modelos/dosdor2/Foto 14.webp";
 
-import imgD60Portada from "../media/img/modelos/D60/Portada Sección Modelos.webp";
+import imgD60Portada from "../media/img/modelos/D60/Portada Seccion Modelos.webp";
 import imgD60Foto01 from "../media/img/modelos/D60/Foto 1.webp";
 import imgD60Foto02 from "../media/img/modelos/D60/Foto 2.webp";
 import imgD60Foto03 from "../media/img/modelos/D60/Foto 3.webp";
